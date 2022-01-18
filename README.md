@@ -9,26 +9,11 @@ Introduction to Text and Data Mining
     * link to all sessions
 
 
-## Overview
-* What is data? What forms does it take? What types are there?
-* How do we use data in DH?
-* How do we ask questions of data? How do we tell stories? 
-* Data and power
-* Lessons for “big data”
-
 ----
-[Next >>>](sections/dh.ipynb)  
-----
-
-
-[Follow up](sections/continue.md)
-
-
-
+[Next >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/dh.ipynb)  
 
 -----
-
-Session Leader: [Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/) 
+Session Leader:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/) 
 
 * Adapted from notebook *Text Analysis: What Every Digital Humanist Should Know* created by [Nathan Kelber](http://nkelber.com) for [JSTOR Labs](https://labs.jstor.org/) under [Creative Commons CC BY License](https://creativecommons.org/licenses/by/4.0/)<br />
 For notebooks from Text Analysis Pedagogy Institute, see [the TAPI site](https://nkelber.github.io/tapi2021/book/intro.html) 
