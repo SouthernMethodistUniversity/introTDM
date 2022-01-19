@@ -6,7 +6,7 @@ Introduction to Text and Data Mining
 * This session will help anyone who is interested in text analysis but unsure what methods might help their current research project.
 
     * This is the **first session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What research questions can be answered with Text Mining? 
-    * link to all sessions
+    * [Register for other Digital Scholarship workshops.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
 
 
 ----
