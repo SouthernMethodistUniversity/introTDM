@@ -218,7 +218,7 @@ Read about using Natural Language Processing [(NLP)](https://constellate.org/doc
 
 <!-- #endregion -->
 
-## Looking for more learning materials? **Check out**
+## Looking for more learning materials? *Check out the following*
 
 # Resources at SMU 
 * [SMU Libraries Scholarship & Publishing](https://www.smu.edu/Libraries/scholarship)
