@@ -218,9 +218,8 @@ Read about using Natural Language Processing [(NLP)](https://constellate.org/doc
 
 <!-- #endregion -->
 
-## Looking for more learning materials?
+## Looking for more learning materials? **Check out**
 
-**Check out**
 # Resources at SMU 
 * [SMU Libraries Scholarship & Publishing](https://www.smu.edu/Libraries/scholarship)
 * [High Performance Computing @ SMU](https://www.smu.edu/OIT/Services/HPC)
