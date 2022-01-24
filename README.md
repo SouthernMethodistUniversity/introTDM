@@ -1,5 +1,4 @@
-# DRAFT VERSION introTDM
-Introduction to Text and Data Mining
+# Introduction to Text and Data Mining (TDM)
 
 ## What goes into learning how to do a text mining project?
 * This session will consist of an overview of the fundamental text analysis methods common in digital humanities and digital scholarship.  

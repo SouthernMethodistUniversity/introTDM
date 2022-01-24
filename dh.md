@@ -91,8 +91,10 @@ Consider the data's current form as well as the size and skill of your project s
 
 In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. Some of this is discussed in [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb), but it would also help to have some experience with working with data at scale with either Excel or, even better, Python Pandas.
 
-Read about downloading historical SEC filings via EDGAR [Textual Analysis on SEC Filings](https://mingze-gao.com/posts/textual-analysis-on-sec-filings/)
+Read about downloading historical SEC filings via EDGAR: [Textual Analysis on SEC Filings](https://mingze-gao.com/posts/textual-analysis-on-sec-filings/)
+
 Read about analyzing [U.S. political party platforms on women's issues](https://pudding.cool/projects/votes-for-women/)
+
 Read about [examining chyrons (the text at the bottom of the screen) from three major cable networks](https://pudding.cool/2018/01/chyrons/)
 ___
 
@@ -201,12 +203,16 @@ The advent of supervised machine learning techniques have rapidly changed text a
 * William Mattingly [Introduction to Machine Learning](https://nkelber.github.io/tapi2021/book/courses/machine-learning-william.html) TAP Institute 2021
 * Grant Glass [Introduction to Machine Learning](https://nkelber.github.io/tapi2021/book/courses/machine-learning-grant.html) TAP Institute 2021
 
+___
+
 **Text Visualization** (Intermediate to Advanced)
 
  ["Text data [can be] a bit more challenging to use to represent insights in charts and graphs because it's not numerical."](https://www.pluralsight.com/guides/text-data-visualization-and-insights-in-python)
 
-See examples of text visualizations (https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a)
+See examples of [text visualizations](https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a)
+
 Read about [SEC Visualizations](https://www.theinformedjd.com/2016/04/sec-visualizations-rank-and-file/)
+
 Read about using Natural Language Processing [(NLP)](https://constellate.org/docs/key-terms/#nlp) to [analyze the Wall Street Bets Reddit group](https://medium.com/swlh/analyzing-the-wall-street-bets-reddit-group-with-natural-language-processing-296465f90f26)
 
 
