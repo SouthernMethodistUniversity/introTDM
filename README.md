@@ -10,7 +10,7 @@ Introduction to Text and Data Mining
 
 
 ----
-[Next >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/dh.ipynb)  
+[Next >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/dh.md)  
 
 -----
 Session Leader:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/) 

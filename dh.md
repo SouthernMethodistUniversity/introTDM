@@ -28,13 +28,14 @@ ___
     * TDM is when your data set consist of text.
     * For a TDM project you need to complete the following steps:
         1. Identify a research question or topic of interest.
-        2. Search for and identify a data set that is available for use and relevent to your research interests. 
-         * For an introductory project we recommend you find and use an already existign data set, rather then creating and/or cleaning a new dataset.
+        2. Search for and identify a data set that is available for use and relevant to your research interests. 
+         * For an introductory project we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
          * [Introduction to Data life cycle](https://github.com/SouthernMethodistUniversity/datalifecycle#introduction-to-the-stages-of-the-data-life-cycle)
         3. Apply the relevant computational methods.
-         * Do you have a specific question you are trying to answer or are you doing an exploratory project? What type of analysis are you interested in?
-     
+         * Do you have a specific question you are trying to answer or are you doing an exploratory project? What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
+* [Text analysis glossary](https://constellate.org/docs/key-terms/)
 
+     
 
 
 ## What kind of texts do I need for text analysis?
@@ -44,13 +45,15 @@ Text analysis depends on having a large number of texts in an accessible format.
 * Full-text
 * Easily readable, such as plaintext files or Python strings
 
-In practice, "easily-readable" means that you could hypothetically copy and paste the text. It is common, however, when doing text analysis to work with current works which are in copyright. If it is not possible to access "full-text" due to applicable copyright laws, the ideal corpus will give readers access to [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. In the cases where Constellate cannot supply full-text due to copyright laws (JSTOR and Portico content), we supply three n-gram counts:
+In practice, "easily-readable" means that you could hypothetically copy and paste the text. It is common, however, when doing text analysis to work with current works which are in copyright. If it is not possible to access "full-text" due to applicable copyright laws, the ideal corpus will give readers access to [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
 
 * Unigrams- A single-word construction, for example: "vegetable".
 * Bigrams- An two-word construction, for example: "vegetable stock".
 * Trigrams- A three-word construction, for example: "homemade vegetable stock".
 
 While having the full texts for the documents in your corpus is ideal, a great deal can be still be discovered through the use of unigrams. Even when researchers have access to the full-texts of a corpus, it is common for them to create a list of n-gram counts for analysis. 
+
+Read about using n-grams to [get a sense of language usage and change on Reddit](https://projects.fivethirtyeight.com/reddit-ngram/)
 ___
 <font color="red">Read more</font>
 * [Constellate Dataset Builder: full-text and n-gram content](https://constellate.org/docs/data-sources)
@@ -58,13 +61,13 @@ ___
 * [Hathitrust Digital Library](https://www.hathitrust.org/help_digital_library)
 
 
-# Text Analysis: What Every Digital Humanist Should Know
+# Text Analysis: What Every Digital Scholar Should Know
 
-This notebook is a high-level overview of the fundamental text analysis methods common in the digital humanities. This notebook will help any digital humanist interested in text analysis but unsure what methods might help their current research project.
+This notebook is a high-level overview of the fundamental text analysis methods common in the digital scholarship. This notebook will help any researcher interested in text analysis but unsure what methods might help their current research project.
 
 This notebook answers:
 
-* What text analysis methods are useful for humanists?
+* What text analysis methods are useful for your discipline?
 * What kinds of questions can a particular method answer?
 * How difficult is a particular method to learn?
 * Where can I start learning now?
@@ -73,29 +76,33 @@ This notebook answers:
 
 ## I have my own data. What will it take to get it ready?
 
-Finding, cleaning and structuring data is often time consuming and labor intensive.
-One of the most significant benefits of using a data base such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. For a major text analysis project, such as UNC Chapel Hill's [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/), about 90% of the labor is creating the corpus. For your intial porject we suggest assembling a data set from one of the previously mentioned database. We will discuss this further in the [next workshop.](https://libcal.smu.edu/event/8767634)
+*Finding, cleaning and structuring data is often time consuming and labor intensive.* 
+One of the most significant benefits of using a data base such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. For a major text analysis project, such as UNC Chapel Hill's [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/), about *90% of the labor is creating the corpus.* For your initial project we suggest assembling a data set from one of the previously mentioned databases. We will discuss this further in the [next workshop.](https://libcal.smu.edu/event/8767634)
 
 If you have your own data, you will need to assess what it will take to make it ready for analysis. Here are some questions you should ask:
 
 * How can I convert my data into plain text? 
-    * <font color="red">Start learning</font> [Optical Character Recognition Basics](./ocr-basics.ipynb)
+    * <font color="red">Start learning</font> [Optical Character Recognition Basics](https://constellate.org/tutorials/ocr-basics.ipynb)
 * How can I tokenize my texts (break up and separate the words)? 
-    * <font color="red">Start learning</font> [Tokenize Text Files](./tokenizing-text-files.ipynb)
-    * <font color="red">Start learning</font> [Tokenize Text Files with NLTK](./tokenize-text-files-with-nltk-for-research.ipynb)
+    * <font color="red">Start learning</font> [Tokenize Text Files](https://constellate.org/tutorials/tokenizing-text-files.ipynb)
+    * <font color="red">Start learning</font> [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb)
     
 Consider the data's current form as well as the size and skill of your project staff. The corpus creation process could take anywhere from a few hours to many years of labor. If there is a significant amount of labor, you may need to write a grant proposal to hire help. *If writing a grant, contact your library with questions about [Research Data Management](https://www.smu.edu/Libraries/scholarship/data/data-policy) since funding agencies often require your corpus to be committed to a disciplinary or institutional repository.*
 
-In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. Some of this is discussed in [Tokenize Text Files with NLTK](./tokenize-text-files-with-nltk-for-research.ipynb), but it would also help to have some experience with working with data at scale with either Excel or, even better, Python Pandas.
+In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. Some of this is discussed in [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb), but it would also help to have some experience with working with data at scale with either Excel or, even better, Python Pandas.
+
+Read about downloading historical SEC filings via EDGAR [Textual Analysis on SEC Filings](https://mingze-gao.com/posts/textual-analysis-on-sec-filings/)
+Read about analyzing [U.S. political party platforms on women's issues](https://pudding.cool/projects/votes-for-women/)
+Read about [examining chyrons (the text at the bottom of the screen) from three major cable networks](https://pudding.cool/2018/01/chyrons/)
 ___
 
 <font color="red">Start learning</font>
-[Pandas 1](./pandas-1.ipynb)
+[Pandas 1](https://constellate.org/tutorials/pandas-1.ipynb)
 
 
-## What humanities questions can text analysis answer?
+## What disciplinary questions can text analysis answer?
 
-Humanists use text analysis to answer a wide variety of questions. Here are a few that are common:
+You can use text analysis to answer a wide variety of questions. Here are a few that are common:
 
 1. What are these texts about?
 2. What emotions are expressed?
@@ -107,21 +114,21 @@ Let's consider the methods to answer each of these questions.
 
 ### What are these texts about?
 
-When it comes to a large body of texts, humanities scholars tend to be most curious about the text's contents. What are the words, topics, concepts, and significant terms in these documents? There are a number of methods often used which vary in complexity and difficulty.
+When it comes to a large body of texts, scholars tend to be most curious about the text's contents. What are the words, topics, concepts, and significant terms in these documents? There are a number of methods often used which vary in complexity and difficulty.
 ___
 
 **Word Frequency** (Beginner Friendly)
 
 If you search for digital humanities in [Google image search](https://www.google.com/search?q=digital+humanities&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmhrrwjeL0AhWvkIkEHfAbCfoQ_AUoA3oECAEQBQ), the most common result is a [word cloud](https://docs.constellate.org/key-terms/#tag-cloud). A word cloud visualizes the most frequent content words in a text or corpus. Before you can create a word cloud, however, you need to collect the word frequencies for all the words in your text. You may also need to use a [stop words list](https://docs.constellate.org/key-terms/#stop-words) to remove common [function words](https://docs.constellate.org/key-terms/#function-words) (grammatical word constructions like "the", "of", and "or").
 
-<font color="red">Start learning</font> [Word Frequency Analysis](./exploring-word-frequencies.ipynb) and create a word cloud
+<font color="red">Start learning</font> [Word Frequency Analysis](https://constellate.org/tutorials/exploring-word-frequencies.ipynb) and create a word cloud
 ___
 
 **Significant Terms** (Beginner Friendly)
 
 Search engines use significant terms analysis to match a user query with a list of appropriate documents. This method could be useful if you want to search your corpus for the most significant texts based on a word (or set of words). It can also be useful in reverse. For a given document, you could create a list of the ten most significant terms. This can be useful for summarizing the content of a document. 
 
-<font color="red">Start learning</font> [Significant Terms Analysis](./finding-significant-terms.ipynb) and create a simple search engine
+<font color="red">Start learning</font> [Significant Terms Analysis](https://constellate.org/tutorials/finding-significant-terms.ipynb) and create a simple search engine
 ___
 **Topic Analysis** or Topic Modeling (Intermediate)
 
@@ -136,7 +143,7 @@ We can recognize that these words tend to cluster together within newspaper sect
 <font color="red">Read more</font>
 Keli Du's [A Survey on LDA Topic Modeling in Digital Humanities](https://www.researchgate.net/profile/Keli-Du/publication/349279379_A_Survey_On_LDA_Topic_Modeling_In_Digital_Humanities/links/6027a55ea6fdcc37a8222850/A-Survey-On-LDA-Topic-Modeling-In-Digital-Humanities.pdf)
 
-<font color="red">Start learning</font> [Topic Analysis](./finding-significant-terms.ipynb) and create an interactive visualization
+<font color="red">Start learning</font> [Topic Analysis](https://constellate.org/tutorials/finding-significant-terms.ipynb) and create an interactive visualization
 ___
 **Concordance** (Beginner Friendly)
 
@@ -154,7 +161,9 @@ The concordance has a long history in humanities study and Roberto Busa's concor
 
 Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning), or both.
 
-<font color="red">Start learning</font> [Sentiment Analysis with VADER](./finding-significant-terms.ipynb)
+<font color="red">Start learning</font> [Sentiment Analysis with VADER](https://constellate.org/tutorials/finding-significant-terms.ipynb)
+
+Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed)
 
 
 ### What key names can I find?
@@ -192,11 +201,20 @@ The advent of supervised machine learning techniques have rapidly changed text a
 * William Mattingly [Introduction to Machine Learning](https://nkelber.github.io/tapi2021/book/courses/machine-learning-william.html) TAP Institute 2021
 * Grant Glass [Introduction to Machine Learning](https://nkelber.github.io/tapi2021/book/courses/machine-learning-grant.html) TAP Institute 2021
 
+**Text Visualization** (Intermediate to Advanced)
+
+ ["Text data [can be] a bit more challenging to use to represent insights in charts and graphs because it's not numerical."](https://www.pluralsight.com/guides/text-data-visualization-and-insights-in-python)
+
+See examples of text visualizations (https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a)
+Read about [SEC Visualizations](https://www.theinformedjd.com/2016/04/sec-visualizations-rank-and-file/)
+Read about using Natural Language Processing [(NLP)](https://constellate.org/docs/key-terms/#nlp) to [analyze the Wall Street Bets Reddit group](https://medium.com/swlh/analyzing-the-wall-street-bets-reddit-group-with-natural-language-processing-296465f90f26)
+
+
 <!-- #endregion -->
 
 ## Looking for more learning materials?
 
-Check out:
+**Check out**
 # Resources at SMU 
 * [SMU Libraries Scholarship & Publishing](https://www.smu.edu/Libraries/scholarship)
 * [High Performance Computing @ SMU](https://www.smu.edu/OIT/Services/HPC)
@@ -219,9 +237,9 @@ Check out:
   
 **Books on Python and NLP**
 * *Automate the Boring Stuff with Python: Practical Programming for Total Beginners* by Al Sweigart
-* *Python Crash Course: A Handson, project-based introduction to programming* by Eric Matthes
+* *Python Crash Course: A Hands on, project-based introduction to programming* by Eric Matthes
 * *Machine Learning with Python Cookbook* by Chris Albon
-* *Natural Langauge Processing in Action* by Hobson Lane, Cole Howard, and Hannes Max Hapke
+* *Natural Language Processing in Action* by Hobson Lane, Cole Howard, and Hannes Max Hapke
 * *Humanities Data Analysis: Case Studies with Python* by Folgert Karsdorp, Mike Kestemont, and Allen Riddell
 * [A list of even more books](https://scottbot.net/teaching-yourself-to-code-in-dh/) by Scott B. Weingart
 
