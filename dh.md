@@ -33,6 +33,7 @@ ___
          * [Introduction to Data life cycle](https://github.com/SouthernMethodistUniversity/datalifecycle#introduction-to-the-stages-of-the-data-life-cycle)
         3. Apply the relevant computational methods.
          * Do you have a specific question you are trying to answer or are you doing an exploratory project? What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
+            * The data and methodology sections are always useful to see where people are fiding data and how they are analyzing it.
 * [Text analysis glossary](https://constellate.org/docs/key-terms/)
 
      
@@ -179,6 +180,7 @@ Named Entity Recognition (NER) automatically identifies entities within a text a
 * Melanie Walsh [Named Entity Recognition](https://melaniewalsh.github.io/Intro-Cultural-Analytics/05-Text-Analysis/12-Named-Entity-Recognition.html) 2021
 * Zoe LeBlanc [Named Entity Recognition](https://nkelber.github.io/tapi2021/book/courses/ner.html) TAP Institute 2021
 * Miguel Won, Patricia Murrieta-Flores, and Bruno Martins [Ensemble Named Entity Recognition (NER): Evaluating NER Tools in the Identification of Place Names in Historical Corpora](https://www.frontiersin.org/articles/10.3389/fdigh.2018.00002/full) (2018)
+* Read about about how hyphenated names are hard to study [here](https://pudding.cool/2019/05/hyphens/) 
 
 <!-- #region -->
 ### Which texts are similar?
