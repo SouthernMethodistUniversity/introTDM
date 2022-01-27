@@ -6,7 +6,7 @@
 
     * This is the **first session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What research questions can be answered with Text Mining? 
   
-**[Go to Session 1: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/introTDM.md)**  
+**[Go to Session 1: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/TDMintro.md)**  
 
 # Session 2: Introduction to finding datasets for Text and Data Mining (TDM)
 
@@ -15,7 +15,7 @@
 
     * This is the **second session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What kinds of datasets are useful for Text Mining? 
 
-**[Go to Session 2: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/introTDM.md)  
+**[Go to Session 2: Introduction to finding datasets TDM >>>]((https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/TDMdata.md) 
 
 
 ----
