@@ -51,16 +51,17 @@ Try searching:
 * [Digital Public Library](https://dp.la/)
 * [Project Gutenberg](https://www.gutenberg.org/)
 
-YOu can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
+You can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
 
 **Open access (OA) repositories**
-Depending on the the type fo data, the collecting agency or you field their might be open access repositories with that data available.
-* In the U.S. government collected data is often open access cess
+Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.
+* Data collected by the U.S. government may be publicly available.(https://usafacts.org/data/)
 * Your discipline may have a OA repository, such as [ARVIX, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 **Data and methodology sessions of research and data journalism articles**
 When reading articles on topics of interest always pay attention to the *data and methodology sections.* Where did these researchers find their data set they are using? If they created it, did they make it accessible in a repository on a website, or a Github repository?
-Read the data and methodology sections in some articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore/) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
+
+Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore/) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
 
 
 <!---
