@@ -9,7 +9,7 @@
 
 
 ----
-[Next >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/dh.md)  
+[Next >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/introTDM.md)  
 
 -----
 Session Leader:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/) 
