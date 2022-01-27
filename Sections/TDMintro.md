@@ -254,3 +254,7 @@ Read about using Natural Language Processing [(NLP)](https://constellate.org/doc
 * *Algorithms of Oppression* by Safiya Noble
 * *Race After Technology* by Ruha Benjamin
 * *Data Feminism* by Catherine D'Ignazio and Lauren F. Klein
+
+
+-----
+[Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)

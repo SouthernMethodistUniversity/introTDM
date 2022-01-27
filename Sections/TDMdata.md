@@ -78,3 +78,7 @@ https://libguides.bc.edu/textdatamining/overview
 https://guides.nyu.edu/tdm/start 
 
 https://guides.lib.uw.edu/research/text-mining --->
+
+
+-----
+[Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)
