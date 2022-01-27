@@ -1,6 +1,6 @@
 * [Session 1: Introduction to Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-1-introduction-to-text-and-data-mining-tdm)
 * [Session 2: Introduction to finding datasets for Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-2-introduction-to-finding-datasets-for-text-and-data-mining-tdm)
-* [Session 3: Introduction to Python for Text and Data Mining (TDM](https://github.com/SouthernMethodistUniversity/introTDM#session-3-introduction-to-python-for-text-and-data-mining-tdm)
+* [Session 3: Introduction to Python for Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-3-introduction-to-python-for-text-and-data-mining-tdm)
 
 * [Register for other Digital Scholarship workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
 * [Link to guide for this series](https://guides.smu.edu/textmining)
