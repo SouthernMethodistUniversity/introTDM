@@ -45,10 +45,10 @@ In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) 
 **Open access (OA) or Public Domain information**
 You can [search](https://guides.smu.edu/internetsearching) the open web using a web browser such as Chrome or Firefox, adding specific terms such as: data, datasets, API, file format (such as .csv). [Advanced search](https://www.google.com/advanced_search) options amy also allow for searching for specific file types. 
 Try searching: 
-* [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page
+* [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
 * [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 * [Library of Congress Labs](https://labs.loc.gov/)
-* [Digital Public Library'(https://dp.la/)
+* [Digital Public Library](https://dp.la/)
 * [Project Gutenberg](https://www.gutenberg.org/)
 
 YOu can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
