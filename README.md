@@ -1,18 +1,28 @@
-# Introduction to Text and Data Mining (TDM)
+# Session 1: Introduction to Text and Data Mining (TDM)
 
 ## What goes into learning how to do a text mining project?
 * This session will consist of an overview of the fundamental text analysis methods common in digital humanities and digital scholarship.  
 * This session will help anyone who is interested in text analysis but unsure what methods might help their current research project.
 
     * This is the **first session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What research questions can be answered with Text Mining? 
-    * [Register for other Digital Scholarship workshops.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
+  
+**[Go to Session 1: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/introTDM.md)**  
+
+# Session 2: Introduction to finding datasets for Text and Data Mining (TDM)
+
+## What goes into learning how to do a text mining project?
+* How do you find and prepare a data set for a text mining project? This session will consist of an overview of [databases that allow for the creation of data sets for text mining.](https://guides.smu.edu/az.php?t=45104) The session will focus on an example from Constellate (datasets from JSTOR), what is required for the creation and prepping of a data set for text mining (topics include the data life cycle, tools, access, copyright and licensing issues). 
+
+    * This is the **second session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What kinds of datasets are useful for Text Mining? 
+
+**[Go to Session 2: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/introTDM.md)  
 
 
 ----
-[Next >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/introTDM.md)  
+* [Register for other Digital Scholarship workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
 
 -----
-Session Leader:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/) 
+Session Leaders:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/), [Jonathan McMichael](https://guides.smu.edu/prf.php?account_id=104877),  & [Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People) 
 
 * Adapted from notebook *Text Analysis: What Every Digital Humanist Should Know* created by [Nathan Kelber](http://nkelber.com) for [JSTOR Labs](https://labs.jstor.org/) under [Creative Commons CC BY License](https://creativecommons.org/licenses/by/4.0/)<br />
 For notebooks from Text Analysis Pedagogy Institute, see [the TAPI site](https://nkelber.github.io/tapi2021/book/intro.html) 
