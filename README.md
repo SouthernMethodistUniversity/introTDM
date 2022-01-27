@@ -15,17 +15,24 @@
 
     * This is the **second session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What kinds of datasets are useful for Text Mining? 
 
-**[Go to Session 2: Introduction to finding datasets TDM >>>]((https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/TDMdata.md) 
+**[Go to Session 2: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/TDMdata.md) 
 
+# Session 3: Introduction to Python for Text and Data Mining (TDM)
+
+## What goes into learning how to use Python for a text mining project?
+* How do you use coding (Python) for a text mining project? This session will consist of an introduction to Python for text mining. In this session we will focus on introducing Python basics and the use of Python notebooks, as well as an introduction to high performance computing (HPC) 
+
+    * This is the **third session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. 
+
+**[Go to Session 3: Introduction to Python for TDM >>>](Link to be added)
 
 ----
 * [Register for other Digital Scholarship workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
+* [Link to guide for this series](https://guides.smu.edu/textmining)
 
 -----
-Session Leaders:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/), [Jonathan McMichael](https://guides.smu.edu/prf.php?account_id=104877),  & [Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People) 
+Session Leaders:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/), [Jonathan McMichael](https://guides.smu.edu/prf.php?account_id=104877), &[Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People) 
 
-* Adapted from notebook *Text Analysis: What Every Digital Humanist Should Know* created by [Nathan Kelber](http://nkelber.com) for [JSTOR Labs](https://labs.jstor.org/) under [Creative Commons CC BY License](https://creativecommons.org/licenses/by/4.0/)<br />
-For notebooks from Text Analysis Pedagogy Institute, see [the TAPI site](https://nkelber.github.io/tapi2021/book/intro.html) 
  
 [![Creative Commons License](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
