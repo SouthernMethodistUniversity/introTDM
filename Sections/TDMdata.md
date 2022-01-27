@@ -32,6 +32,7 @@ Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/
 # You can search for already existing datasets in the following:
 
 **Databases**
+
 *Licensed content in Library databases*
 Some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HathiTrustResearchCenter.md)
@@ -43,6 +44,7 @@ If you are thinking of basing a research project on data extracted from a librar
 In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) considerations, we must take into account what the database vendors’ own policies specify in regard to this type of use. When providing access to a database, the library enters into licensing agreements, which also dictate what types of data can be extracted and used. Many prohibit text and data mining and the use of software such as scripts, agents, or robots, but it may be possible to negotiate text mining rights.
 
 **Open access (OA) or Public Domain information**
+
 You can [search](https://guides.smu.edu/internetsearching) the open web using a web browser such as Chrome or Firefox, adding specific terms such as: data, datasets, API, file format (such as .csv). [Advanced search](https://www.google.com/advanced_search) options amy also allow for searching for specific file types. 
 Try searching: 
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
@@ -54,11 +56,13 @@ Try searching:
 You can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
 
 **Open access (OA) repositories**
+
 Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.
 * Data collected by the U.S. government may be publicly available.(https://usafacts.org/data/)
 * Your discipline may have a OA repository, such as [ARVIX, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 **Data and methodology sessions of research and data journalism articles**
+
 When reading articles on topics of interest always pay attention to the *data and methodology sections.* Where did these researchers find their data set they are using? If they created it, did they make it accessible in a repository on a website, or a Github repository?
 
 Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore/) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
