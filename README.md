@@ -4,7 +4,7 @@
 
 * [Register for other Digital Scholarship workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
 * [Link to SMU Libraries guide for this series. Links to any recorded sessions are on the guide.](https://guides.smu.edu/textmining)
-* [Terminology]((https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/terminology.md))
+* [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/terminology.md)
 ----
 
 
