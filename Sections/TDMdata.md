@@ -64,8 +64,8 @@ In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) 
 
 *Licensed content in Library databases*
 Some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
-* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HathiTrustResearchCenter.md)
-* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/JSTORConstellate.md)
+* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md)
+* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/Constellate.md)
 
 *Policies for Mining Licensed Content* 
 If you are thinking of basing a research project on data extracted from a library database, contact your [subject librarian](https://www.smu.edu/libraries/help/librarian) to discuss issues around permissions (copyright and licensing agreements), formats and fees.
