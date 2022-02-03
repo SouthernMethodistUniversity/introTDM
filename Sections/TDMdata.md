@@ -37,18 +37,16 @@ For the purposes of completing a project in a semester, we recommend choosing an
 
 The considerations you should keep in mind for [creating a data set,](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) are the same things you want to look for when searching for a dataset for research. 
     
-    * Is there a [Data dictionary](https://www.usgs.gov/data-management/data-dictionaries) or any kind of documentation that states how the date was derived and why it was recording in the way it was. 
+   * Is there a [Data dictionary](https://www.usgs.gov/data-management/data-dictionaries) or any kind of documentation that states how the date was derived and why it was recording in the way it was. 
     
-    * Good documentation makes material *understandable, verifiable, and reusable* (by you or by others).
+   * Good documentation makes material *understandable, verifiable, and reusable* (by you or by others).
     
-    * What are the file naming conventions? 
+   * What are the file naming conventions? 
     
-    * Is there metadata ?
-        * Metadata is simply ‘data about data’.  It is related to the broader contextual information that describes your data, but is usually more structured in that it conforms to set standards and is machine readable.  One typical use of metadata is to create a catalogue record for a dataset held in an archive. By using a standard set of tags, an automatic system can tell where the information about the title, creator, description and so forth begin and end.
+   * Is there metadata ?
+       * Metadata is simply ‘data about data’.  It is related to the broader contextual information that describes your data, but is usually more structured in that it conforms to set standards and is machine readable.  One typical use of metadata is to create a catalogue record for a dataset held in an archive. By using a standard set of tags, an automatic system can tell where the information about the title, creator, description and so forth begin and end.
     
-    * Data that is not structured or cleaned is referred to as unstructured, noisy or dirty. *A messy data set can be used but you will need to spend time [processing that data:](https://www.usgs.gov/data-management/process) either cleaning, structuring and/or organizing it.* 
-
-
+   * Data that is not structured or cleaned is referred to as unstructured, noisy or dirty. *A messy data set can be used but you will need to spend time [processing that data:](https://www.usgs.gov/data-management/process) either cleaning, structuring and/or organizing it.* 
 
 <!-- #endregion -->
 
@@ -76,8 +74,6 @@ In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) 
 
 **Open access (OA) or Public Domain information**
 
-**Open access (OA) search & OA repositories****
-
 You can [search](https://guides.smu.edu/internetsearching) the open web using a web browser such as Chrome or Firefox, adding specific terms such as: data, datasets, API, file format (such as .csv). [Advanced search](https://www.google.com/advanced_search) options amy also allow for searching for specific file types. 
 Try searching: 
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
@@ -85,14 +81,13 @@ Try searching:
 * [Library of Congress Labs](https://labs.loc.gov/)
 * [Digital Public Library](https://dp.la/)
 * [Project Gutenberg](https://www.gutenberg.org/)
-You can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
+* You can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
 
-* OA repositories
 Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.
 * Data collected by the [U.S. government may be publicly available.](https://usafacts.org/data/)
 * Your discipline may have a OA repository, such as [ARVIX, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
-**Data and methodology sessions of research and data journalism articles**
+**Data and methodology sections of research and data journalism articles**
 
 When reading articles on topics of interest, always pay attention to the *data and methodology sections.* 
 * Where did these researchers find their data set they are using? 
