@@ -12,6 +12,10 @@
 
 ## What goes into learning how to do a text mining project?
 * This session will consist of an overview of the fundamental text analysis methods common in digital humanities and digital scholarship.  
+
+Goals: 
+    * Introduce text analysis and broad text analysis workflows
+    * Make sense of digital scholarly research practices
 * This session will help anyone who is interested in text analysis but unsure what methods might help their current research project.
 
     * This is the **first session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What research questions can be answered with Text Mining? 
@@ -21,7 +25,10 @@
 # Session 2: Introduction to finding datasets for Text and Data Mining (TDM)
 
 ## What goes into learning how to do a text mining project?
-* How do you find and prepare a data set for a text mining project? This session will consist of an overview of [databases that allow for the creation of data sets for text mining.](https://guides.smu.edu/az.php?t=45104) The session will focus on an example from Constellate (datasets from JSTOR), what is required for the creation and prepping of a data set for text mining (topics include the data life cycle, tools, access, copyright and licensing issues). 
+* How do you find and prepare a data set for a text mining project? This session will consist of an overview of [databases that allow for the creation of data sets for text mining.](https://guides.smu.edu/az.php?t=45104) The session will focus on an example from Constellate (datasets from JSTOR), what is required for the creation and prepping of a data set for text mining (topics include the data life cycle, tools, access, copyright and licensing issues).
+
+Goals: 
+* Understand the context for one text analysis tool provider (ex. HTRC or Constellate)
 
     * This is the **second session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What kinds of datasets are useful for Text Mining? 
 
@@ -31,6 +38,10 @@
 
 ## What goes into learning how to use Python for a text mining project?
 * How do you use coding (Python) for a text mining project? This session will consist of an introduction to Python for text mining. In this session we will focus on introducing Python basics and the use of Python notebooks, as well as an introduction to high performance computing (HPC) 
+
+Goals:
+    * Introduce our hands-on example and case study
+    * Recognize research questions text analysis can answer
 
     * This is the **third session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. 
 
@@ -42,5 +53,6 @@ Session Leaders:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/),
  
 [![Creative Commons License](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+
 
 

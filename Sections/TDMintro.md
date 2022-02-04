@@ -21,8 +21,28 @@ For notebooks from Text Analysis Pedagogy Institute, see [the TAPI site](https:/
 ___
 
 
+# Text Analysis: What Every Digital Scholar Should Know
+
+This notebook is a high-level overview of the fundamental text analysis methods common in the digital scholarship. This notebook will help any researcher interested in text analysis but unsure what methods might help their current research project.
+
+This notebook answers:
+
+* What text analysis methods are useful for your discipline?
+* What kinds of questions can a particular method answer?
+* How difficult is a particular method to learn?
+* Where can I start learning now?
+
+
+
 # Text Mining: What is it?
+
 * Text Mining is also sometimes referred to as TDM (Text and Data mining).
+* Broadly speaking, it’s the process by which computers are used to reveal information in and about text (Marti Hearst definition). 
+* Computer algorithms can discern patterns in bodies of (often unstructured) text. 
+    * *"Unstructured”* means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database. An *algorithm* is simply a computational process that creates an output from an input. 
+    * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. It should be noted that text analysis is more than just search, meaning it’s not just about discovery and knowing something is there. It’s also about exploring what does it mean for something to be there. For instance, knowing the word “creativity” appears in x number of volumes is only the first step; we also want to know what does this tell us. 
+    * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
+    * [What Is Text Mining? -Marti Hearst](https://people.ischool.berkeley.edu/~hearst/text-mining.html)
     * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
     * Data mining is looking for patterns using computational methods, often across large data sets. 
     * TDM is when your data set consist of text.
@@ -37,6 +57,41 @@ ___
 * [Text analysis glossary](https://constellate.org/docs/key-terms/)
 
      
+
+
+# So how does text analysis work in general? 
+
+Text analysis usually follows these steps:
+* First, the text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
+* This means we need to break the text into smaller pieces, and abstract (reduce) it into things that a computer can crunch.
+* Counting is often what happens next. 
+    * Some of the things that are often counted include words, phrases, and parts of speech. 
+    * The number of these counts can be used to identify characteristics of texts. 
+* Then, researchers can apply computational statistics to the counts of textual features, and develop hypotheses based on these counts.
+
+
+# How does it impact research?
+
+* In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called *“distant reading”.* 
+    * This is a term coined by Stanford professor Franco Moretti, meaning “reading” literature not by studying particular texts, but by aggregating and analyzing massive amounts of texts and “reading” them at a “distance”. This scaling-up and “distancing” can bring out more insights from a very different vantage point. 
+    * It is also worth mentioning that text analysis doesn’t have to be the primary method in a research project. It may be just one step in the entire process, or it can be combined with close reading. This approach has been called *“intermediate reading” or “distant-close reading”.*
+* This shift in research perspective allows for new kinds of research questions to be asked, or for old questions to be “answered” in new ways. Here are some of the possibilities that text analysis can bring to researchers:
+    * It can explore questions not provable by human reading alone
+    * It allows larger corpora for analysis
+    * It allows studies that cover longer time spans
+
+* Text analysis techniques are often best when combined with qualitative assessment and theoretical context. 
+* Text analysis research questions explore a wide range of topics, from biomedical discovery to literary history. Research questions that are conducive for text analysis methods may involve these characteristics:
+    * Change over time 
+    * Pattern recognition 
+    * Comparative analysis 
+    
+[Examples for discussion](https://teach.htrc.illinois.edu/teaching-resources/text-analysis-research-examples/) 
+* How do the projects involve change over time, pattern recognition, or comparative analysis?
+* What kind of text data do they use (time period, source, etc.)?
+* What are their findings? 
+
+
 
 
 ## What kind of texts do I need for text analysis?
@@ -60,19 +115,6 @@ ___
 * [Constellate Dataset Builder: full-text and n-gram content](https://constellate.org/docs/data-sources)
 * [Bring your own data into Constellate](https://constellate.org/docs/import-data-into-constellate)
 * [Hathitrust Digital Library](https://www.hathitrust.org/help_digital_library)
-
-
-# Text Analysis: What Every Digital Scholar Should Know
-
-This notebook is a high-level overview of the fundamental text analysis methods common in the digital scholarship. This notebook will help any researcher interested in text analysis but unsure what methods might help their current research project.
-
-This notebook answers:
-
-* What text analysis methods are useful for your discipline?
-* What kinds of questions can a particular method answer?
-* How difficult is a particular method to learn?
-* Where can I start learning now?
-
 
 
 ## I have my own data. What will it take to get it ready?
@@ -102,7 +144,17 @@ ___
 <font color="red">Start learning</font>
 [Pandas 1](https://constellate.org/tutorials/pandas-1.ipynb)
 
+<!-- #region -->
+# How does it impact research?
 
+* In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called *“distant reading”.* 
+    * This is a term coined by Stanford professor Franco Moretti, meaning “reading” literature not by studying particular texts, but by aggregating and analyzing massive amounts of texts and “reading” them at a “distance”. This scaling-up and “distancing” can bring out more insights from a very different vantage point. 
+    * It is also worth mentioning that text analysis doesn’t have to be the primary method in a research project. It may be just one step in the entire process, or it can be combined with close reading. This approach has been called *“intermediate reading” or “distant-close reading”.*
+* This shift in research perspective allows for new kinds of research questions to be asked, or for old questions to be “answered” in new ways. Here are some of the possibilities that text analysis can bring to researchers:
+    * It can explore questions not provable by human reading alone
+    * It allows larger corpora for analysis
+    * It allows studies that cover longer time spans
+    
 ## What disciplinary questions can text analysis answer?
 
 You can use text analysis to answer a wide variety of questions. Here are a few that are common:
@@ -112,8 +164,20 @@ You can use text analysis to answer a wide variety of questions. Here are a few 
 3. What key names can I find?
 4. Which texts are similar?
 
-Let's consider the methods to answer each of these questions.
+* Text analysis techniques are often best when combined with qualitative assessment and theoretical context. 
+* Text analysis research questions explore a wide range of topics, from biomedical discovery to literary history. Research questions that are conducive for text analysis methods may involve these characteristics:
+    * Change over time 
+    * Pattern recognition 
+    * Comparative analysis 
+    
+[Examples for discussion](https://teach.htrc.illinois.edu/teaching-resources/text-analysis-research-examples/) 
+* How do the projects involve change over time, pattern recognition, or comparative analysis?
+* What kind of text data do they use (time period, source, etc.)?
+* What are their findings? 
 
+
+Let's consider the methods to answer each of these questions.
+<!-- #endregion -->
 
 ### What are these texts about?
 
@@ -258,3 +322,9 @@ Read about using Natural Language Processing [(NLP)](https://constellate.org/doc
 
 -----
 [Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)
+
+Some content in this session basesd on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
+
+```python
+![image.png](attachment:image.png)
+```

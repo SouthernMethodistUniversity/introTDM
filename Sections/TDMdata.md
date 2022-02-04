@@ -48,6 +48,16 @@ The considerations you should keep in mind for [creating a data set,](https://re
     
    * Data that is not structured or cleaned is referred to as unstructured, noisy or dirty. *A messy data set can be used but you will need to spend time [processing that data:](https://www.usgs.gov/data-management/process) either cleaning, structuring and/or organizing it.* 
 
+Read more: 
+* [DH@ Berkley:Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning)
+* "Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled." 
+    * How do you clean data?
+        * Step 1: Remove duplicate or irrelevant observations
+        * Step 2: Fix structural errors
+        * Step 3: Filter unwanted outliers
+        * Step 4: Handle missing data
+        * Step 5: Validate and QA (quality assurance)
+            * [Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data](https://www.tableau.com/learn/articles/what-is-data-cleaning) 
 <!-- #endregion -->
 
 # You can search for already existing datasets in the following:
