@@ -29,7 +29,7 @@ jupyter:
 * [HTRC Algorithms](https://analytics.hathitrust.org/statisticalalgorithms) are web-based, click-and-run tools to perform computational text analysis on volumes in the HathiTrust Digital Library. 
 
 
-[![HTRC for text analysis](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/htrcta.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/htrcta.PNG)
+[![HTRC for text analysis](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/htrcta.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/htrcta.png)
 
 
 
