@@ -284,6 +284,13 @@ Read about using Natural Language Processing [(NLP)](https://constellate.org/doc
 
 <!-- #endregion -->
 
+<!-- #region -->
+[![theoretical Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/idealwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/idealwf.png)
+
+
+[![Actual Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)
+<!-- #endregion -->
+
 ## Looking for more learning materials? *Check out the following*
 
 # Resources at SMU 

@@ -71,7 +71,7 @@ If you are thinking of basing a research project on data extracted from a librar
 
 In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) considerations, we must take into account what the database vendors’ own policies specify in regard to this type of use. When providing access to a database, the library enters into licensing agreements, which also dictate what types of data can be extracted and used. Many prohibit text and data mining and the use of software such as scripts, agents, or robots, but it may be possible to negotiate text mining rights.
 
-
+<!-- #region -->
 *Licensed content in Library databases*
 Some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md)
@@ -81,6 +81,14 @@ Some databases allow for text mining. Those are [marked on our A-Z list with the
 If you are thinking of basing a research project on data extracted from a library database, contact your [subject librarian](https://www.smu.edu/libraries/help/librarian) to discuss issues around permissions (copyright and licensing agreements), formats and fees.
 
 In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) considerations, we must take into account what the database vendors’ own policies specify in regard to this type of use. When providing access to a database, the library enters into licensing agreements, which also dictate what types of data can be extracted and used. Many prohibit text and data mining and the use of software such as scripts, agents, or robots, but it may be possible to negotiate text mining rights.
+
+*Non-consumptive or non-expressive use*
+
+* Research in which computational analysis is performed on text, but not research in which a researcher reads or displays substantial portions of the text to understand the expressive content presented within it.
+* Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”). 
+    * Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”). 
+* Foundation of [HTRC](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md) work.
+
 
 **Open access (OA) or Public Domain information**
 
@@ -105,10 +113,41 @@ When reading articles on topics of interest, always pay attention to the *data a
 
 Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
 
+<!-- #endregion -->
 
+```python
+# Preparing Data 
+* After gathering the data needed for research and before conducting the actual analysis, data often requires preparation. Preparing data can take a lot of time and effort.
+* Examples of what may be necessary to do before the data is in a workable state: 
+    * Correcting OCR errors.
+    * Removing title and header information.
+    * Removing html or xml tags.
+    * Splitting or combining files. 
+    * Removing certain words or punctuation marks.
+    * Making text into lowercase.
+    
+[![Chunking text](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/chunktext.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/chunktext.png)
+* As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
+
+[![Grouping text](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/groupingtext.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/groupingtext.png)
+* An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
+
+Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
+
+[![Tokenizations](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/token.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/token.png)
+* An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
+Here’s a tokenized version of the beginning of The Gettysburg Address on the slide. The original text, which is in a human-readable form, has been translated into tokens. 
+While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
+
+* It is important to note that different choices in text preparation will affect the results of the analysis. Depending on the amount of text and size of chunks, which stop words are removed and which characters are included, and whether to lowercase and normalize words, the eventual text that is ready for analysis can be very different. Additionally, preparation for analysis takes a lot of time and effort. This is where scripting becomes useful!
+
+* [Additional information about how text preparation impacts results](https://ssrn.com/abstract=2849145)  
+
+```
 
 Some content on this page adapted from:
 * [Research Data Oxford](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) and used under a [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/).
 * [BOSTON COLLEGE LIBRARIES:Text & Data Mining](https://libguides.bc.edu/textdatamining/overview) and used under a [Creative Commons Attribution 4.0 International License..](https://creativecommons.org/licenses/by/4.0/).
 * [NYU Text Data Mining](https://guides.nyu.edu/tdm/start)and used under a [ Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/).
+* [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
 * Also see:[USGS data management](https://www.usgs.gov/data-management) 
