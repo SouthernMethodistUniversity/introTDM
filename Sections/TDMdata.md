@@ -144,6 +144,23 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 
 
 
+# Approaches to TDM
+
+### What emotions are expressed?
+* One key approach is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. Some common, specific methods under NLP are:
+    
+    * Named entity extraction, which uses computers to learn about what names of people, places, and organizations are in the text.
+    * Sentiment analysis, which uses computers to explore what emotions are present in the text. 
+    * Stylometry, which uses computers to speculate who wrote the text based on language style.
+
+### What patterns are present? 
+* Another key approach to text analysis is *Machine Learning (ML)*, which is training computers to recognize patterns in text without explicit human programming. Machine learning can either be unsupervised (with minimal human intervention) or supervised (with more human intervention). Here are some common, specific methods that are based on machine learning:  
+
+    * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
+    * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
+
+
+
 Some content on this page adapted from:
 * [Research Data Oxford](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) and used under a [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/).
 * [BOSTON COLLEGE LIBRARIES:Text & Data Mining](https://libguides.bc.edu/textdatamining/overview) and used under a [Creative Commons Attribution 4.0 International License..](https://creativecommons.org/licenses/by/4.0/).

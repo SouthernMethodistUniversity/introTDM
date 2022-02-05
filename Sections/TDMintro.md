@@ -144,7 +144,7 @@ ___
 <font color="red">Start learning</font>
 [Pandas 1](https://constellate.org/tutorials/pandas-1.ipynb)
 
-<!-- #region -->
+
 # How does it impact research?
 
 * In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called *“distant reading”.* 
@@ -176,8 +176,8 @@ You can use text analysis to answer a wide variety of questions. Here are a few 
 * What are their findings? 
 
 
-Let's consider the methods to answer each of these questions.
-<!-- #endregion -->
+
+
 
 ### What are these texts about?
 
@@ -220,6 +220,22 @@ The concordance has a long history in humanities study and Roberto Busa's concor
 
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
 * Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)
+
+
+### What emotions are expressed?
+* One key approach is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. Some common, specific methods under NLP are:
+    
+    * Named entity extraction, which uses computers to learn about what names of people, places, and organizations are in the text.
+    * Sentiment analysis, which uses computers to explore what emotions are present in the text. 
+    * Stylometry, which uses computers to speculate who wrote the text based on language style.
+
+### What patterns are present? 
+* Another key approach to text analysis is *Machine Learning (ML)*, which is training computers to recognize patterns in text without explicit human programming. Machine learning can either be unsupervised (with minimal human intervention) or supervised (with more human intervention). Here are some common, specific methods that are based on machine learning:  
+
+    * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
+    * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
+
+
 
 
 ### What emotions are expressed?
