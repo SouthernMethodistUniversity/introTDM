@@ -115,7 +115,6 @@ Read some data journalism articles on [The Pudding](https://pudding.cool/), [Pro
 
 <!-- #endregion -->
 
-```python
 # Preparing Data 
 * After gathering the data needed for research and before conducting the actual analysis, data often requires preparation. Preparing data can take a lot of time and effort.
 * Examples of what may be necessary to do before the data is in a workable state: 
@@ -143,7 +142,7 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 
 * [Additional information about how text preparation impacts results](https://ssrn.com/abstract=2849145)  
 
-```
+
 
 Some content on this page adapted from:
 * [Research Data Oxford](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) and used under a [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/).
