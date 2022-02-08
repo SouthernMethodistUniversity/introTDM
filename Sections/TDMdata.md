@@ -15,7 +15,6 @@ jupyter:
 
 For a discussion of what is text and data mining? Refer to this [introductory session](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/introTDM.md)
 
-
 # How do you find data for TDM projects ?
 
 ## Glossary
@@ -28,7 +27,15 @@ For a discussion of what is text and data mining? Refer to this [introductory se
 * Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
 
 
-<!-- #region jupyter={"source_hidden": true} tags=[] -->
+# Text as Data 
+
+When approaching text as data, here are some things to keep in mind:
+
+* First, having textual data of sufficient quality is important. Textual data quality is determined by how it’s created. Hand-keyed text is often of the best quality, while text obtained by OCR, Optical Character Recognition, can vary in quality. Raw, uncorrected OCR text is dirty, and it can only become clean until it is corrected. (For examale, Please note that HathiTrust OCR is dirty and uncorrected.
+* When viewing text as data, we usually analyze them by corpus or corpora. As mentioned in previous modules, a “corpus” of text can refer to both a digital collection and an individual's research text dataset. Text corpora are bodies of text.
+* When preparing text, one can think in terms of what [Geoffrey Rockwell has called text decomposition or re-composition.](https://geoffreyrockwell.com/publications/WhatIsTAnalysis.pdf) The text will be split, combined, or represented in ways that distinguish it from human readable text. It may involve discarding some text, and requires the researcher to shift their understanding of the text from human-legible object to data. What stays, what goes, and how things are manipulated is a researcher’s choice. While there are emerging best practices, there isn’t a step-by-step guide to follow.
+
+
 ## What makes a useful dataset?
 
 For the purposes of completing a project in a semester, we recommend choosing an already existing 'good' data set so that you can start [your analysis.](https://www.usgs.gov/data-management/analyze)
@@ -58,7 +65,102 @@ Read more:
         * Step 4: Handle missing data
         * Step 5: Validate and QA (quality assurance)
             * [Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data](https://www.tableau.com/learn/articles/what-is-data-cleaning) 
-<!-- #endregion -->
+
+# What are the stages of data ?
+* We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
+
+## Raw data 
+* Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.
+* But "raw data" is a relative term, inasmuch as when one person finishes processing data and presents it as a finished product, another person may take that product and work on it further, and for them that data is "raw data". 
+    * For example, is "big data" "raw data"? How do we understand data that we have "scraped"?
+
+## Processed/transformed
+
+* Processing data puts it into a state more readily available for analysis, and makes the data legible. For instance it could be rendered as **structured data**. This can also take many forms, e.g., a table. 
+
+* Here are a few you're likely to come across, all representing the same data:
+
+### XML
+
+```
+<Cats> 
+    <Cat> 
+        <firstName>Smally</firstName> <lastName>McTiny</lastName> 
+    </Cat> 
+    <Cat> 
+        <firstName>Kitty</firstName> <lastName>Kitty</lastName> 
+    </Cat> 
+    <Cat> 
+        <firstName>Foots</firstName> <lastName>Smith</lastName> 
+    </Cat> 
+    <Cat> 
+        <firstName>Tiger</firstName> <lastName>Jaws</lastName> 
+    </Cat> 
+</Cats> 
+```
+
+### JSON
+
+```
+{"Cats":[ 
+    { "firstName":"Smally", "lastName":"McTiny" }, 
+    { "firstName":"Kitty", "lastName":"Kitty" }, 
+    { "firstName":"Foots", "lastName":"Smith" }, 
+    { "firstName":"Tiger", "lastName":"Jaws" } 
+]} 
+```
+
+### CSV
+```
+First Name,Last Name/n
+Smally,McTiny/n
+Kitty,Kitty/n
+Foots,Smith/n
+Tiger,Jaws/n
+```
+
+### The importance of using open data formats
+A small detour to discuss (the ethics of?) data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats. A demonstration:
+
+Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:
+
+* ASCII
+* PDF 
+* .csv
+* FLAC
+* TIFF
+* JPEG2000
+* MPEG-4
+* XML
+* RDF
+* .txt
+* .r
+
+How do you decide the formats to store your data when you transition from 'raw' to 'processed/transformed' data? What are some of your considerations?
+
+## Tidy data
+There are guidelines to the processing of data, sometimes referred to as **Tidy Data**.<sup>1</sup> One manifestation of these rules:
+1. Each variable is in a column.
+2. Each observation is a row.
+3. Each value is a cell.
+
+Look back at our example of cats to see how they may or may not follow those guidelines. **Important note**: Some data formats allow for more than one dimension of data! How might that complicate the concept of **Tidy Data**?
+
+```
+{"Cats":[
+    {"Calico":[
+    { "firstName":"Smally", "lastName":"McTiny" },
+    { "firstName":"Kitty", "lastName":"Kitty" }],
+    "Tortoiseshell":[
+    { "firstName":"Foots", "lastName":"Smith" }, 
+    { "firstName":"Tiger", "lastName":"Jaws" }]}]}
+```
+
+ <sup>1</sup>Wickham, Hadley. "Tidy Data". Journal of Statistical Software.
+
+## Forms of data
+
+There are many ways to represent data, just as there are many sources of data. For the purposes of this series we are focusing on already digitized text. In the next session workshop in this series, you will see how a .csv file can be processed an analysed using Python. 
 
 # You can search for already existing datasets in the following:
 
@@ -71,7 +173,6 @@ If you are thinking of basing a research project on data extracted from a librar
 
 In addition to [copyright](https://www.smu.edu/Libraries/scholarship/copyright) considerations, we must take into account what the database vendors’ own policies specify in regard to this type of use. When providing access to a database, the library enters into licensing agreements, which also dictate what types of data can be extracted and used. Many prohibit text and data mining and the use of software such as scripts, agents, or robots, but it may be possible to negotiate text mining rights.
 
-<!-- #region -->
 *Licensed content in Library databases*
 Some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md)
@@ -96,6 +197,7 @@ You can [search](https://guides.smu.edu/internetsearching) the open web using a 
 Try searching: 
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
 * [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+* [Wikisource](https://en.wikisource.org/wiki/Main_Page)
 * [Library of Congress Labs](https://labs.loc.gov/)
 * [Digital Public Library](https://dp.la/)
 * [Project Gutenberg](https://www.gutenberg.org/)
@@ -103,7 +205,7 @@ Try searching:
 
 Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.
 * Data collected by the [U.S. government may be publicly available.](https://usafacts.org/data/)
-* Your discipline may have a OA repository, such as [ARVIX, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
+* Your discipline may have a OA repository, such as [arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 **Data and methodology sections of research and data journalism articles**
 
@@ -113,7 +215,6 @@ When reading articles on topics of interest, always pay attention to the *data a
 
 Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
 
-<!-- #endregion -->
 
 # Preparing Data 
 * After gathering the data needed for research and before conducting the actual analysis, data often requires preparation. Preparing data can take a lot of time and effort.
@@ -138,15 +239,17 @@ Both chunking (from the previous image) and grouping are ways of modifying the u
 Here’s a tokenized version of the beginning of The Gettysburg Address on the slide. The original text, which is in a human-readable form, has been translated into tokens. 
 While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
 
-* It is important to note that different choices in text preparation will affect the results of the analysis. Depending on the amount of text and size of chunks, which stop words are removed and which characters are included, and whether to lowercase and normalize words, the eventual text that is ready for analysis can be very different. Additionally, preparation for analysis takes a lot of time and effort. This is where scripting becomes useful!
+* It is important to note that *different choices in text preparation will affect the results of the analysis.* 
+* Depending on the amount of text and size of chunks, which stop words are removed and which characters are included, and whether to lowercase and normalize words, the eventual text that is ready for analysis can be very different. Additionally, preparation for analysis takes a lot of time and effort. This is where scripting becomes useful!
 
 * [Additional information about how text preparation impacts results](https://ssrn.com/abstract=2849145)  
-
 
 
 # Approaches to TDM
 
 ### What emotions are expressed?
+[![Natural Language Processing (NLP)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/nlp.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/nlp.png)
+
 * One key approach is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. Some common, specific methods under NLP are:
     
     * Named entity extraction, which uses computers to learn about what names of people, places, and organizations are in the text.
@@ -154,14 +257,48 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
     * Stylometry, which uses computers to speculate who wrote the text based on language style.
 
 ### What patterns are present? 
+
+[![Machine Learning (ML)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ml.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ml.png)
 * Another key approach to text analysis is *Machine Learning (ML)*, which is training computers to recognize patterns in text without explicit human programming. Machine learning can either be unsupervised (with minimal human intervention) or supervised (with more human intervention). Here are some common, specific methods that are based on machine learning:  
 
     * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
     * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
 
+# Topic modeling
+* Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
+* This image visualizes what happens in a topic model. 
+[![Topic Modeling](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)
+* For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
+* The computer treats the textual documents as bags of words, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
+
+## Bag-of-words
+* “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
+[![Bag Of Words](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)
+
+* Here are some tips for topic modeling:
+ * Treat topic modeling as one part of a larger analysis.
+* Understand what you input, including how you set your parameters, will affect the output. Some points to note are:
+* Be careful with how you set the number of texts analyzed, as well as number of topics generated
+* Be familiar with your input data
+* Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.
+* You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
+* Also, try to gain some basic understanding of your tool. *Reading some relevant documentation is especially important when the tool is within a “black box”.*
+    * For example the HTRC algorithm only has a few parameters you can set, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, [the HTRC topic modeling algorithm can be a good place to start!](https://analytics.hathitrust.org/algorithms)
+
+
+
+# Next Session
+* In the next workshop we will be introducing Python. 
+* Python is a commonly-used programming language, and it’s very useful for working with data. It is also an [interpreted language, which basically means it follows step-by-step directions.](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/) 
+* Additionally, Python is generally easy to learn with its relatively simple syntax. For example, one of its learner-friendly features is it avoids excess punctuation. 
+
+
+Read more about [Data in digital humanities](https://github.com/SouthernMethodistUniversity/data)
+
 
 
 Some content on this page adapted from:
+    
 * [Research Data Oxford](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) and used under a [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/).
 * [BOSTON COLLEGE LIBRARIES:Text & Data Mining](https://libguides.bc.edu/textdatamining/overview) and used under a [Creative Commons Attribution 4.0 International License..](https://creativecommons.org/licenses/by/4.0/).
 * [NYU Text Data Mining](https://guides.nyu.edu/tdm/start)and used under a [ Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/).

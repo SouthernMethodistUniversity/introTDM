@@ -101,8 +101,13 @@ Text analysis depends on having a large number of texts in an accessible format.
 * Full-text
 * Easily readable, such as plaintext files or Python strings
 
-In practice, "easily-readable" means that you could hypothetically copy and paste the text. It is common, however, when doing text analysis to work with current works which are in copyright. If it is not possible to access "full-text" due to applicable copyright laws, the ideal corpus will give readers access to [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
+In practice, "easily-readable" means that you could hypothetically copy and paste the text. It is common, however, when doing text analysis to work with current works which are in copyright. If it is not possible to access "full-text" due to applicable copyright laws, the ideal corpus will give readers access to [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
+* N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
+* Notice how in the bigram example below the window of the gram slides across the text, so in bigrams, a word will occur with both the word preceding and following it. 
 
+[![N-gram)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ngram.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ngram.png)
+
+In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
 * Unigrams- A single-word construction, for example: "vegetable".
 * Bigrams- An two-word construction, for example: "vegetable stock".
 * Trigrams- A three-word construction, for example: "homemade vegetable stock".
@@ -139,6 +144,8 @@ Read about downloading historical SEC filings via EDGAR: [Textual Analysis on SE
 Read about analyzing [U.S. political party platforms on women's issues](https://pudding.cool/projects/votes-for-women/)
 
 Read about [examining chyrons (the text at the bottom of the screen) from three major cable networks](https://pudding.cool/2018/01/chyrons/)
+
+Read about [The Emergence of Literary Diction](http://journalofdigitalhumanities.org/1-2/the-emergence-of-literary-diction-by-ted-underwood-and-jordan-sellers/)
 ___
 
 <font color="red">Start learning</font>
@@ -289,13 +296,12 @@ ___
 
 **Text Visualization** (Intermediate to Advanced)
 
- ["Text data [can be] a bit more challenging to use to represent insights in charts and graphs because it's not numerical."](https://www.pluralsight.com/guides/text-data-visualization-and-insights-in-python)
-
-See examples of [text visualizations](https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a)
-
-Read about [SEC Visualizations](https://www.theinformedjd.com/2016/04/sec-visualizations-rank-and-file/)
-
-Read about using Natural Language Processing [(NLP)](https://constellate.org/docs/key-terms/#nlp) to [analyze the Wall Street Bets Reddit group](https://medium.com/swlh/analyzing-the-wall-street-bets-reddit-group-with-natural-language-processing-296465f90f26)
+ * Data visualization is the process of converting data sources into a visual representation. This representation is usually in graphical form. Broadly speaking, anything that displays data in some visual form can be called a data visualization, including both traditional graphs and charts, as well as more innovative data art. 
+* Visualizations present particular ways of interpreting data. It is not a transparent, objective projection of what the data is. By selecting different types of visualization and adjusting parameters, the resulting visualization is a researcher’s specific way of interpreting and presenting data. 
+*  ["Text data [can be] a bit more challenging to use to represent insights in charts and graphs because it's not numerical."](https://www.pluralsight.com/guides/text-data-visualization-and-insights-in-python)
+* See examples of [text visualizations](https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a)
+* Read about [SEC Visualizations](https://www.theinformedjd.com/2016/04/sec-visualizations-rank-and-file/)
+* Read about using Natural Language Processing [(NLP)](https://constellate.org/docs/key-terms/#nlp) to [analyze the Wall Street Bets Reddit group](https://medium.com/swlh/analyzing-the-wall-street-bets-reddit-group-with-natural-language-processing-296465f90f26)
 
 
 <!-- #endregion -->
