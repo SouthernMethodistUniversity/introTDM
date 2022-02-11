@@ -4,7 +4,7 @@
 
 * [Register for other Digital Scholarship workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
 * [Link to SMU Libraries guide for this series. Links to any recorded sessions are on the guide.](https://guides.smu.edu/textmining)
-* [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/terminology.md)
+* [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/terminology.md)
 ----
 
 
@@ -20,7 +20,7 @@ Goals:
 
     * This is the **first session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What research questions can be answered with Text Mining? 
   
-**[Go to Session 1: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/TDMintro.md)**  
+**[Go to Session 1: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md)**  
 
 # Session 2: Introduction to finding datasets for Text and Data Mining (TDM)
 
@@ -28,15 +28,15 @@ Goals:
 * How do you find and prepare a data set for a text mining project? This session will consist of an overview of [databases that allow for the creation of data sets for text mining.](https://guides.smu.edu/az.php?t=45104) The session will focus on an example from Constellate (datasets from JSTOR), what is required for the creation and prepping of a data set for text mining (topics include the data life cycle, tools, access, copyright and licensing issues).
 * *Licensed content in Library databases*
 Some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
-* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md)
-* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/Constellate.md)
+* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
+* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
 
 Goals: 
 * Understand the context for one text analysis tool provider (ex. HTRC or Constellate)
 
     * This is the **second session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. What kinds of datasets are useful for Text Mining? 
 
-**[Go to Session 2: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/TDMdata.md)** 
+**[Go to Session 2: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md)** 
 
 # Session 3: Introduction to Python for Text and Data Mining (TDM)
 
@@ -49,7 +49,7 @@ Goals:
 
    * This is the **third session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. 
 
-**[Go to Session 3: Introduction to Python for TDM >>>](Link to be added)**
+**[Go to Session 3: Introduction to Python for TDM >>>](Link to be added closer to date of session)**
 
 -----
 Session Leaders:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/), [Jonathan McMichael](https://guides.smu.edu/prf.php?account_id=104877), & [Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People) 

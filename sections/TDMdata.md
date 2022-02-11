@@ -241,10 +241,11 @@ There are many ways to represent data, just as there are many sources of data. F
 Some databases allow for text mining. Those are [marked on our A-Z list with ](https://guides.smu.edu/az.php?t=45104) *
 
 
-*Licensed content in Library databases*
+# *Licensed content in Library databases*
 * Only some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md)
 * [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/Constellate.md)
+* Additional resources for [Datasets and Data Repositories](https://guides.smu.edu/data/overview)
 
 *Policies for Mining Licensed Content* 
 * If you are thinking of basing a research project on data extracted from a library database, contact your [subject librarian](https://www.smu.edu/libraries/help/librarian) to discuss issues around permissions (copyright and licensing agreements), formats and fees.
