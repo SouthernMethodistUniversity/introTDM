@@ -58,14 +58,14 @@ This is what it looks like when you have logged into JSTOR through SMU:
 [![name dataset](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate2.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate2.PNG)
 
 * You will then be at your *Dataset Dashboard* which displays recently viewed datasets and example datasets.
-[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.png)
+[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.PNG)
 
 * Scroll down to see the example datasets. 
-[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.png)
+[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.PNG)
 
 * **The options available to you are:** 
 * Analyze: This will allow you to analyze your dataset in the Constellate Lab by opening any of the tutorial Jupyter Notebooks (in the Python programming language) as seen below.
-[![Analyze](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.png)
+[![Analyze](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.PNG)
 * Visualize: This will allow you to do things like visualize terms across you dataset.
 * Download: note the option in reagrds to content (metadata, ngrams, full-text, sampled metadata, trigrams) and formats (.csv, json)
 
