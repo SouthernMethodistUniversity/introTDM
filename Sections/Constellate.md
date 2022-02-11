@@ -34,14 +34,17 @@ jupyter:
    * *visualize and analyze* their datasets.
   *  [Working with Dataset Files](https://constellate.org/tutorials/working-with-dataset-files)
 
+DELETE THIS 
 [![Actual Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)
+
+[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
 <!-- #endregion -->
 
 
 ## Login (Twice!)   
 * 1st: [Login into JSTOR through your institution: SMU](https://login.proxy.libraries.smu.edu/login?url=https://www.jstor.org/). 
 What it looks like when you have logged into JSTOR through SMU:
-[![What it looks like when you have logged into JSTOR through SMU] (https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.png)
+[![What it looks like when you have logged into JSTOR through SMU]](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.PNG)
 * 2nd: [Login into *your* personal JSTOR account.This option will appear after you logon to JSTOR ](https://www-jstor-org.proxy.libraries.smu.edu/action/showLogin?redirectUri=/)  
 * *Note: Choose the Google log on option.*
 * If you don't have a google account [you can create one here.](https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp) You can choose a new gmail address for your account or you can choose to use an existing email (such as your smu.edu email).
