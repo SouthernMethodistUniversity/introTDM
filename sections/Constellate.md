@@ -40,7 +40,7 @@ jupyter:
 ## Login (Twice!)   
 * 1st: [Login into JSTOR through your institution: SMU](https://login.proxy.libraries.smu.edu/login?url=https://www.jstor.org/). 
 This is what it looks like when you have logged into JSTOR through SMU:
-[![JSTOR through SMU](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.PNG)
+[![JSTOR through SMU](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.png)
 
 * 2nd: Login into *your* personal JSTOR account. [This option will appear after you logon to JSTOR](https://www-jstor-org.proxy.libraries.smu.edu/action/showLogin?redirectUri=/)  
 * *Note: Choose the Google log on option.*
@@ -49,23 +49,23 @@ This is what it looks like when you have logged into JSTOR through SMU:
 
 * Now go to [Constellate](https://constellate.org/)
 
-* This is what it looks like when you are logged into JSTOR and Constellate. Note how you are logged into the SMU account and your JSTOR account.[![logged into JSTOR and Constellate](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.PNG)
+* This is what it looks like when you are logged into JSTOR and Constellate. Note how you are logged into the SMU account and your JSTOR account.[![logged into JSTOR and Constellate](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.png)
 
 * Enter your keywords in *Build your dataset* and search. It will then run your search. You can use filters to refine and modify your search.
-[![Build](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate.PNG)
+[![Build](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate.png)
 
 * Once your results look interesting to you, click on *Build* your dataset. It will ask if you want to name your dataset.
-[![name dataset](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate2.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate2.PNG)
+[![name dataset](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate2.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate2.png)
 
 * You will then be at your *Dataset Dashboard* which displays recently viewed datasets and example datasets.
-[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.PNG)
+[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate3.png)
 
 * Scroll down to see the example datasets. 
-[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.PNG)
+[![dataset dashboard](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/buildconstellate4.png)
 
 * **The options available to you are:** 
 * Analyze: This will allow you to analyze your dataset in the Constellate Lab by opening any of the tutorial Jupyter Notebooks (in the Python programming language) as seen below.
-[![Analyze](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.PNG)
+[![Analyze](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.png)
 * Visualize: This will allow you to do things like visualize terms across your dataset.
 * Download: note the option in reagrds to content (metadata, ngrams, full-text, sampled metadata, trigrams) and formats (.csv, json)
 
