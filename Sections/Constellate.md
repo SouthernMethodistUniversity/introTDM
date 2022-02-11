@@ -66,7 +66,7 @@ This is what it looks like when you have logged into JSTOR through SMU:
 * **The options available to you are:** 
 * Analyze: This will allow you to analyze your dataset in the Constellate Lab by opening any of the tutorial Jupyter Notebooks (in the Python programming language) as seen below.
 [![Analyze](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.PNG)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/analyzeconstellate.PNG)
-* Visualize: This will allow you to do things like visualize terms across you dataset.
+* Visualize: This will allow you to do things like visualize terms across your dataset.
 * Download: note the option in reagrds to content (metadata, ngrams, full-text, sampled metadata, trigrams) and formats (.csv, json)
 
 * More on [Working with Dataset Files](https://constellate.org/tutorials/working-with-dataset-files)
