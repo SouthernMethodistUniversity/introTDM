@@ -103,7 +103,7 @@ jupyter:
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
     [![Bag of Words](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)
 * Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
- [![topicmodel](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)
+ [![topic model](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)
 * For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
 * The computer treats the textual documents as bags of words, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. 
 * So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
@@ -132,5 +132,5 @@ jupyter:
 [Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)
 
 
-Some content in this session basesd on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
+Some content in this session based on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
 <!-- #endregion -->

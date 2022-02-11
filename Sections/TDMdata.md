@@ -276,9 +276,9 @@ Depending on the the type of data, the collecting agency or you field their migh
 * Your discipline may have a OA repository, such as [arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 
-### *Highly recommended practice:* reading the Data and methodology sections of research and/ore data journalism articles
+### *Highly recommended practice:* Read the Data and methodology sections of research and/or data journalism articles
 
-When you are considering learning new methodologies, we highly recommend search for academic or data journalism articles where teh authors have asked similar questions or used related methodologies. 
+When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies. 
 * When reading these articles, pay particular attentions to the literature review, and to the *data and methodology sections.* 
 * Where did these researchers find their data set they are using? 
 * If they created it, did they make it accessible in a repository on a website, or a Github repository?
@@ -292,8 +292,6 @@ Read some data journalism articles on [The Pudding](https://pudding.cool/), [Pro
 * Python is a commonly-used programming language, and it’s very useful for working with data. 
     * It is also an [interpreted language, which basically means it follows step-by-step directions.](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/) 
     * Additionally, Python is generally easy to learn with its relatively simple syntax. For example, one of its learner-friendly features is it avoids excess punctuation. 
-
-
 
 
 

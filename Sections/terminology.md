@@ -49,12 +49,9 @@ jupyter:
 * "Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis." [wikipedia](https://en.wikipedia.org/wiki/Web_scraping)
 
  
-
-
 * General rules: You can probably scrape any data that is publicly available and not copyrighted. Commercial use of scraped data may be limited, and do not scrape sites that require authentication (e.g. library subscription databases)
 * Check for an API before scraping
   * See: Access to some APIs is through a publicly available URL, such as [The HathiTrust Bibliographic API.](https://www.hathitrust.org/bib_api) This API provides programmatic access to bibliographic metadata for volumes in the HathiTrust.The metadata is retrieved using a specially formatted URL and the volume ID number.
-
 
 
 See:

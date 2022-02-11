@@ -352,8 +352,6 @@ ___
 -----
 [Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)
 
-Some content in this session basesd on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
+Some content in this session based on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
 
-```python
-![image.png](attachment:image.png)
-```
+
