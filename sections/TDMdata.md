@@ -139,7 +139,7 @@ Both chunking (from the previous image) and grouping are ways of modifying the u
 
 [![Tokenizations](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/token.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/token.png)
 * An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
-Here’s a tokenized version of the beginning of The Gettysburg Address on the slide. The original text, which is in a human-readable form, has been translated into tokens. 
+Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens. 
 While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
 
 * It is important to note that *different choices in text preparation will affect the results of the analysis.* 
@@ -180,10 +180,10 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 [![Bag Of Words](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)
 
 * Here are some tips for topic modeling:
- * Treat topic modeling as one part of a larger analysis.
-* Understand what you input, including how you set your parameters, will affect the output. Some points to note are:
-* Be careful with how you set the number of texts analyzed, as well as number of topics generated
-* Be familiar with your input data
+* Treat topic modeling as one part of a larger analysis.
+    * Understand what you input, including how you set your parameters, will affect the output. Some points to note are:
+    * Be careful with how you set the number of texts analyzed, as well as number of topics generated
+    * Be familiar with your input data
 * Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.
 * You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
 * Also, try to gain some basic understanding of your tool. *Reading some relevant documentation is especially important when the tool is within a “black box”.*
@@ -237,9 +237,6 @@ There are many ways to represent data, just as there are many sources of data. F
 # You can search for already existing datasets in the following:
 
 **Databases**
-*Licensed content in Library databases*
-Some databases allow for text mining. Those are [marked on our A-Z list with ](https://guides.smu.edu/az.php?t=45104) *
-
 
 # *Licensed content in Library databases*
 * Only some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
