@@ -24,16 +24,13 @@ jupyter:
   
   * *teach and learn* text analytics
     * [Constellate tutorials](https://constellate.org/tutorials/)
-  
-  * *build datasets* from across multiple content sources
+    * *build datasets* from across multiple content sources
      * Two of ITHAKA’s services, JSTOR and Portico, are the initial sources of content for the new platform, which includes: [Chronicling America, collections from Documenting the American South, the South Asia Open Archives and Independent Voices from Reveal Digital.](https://constellate.org/docs/data-sources/)  
     * [Build a new dataset](https://constellate.org/builder/)  
     * [Dataset Dashboard and Example datasets](https://constellate.org/dataset/dashboard/)
         * Saving to Dashboard and examples available when logged in 
-    * [Working with Dataset Files](https://constellate.org/tutorials/working-with-dataset-files)
-
     * *visualize and analyze* their datasets.
-    * [Working with Dataset Files](https://constellate.org/tutorials/working-with-dataset-files)
+     * [Working with Dataset Files](https://constellate.org/tutorials/working-with-dataset-files)
 
 <!-- #endregion -->
 
@@ -45,11 +42,11 @@ jupyter:
 
 * 2nd: Login into *your* personal JSTOR account. [This option will appear after you logon to JSTOR](https://www-jstor-org.proxy.libraries.smu.edu/action/showLogin?redirectUri=/)  
   * *Note: Choose the Google log on option.*
-  * If you don't have a google account [you can create one here.](https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp) You can choose a new gmail address for your account or you can choose to use an existing email (such as your smu.edu email) to associate with your Google account.
+  * If you don't have a Google account [you can create one here.](https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp) You can choose a new gmail address for your account or you can choose to use an existing email (such as your smu.edu email) to associate with your Google account.
 
 * Now go to [Constellate](https://constellate.org/)
 
-* This is what it looks like when you are logged into JSTOR and Constellate. Note how you are logged into the SMU account and your JSTOR account.[![logged into JSTOR and Constellate](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.png)
+* This is what it looks like when you are logged into JSTOR and Constellate. Note how you are logged into the SMU JSTOR account *and* your personal JSTOR account.[![logged into JSTOR and Constellate](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginconstellate.png)
 
 * Enter your keywords in *Build your dataset* and search. It will then run your search. You can use filters to refine and modify your search.
 
