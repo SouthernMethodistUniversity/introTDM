@@ -86,6 +86,7 @@ jupyter:
     * You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
     * Also, try to gain some basic understanding of your tool. **Reading some relevant documentation is especially important when the tool is within a “black box”.** Speaking of understanding your tools, it’s important to note that the HTRC algorithm only has two parameters you can set right now, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, the HTRC topic modeling algorithm can be a good place to start.
 
+# Login to HTDL & HTRC 
 ## First, let’s go to the HathiTrust Digital Library (HTDL) interface. 
 * [Go to HTDL site](https://www.hathitrust.org/)
 * Click on the “LOG IN” button on the right to sign in.

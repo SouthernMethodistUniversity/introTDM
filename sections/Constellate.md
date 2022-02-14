@@ -35,7 +35,7 @@ jupyter:
 <!-- #endregion -->
 
 
-## Login (Twice!)   
+# Login to JSTOR & CONSTELLATE    
 * 1st: [Login into JSTOR through your institution: SMU](https://login.proxy.libraries.smu.edu/login?url=https://www.jstor.org/). 
   * This is what it looks like when you have logged into JSTOR through SMU:
 [![JSTOR through SMU](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/loginjstor.png)
