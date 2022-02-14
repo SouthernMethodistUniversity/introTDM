@@ -13,7 +13,7 @@ jupyter:
     name: python3
 ---
 
-For a discussion of what is text and data mining? Refer to this [introductory session](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/introTDM.md)
+For a discussion of what is text and data mining? Refer to this [introductory session](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md)
 
 # How do you find data for TDM projects ?
 
@@ -243,8 +243,8 @@ Some databases allow for text mining. Those are [marked on our A-Z list with ](h
 
 # *Licensed content in Library databases*
 * Only some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
-* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md)
-* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/Constellate.md)
+* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
+* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
 * Additional resources for [Datasets and Data Repositories](https://guides.smu.edu/data/overview)
 
 *Policies for Mining Licensed Content* 
@@ -257,7 +257,7 @@ Some databases allow for text mining. Those are [marked on our A-Z list with ](h
 * Research in which computational analysis is performed on text, but *not* research in which a researcher reads or displays substantial portions of the text to understand the expressive content presented within it.
 * Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”). 
     * Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”). 
-* Foundation of [HTRC](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/Sections/HTRC.md) work.
+* Foundation of [HTRC](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md) work.
 
 
 **Open access (OA) or Public Domain information**
