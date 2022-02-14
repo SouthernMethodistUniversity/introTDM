@@ -1,6 +1,6 @@
-* Go to description [Session 1: Introduction to Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-1-introduction-to-text-and-data-mining-tdm)
-* Go to description [Session 2: Introduction to finding datasets for Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-2-introduction-to-finding-datasets-for-text-and-data-mining-tdm)
-*Go to description [Session 3: Introduction to Python for Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-3-introduction-to-python-for-text-and-data-mining-tdm)
+* Go to description: [Session 1: Introduction to Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-1-introduction-to-text-and-data-mining-tdm)
+* Go to description: [Session 2: Introduction to finding datasets for Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-2-introduction-to-finding-datasets-for-text-and-data-mining-tdm)
+* Go to description: [Session 3: Introduction to Python for Text and Data Mining (TDM)](https://github.com/SouthernMethodistUniversity/introTDM#session-3-introduction-to-python-for-text-and-data-mining-tdm)
 
 * [Register for other Digital Scholarship workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=57548&inc=0)
 * [Link to SMU Libraries guide for this series. Links to any recorded sessions are on the guide.](https://guides.smu.edu/textmining)
@@ -45,8 +45,9 @@ Goals:
 * How do you use coding (Python) for a text mining project? This session will consist of an introduction to Python for text mining. In this session we will focus on introducing Python basics and the use of Python notebooks, as well as an introduction to high performance computing (HPC) 
 
 Goals:
-    * Introduce our hands-on example and case study
-    * Recognize research questions text analysis can answer
+
+* Introduce our hands-on example and case study
+* Recognize research questions text analysis can answer
 
    * This is the **third session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. 
 
