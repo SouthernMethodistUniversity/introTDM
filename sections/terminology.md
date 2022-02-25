@@ -55,11 +55,14 @@ jupyter:
 
 
 See:
-* [Web Scraping Toolkit for examples & porcesses](https://github.com/ashleychampagne/Web-Scraping-Toolkit) 
+* [Web Scraping Toolkit for examples & processes](https://github.com/ashleychampagne/Web-Scraping-Toolkit) 
 * [Open educational resource of Building Legal Literacies for Text Data Mining](https://update.lib.berkeley.edu/2021/07/26/now-available-open-educational-resource-of-building-legal-literacies-for-text-data-mining/)
 * [Building Legal Literacies for Text Data Mining - UC Berkeley.Link goes to PDF](https://berkeley.pressbooks.pub/buildinglltdm/open/download?type=pdf)
 
 Example: [The Gender Novels Project](http://gendernovels.digitalhumanitiesmit.org/info/web_scraping)
+
+# Wikipedia 
+* When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
 
 <!-- #endregion -->
 

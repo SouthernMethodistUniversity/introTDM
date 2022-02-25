@@ -24,6 +24,7 @@ For a discussion of what is text and data mining? Refer to this [introductory se
   * A *database* is an organized collection of data stored as multiple datasets. Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. 
   - [Definition via USGS](https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.) 
 * For the purposes of this workshop series, we recommend finding an already existing data set for your project, as  creating, cleaning and/or structuring a new dataset is often time and labor intensive. 
+    * Remember that just becasue data may be avaible digitally, it does not automatically exist as a dataset.   
 * Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
 
 # What are the stages of data ?
@@ -150,45 +151,8 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 
 
 # Approaches to TDM
-
-### What emotions are expressed?
-[![Natural Language Processing (NLP)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/nlp.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/nlp.png)
-
-* One key approach is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. Some common, specific methods under NLP are:
-    
-    * Named entity extraction, which uses computers to learn about what names of people, places, and organizations are in the text.
-    * Sentiment analysis, which uses computers to explore what emotions are present in the text. 
-    * Stylometry, which uses computers to speculate who wrote the text based on language style.
-
-### What patterns are present? 
-
-[![Machine Learning (ML)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ml.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ml.png)
-* Another key approach to text analysis is *Machine Learning (ML)*, which is training computers to recognize patterns in text without explicit human programming. Machine learning can either be unsupervised (with minimal human intervention) or supervised (with more human intervention). Here are some common, specific methods that are based on machine learning:  
-
-    * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
-    * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
-
-# Topic modeling
-* Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
-* This image visualizes what happens in a topic model. 
-[![Topic Modeling](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)
-* For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
-* The computer treats the textual documents as bags of words, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
-
-## Bag-of-words
-* “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
-[![Bag Of Words](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)
-
-* Here are some tips for topic modeling:
-* Treat topic modeling as one part of a larger analysis.
-    * Understand what you input, including how you set your parameters, will affect the output. Some points to note are:
-    * Be careful with how you set the number of texts analyzed, as well as number of topics generated
-    * Be familiar with your input data
-* Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.
-* You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
-* Also, try to gain some basic understanding of your tool. *Reading some relevant documentation is especially important when the tool is within a “black box”.*
-    * For example the HTRC algorithm only has a few parameters you can set, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, [the HTRC topic modeling algorithm can be a good place to start!](https://analytics.hathitrust.org/algorithms)
-
+* See our [introduction to TM methods ](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md).
+* The TDM approaches you want to use will dictate your preprocessing choices.  
 
 
 ### The importance of using open data formats
