@@ -65,6 +65,7 @@ This notebook discusses:
 Text analysis usually follows these steps:
 * First, the text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
 * This means we need to break the text into smaller pieces, and abstract (reduce) it into things that a computer can crunch.
+    * We discuss [preparing text data here](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md#preparing-data)
 * Counting is often what happens next. 
     * Some of the things that are often counted include words, phrases, and parts of speech. 
     * The number of these counts can be used to identify characteristics of texts. 

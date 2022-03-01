@@ -23,12 +23,15 @@ For a discussion of what is text and data mining? Refer to this [introductory se
   * A *dataset* is a structured collection of data generally associated with a unique body of work.
   * A *database* is an organized collection of data stored as multiple datasets. Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. 
   - [Definition via USGS](https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.) 
-* For the purposes of this workshop series, we recommend finding an already existing data set for your project, as  creating, cleaning and/or structuring a new dataset is often time and labor intensive. 
-    * Remember that just becasue data may be avaible digitally, it does not automatically exist as a dataset.   
+* For the purposes of this workshop series, we recommend finding an already existing data set for your project, as creating, cleaning and/or structuring a new dataset is often time and labor intensive. 
+    * Remember that just because data may be avaible digitally, it does *not* automatically exist as a dataset. You may have to do works manually (copying and pasting into a spreadsheet) or computationally (scarping the data) to create a dataset usable for computational analysis.  
 * Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
+
+
 
 # What are the stages of data ?
 * We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
+[![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
 
 ## Raw data 
 * Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.
@@ -120,8 +123,8 @@ Read more:
         * Step 5: Validate and QA (quality assurance)
             * [Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data](https://www.tableau.com/learn/articles/what-is-data-cleaning) 
 
-# Preparing Data 
-* After gathering the data needed for research and before conducting the actual analysis, data often requires preparation. Preparing data can take a lot of time and effort.
+# Preparing Data
+* After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed ot as pre-processing the data). Preparing data can take a lot of time and effort.
 * Examples of what may be necessary to do before the data is in a workable state: 
     * Correcting OCR errors.
     * Removing title and header information.
