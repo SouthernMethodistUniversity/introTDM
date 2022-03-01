@@ -45,7 +45,6 @@ This notebook discusses:
  ## Data mining      
  * Data mining is looking for patterns using computational methods, often across large data sets. 
    * TDM is when your data set consists of text.
-    [![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
     * For a TDM project you need to complete the following steps:
         1. Identify a research question or topic of interest.
         2. Search for and identify a data set that is available for use and relevant to your research interests. 
@@ -53,7 +52,7 @@ This notebook discusses:
         3. Apply the relevant computational methods.
             - Do you have a specific question you are trying to answer or are you doing an exploratory project? What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
             - The data and methodology sections are always useful to read to see where people are finding data and how they are analyzing it.
-
+    [![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
 ## [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/terminology.md)
 * [Text analysis glossary](https://constellate.org/docs/key-terms/)
 * When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
