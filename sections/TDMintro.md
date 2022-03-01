@@ -29,31 +29,30 @@ This notebook discusses:
 
 * What text analysis methods are useful for your discipline?
 * What kinds of questions can a particular method answer?
-* How difficult is a particular method to learn?
-
 
 # Text Mining: What is it?
 
 * Text Mining is also sometimes referred to as TDM (Text and Data mining).
-* Broadly speaking, it’s the process by which computers are used to reveal information in and about text [(Marti Hearst definition)]([What Is Text Mining? -Marti Hearst](https://people.ischool.berkeley.edu/~hearst/text-mining.html)). 
+* Broadly speaking, it’s the process by which computers are used to reveal information in and about text. 
+    * [What Is Text Mining? -Marti Hearst](https://people.ischool.berkeley.edu/~hearst/text-mining.html). 
 * Computer algorithms can discern patterns in bodies of (often unstructured) text. 
     * *"Unstructured”* means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database. 
-        * An *algorithm* is simply a computational process that creates an output from an input. 
-    * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. 
+        * An [*algorithm*](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) is simply a computational process that creates an output from an input. 
+            * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. 
         * It should be noted that text analysis is more than just search, meaning it’s not just about discovery and knowing something is there. It’s also about exploring what does it mean for something to be there. 
     * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
-    * [What Is Text Mining? -Marti Hearst](https://people.ischool.berkeley.edu/~hearst/text-mining.html)
-    * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
+      * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
+ ## Data mining      
     * Data mining is looking for patterns using computational methods, often across large data sets. 
-    * TDM is when your data set consist of text.
+    * TDM is when your data set consists of text.
+    [![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
     * For a TDM project you need to complete the following steps:
         1. Identify a research question or topic of interest.
         2. Search for and identify a data set that is available for use and relevant to your research interests. 
-         * For an introductory project we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
-         * [Introduction to Data life cycle](https://github.com/SouthernMethodistUniversity/datalifecycle#introduction-to-the-stages-of-the-data-life-cycle)
+            - For an introductory project we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
         3. Apply the relevant computational methods.
-         * Do you have a specific question you are trying to answer or are you doing an exploratory project? What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
-            * The data and methodology sections are always useful to see where people are fiding data and how they are analyzing it.
+            - Do you have a specific question you are trying to answer or are you doing an exploratory project? What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
+            - The data and methodology sections are always useful to read to see where people are finding data and how they are analyzing it.
 
 ## [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/terminology.md)
 * [Text analysis glossary](https://constellate.org/docs/key-terms/)
@@ -65,7 +64,7 @@ This notebook discusses:
 Text analysis usually follows these steps:
 * First, the text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
 * This means we need to break the text into smaller pieces, and abstract (reduce) it into things that a computer can crunch.
-    * We discuss [preparing text data here](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md#preparing-data)
+    * We discuss [preparing text data in the next session](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md#preparing-data)
 * Counting is often what happens next. 
     * Some of the things that are often counted include words, phrases, and parts of speech. 
     * The number of these counts can be used to identify characteristics of texts. 
@@ -74,7 +73,7 @@ Text analysis usually follows these steps:
 
 # How does it impact research?
 
-* In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called *“distant reading”. 
+* In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called *“distant reading”*. 
     * This is a term coined by Stanford professor Franco Moretti, meaning “reading” literature not by studying particular texts, but by aggregating and analyzing massive amounts of texts and “reading” them at a “distance”. This scaling-up and “distancing” can bring out more insights from a very different vantage point. 
     * It is also worth mentioning that text analysis doesn’t have to be the primary method in a research project. It may be just one step in the entire process, or it can be combined with close reading. This approach has been called *“intermediate reading” or “distant-close reading”.*
 * This shift in research perspective allows for new kinds of research questions to be asked, or for old questions to be “answered” in new ways. Here are some of the possibilities that text analysis can bring to researchers:
@@ -115,7 +114,7 @@ ___
 ## I have my own data. What will it take to get it ready?
 
 *Finding, cleaning and structuring data is often time consuming and labor intensive.* 
-One of the most significant benefits of using a data base such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. For a major text analysis project, such as UNC Chapel Hill's [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/), about *90% of the labor is creating the corpus.* For your initial project we suggest assembling a data set from one of the previously mentioned databases. We will discuss this further in the [next workshop.](https://libcal.smu.edu/event/8767634)
+One of the most significant benefits of using a data base such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. For a major text analysis project, such as UNC Chapel Hill's [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/), about *90% of the labor is creating the corpus.* For your initial project we suggest assembling a data set from one of the previously mentioned databases. We will discuss this further in the [next workshop.](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md)
 
 If you have your own data, you will need to assess what it will take to make it ready for analysis. Here are some questions you should ask:
 
@@ -127,9 +126,9 @@ If you have your own data, you will need to assess what it will take to make it 
     
 Consider the data's current form as well as your current skill level or the size and skill of your project staff. The corpus creation process could take anywhere from a few hours to many years of labor. 
 * If there is a significant amount of labor, you may need to write a grant proposal to hire help. 
-    * If writing a grant, contact your library with questions about [Research Data Management](https://www.smu.edu/Libraries/scholarship/data/data-policy) since funding agencies often require your corpus to be committed to a disciplinary or institutional repository.*
+    * If writing a grant, contact your library with questions about [Research Data Management](https://www.smu.edu/Libraries/scholarship/data/data-policy) since funding agencies often require your corpus to be committed to a disciplinary or institutional repository.
 
-In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. Some of this is discussed in [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb), but it would also help to have some experience with working with data at scale with either Excel or Python Pandas.
+* In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. Some of this is discussed in [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb), but it would also help to have some experience with working with data at scale with either Excel or Python Pandas.
 
 Read about downloading historical SEC filings via EDGAR: [Textual Analysis on SEC Filings](https://mingze-gao.com/posts/textual-analysis-on-sec-filings/)
 
@@ -315,9 +314,9 @@ Named entity extraction, which uses computers to learn about what names of peopl
 <!-- #region -->
 
 
-# Related 
+## Related 
 
-# *Machine Learning(ML)* 
+### *Machine Learning(ML)* 
 * Another key approach to text analysis is *Machine Learning (ML)*, 
 You can use ML which is training computers to recognize patterns in text without explicit human programming. 
 * Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* Here are some common, specific methods that are based on machine learning:  
@@ -325,8 +324,9 @@ You can use ML which is training computers to recognize patterns in text without
     * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
 * One key approach in ML for TDM is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. 
 * Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.
+
     **Supervised Machine Learning** 
-        * The advent of *supervised machine learning techniques have rapidly changed text analysis in the digital humanities. These methods "train" computers to identify and classify similar items based on data that has been labeled or tagged by experts. For example, On the Books: Jim Crow and Algorithms of Resistance was able to use machine learning to identify 1939 North Carolina Jim Crow laws enacted between Reconstruction and the Civil Rights Movement. 
+       * The advent of *supervised machine learning techniques have rapidly changed text analysis in the digital humanities. These methods "train" computers to identify and classify similar items based on data that has been labeled or tagged by experts. For example, [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/) was able to [use machine learning](https://github.com/UNC-Libraries-data/OnTheBooks) to [identify 1939 North Carolina Jim Crow laws enacted between Reconstruction and the Civil Rights Movement.](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) 
 
 <font color="red">Read more</font>
 * [Project Outcomes for On the Books](https://onthebooks.lib.unc.edu/otb-research/project-outcomes/)
