@@ -292,7 +292,7 @@ List every example of a kind of entity from these texts. Example: “What are al
 Named entity extraction, which uses computers to learn about what names of people, places, and organizations are in the text.
 
 
-## 5. Which of these texts are most similar?¶
+## 5. Which of these texts are most similar?
 
 **Stylometrics and Authorship Attribution** 
 * Stylometrics uses computers to speculate who wrote the text based on language style. You could use it to find the author of an anonymous document. 
