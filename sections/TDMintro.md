@@ -43,8 +43,8 @@ This notebook discusses:
     * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
       * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
  ## Data mining      
-    * Data mining is looking for patterns using computational methods, often across large data sets. 
-    * TDM is when your data set consists of text.
+ * Data mining is looking for patterns using computational methods, often across large data sets. 
+   * TDM is when your data set consists of text.
     [![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
     * For a TDM project you need to complete the following steps:
         1. Identify a research question or topic of interest.
