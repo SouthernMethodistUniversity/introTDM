@@ -205,9 +205,9 @@ Read about using n-grams to [get a sense of language usage and change on Reddit]
 ___
 
 **TF/IDF** 
-* Tf-IDF (term frequency–inverse document frequency0 is about finding the significant words within a text. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
+* Tf-IDF (term frequency–inverse document frequency) is about finding the significant words within a text. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
 
-Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here](https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html)]
+Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here.](https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html)
 
 ___
 
@@ -320,12 +320,12 @@ Named entity extraction, which uses computers to learn about what names of peopl
 ### *Machine Learning(ML)* 
 * Another key approach to text analysis is *Machine Learning (ML)*, 
 You can use ML which is training computers to recognize patterns in text without explicit human programming. 
-* Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* Here are some common, specific methods that are based on machine learning:  
+* Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* 
+* Here are some common, specific methods that are based on machine learning:  
     * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
     * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
 * One key approach in ML for TDM is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. 
 * Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.
-
     **Supervised Machine Learning** 
        * The advent of *supervised machine learning techniques have rapidly changed text analysis in the digital humanities. These methods "train" computers to identify and classify similar items based on data that has been labeled or tagged by experts. For example, [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/) was able to [use machine learning](https://github.com/UNC-Libraries-data/OnTheBooks) to [identify 1939 North Carolina Jim Crow laws enacted between Reconstruction and the Civil Rights Movement.](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) 
 
