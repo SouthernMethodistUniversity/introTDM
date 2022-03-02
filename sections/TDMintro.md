@@ -205,7 +205,9 @@ Read about using n-grams to [get a sense of language usage and change on Reddit]
 ___
 
 **TF/IDF** 
-* Finding the significant words within a text. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
+* Tf-IDF (term frequency–inverse document frequency0 is about finding the significant words within a text. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
+
+Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here](https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html)]
 
 ___
 
