@@ -50,6 +50,7 @@ Goals:
 * Recognize research questions text analysis can answer
 
    * This is the **third session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. 
+   * For this session if you want to run the cells in the [python notbook](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDM_Python.ipynb), you'll either need to request an M2 account [(details here)](https://www.smu.edu/provost/crc#accounts), or have [python](https://www.python.org/downloads/) and a [jupyter notebook environment installed locally.](https://jupyter.org/install) 
 
 **[Go to content for Session 3: Introduction to Python for TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDM_Python.md)**
 
