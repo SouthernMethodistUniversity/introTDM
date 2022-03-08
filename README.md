@@ -51,7 +51,7 @@ Goals:
 
    * This is the **third session** in a sequence of scaffolded workshops that are meant to culminate in you being able to completing a text mining project. 
 
-**[Go to content for Session 3: Introduction to Python for TDM >>>](Link to be added closer to date of session)**
+**[Go to content for Session 3: Introduction to Python for TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDM_Python.md)**
 
 -----
 Session Leaders:[Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/), [Jonathan McMichael](https://guides.smu.edu/prf.php?account_id=104877), & [Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People) 
