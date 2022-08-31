@@ -1,19 +1,7 @@
 ---
-jupyter:
-  jupytext:
-    formats: ipynb,md
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.13.6
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
+
 ---
 
-<!-- #region -->
 # Terminology used in sessions
 
 ## Text analysis glossery 
@@ -64,7 +52,7 @@ Example: [The Gender Novels Project](http://gendernovels.digitalhumanitiesmit.or
 # Wikipedia 
 * When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
 
-<!-- #endregion -->
+
 
 -----
 [Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)

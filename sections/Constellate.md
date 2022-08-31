@@ -1,16 +1,5 @@
 ---
-jupyter:
-  jupytext:
-    formats: ipynb,md
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.13.6
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
+
 ---
 
 # JSTOR Constellate
@@ -18,9 +7,9 @@ jupyter:
 * [Quickstart](https://constellate.org/news/user-quick-start)
 
 * [What is Constellate?](https://constellate.org/docs/what-is-constellate/)
-* [Constellate](https://labs.jstor.org/projects/text-mining/) is text analytics platform from ITHAKA with three goals: learning, building and analyzing.
+* [Constellate](https://labs.jstor.org/projects/text-mining/) is text analytics platform from ITHAKA. 
 
-**SMU has a trial to Constellate’s full research and pedagogy features for the Spring 2022 semester.** 
+
   
   * *teach and learn* text analytics
     * [Constellate tutorials](https://constellate.org/tutorials/)
