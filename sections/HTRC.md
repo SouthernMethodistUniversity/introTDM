@@ -8,9 +8,9 @@
 * [HathiTrust Research Center](https://analytics.hathitrust.org/)
     * The HathiTrust Research Center (HTRC) enables computational analysis of the HathiTrust corpus.
     * Log in with your partner institution (SMU) account to access the largest number of volumes and features.
+    * [Clikc here for a list of HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
 
 
-<!-- #region -->
 # Worksets
 * [Recommended Worksets](https://analytics.hathitrust.org/staticrecommendedworksets) are curated worksets created by real researchers of projects that utilize resources from the HathiTrust Digital Library and can be analyzed with tools built by the HTRC.
 * [Creating datasets/worksets](https://analytics.hathitrust.org/staticworksets#top)
@@ -29,10 +29,7 @@
 * The researcher, of course, still brings her own analysis to bear on the results.
 
 
-<!-- #endregion -->
 
-
-<!-- #region -->
 # TDM tools 
 * For performing text analysis, there are both pre-built tools and do-it-yourself tools that you can choose from. 
 
@@ -138,19 +135,15 @@
     * Remember you can always click on Read Documentation or Learn More to find additional contextual information. 
 
 
-
 ## Do it yourself tools
 * You can also use do-it-yourself tools for text analysis as an alternative, and these tools usually involve some degree of programming.
 * The advantages of using do-it-yourself tools are you can set your own workflows and parameters, and it allows you to have more control over what you want to do.
 * The drawback is they usually require technical knowledge and may be a lot harder to use. 
 
 
-<!-- #endregion -->
-
-<!-- #region -->
 -----
 [Return to introduction](https://github.com/SouthernMethodistUniversity/introTDM)
 
 
 Some content in this session based on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
-<!-- #endregion -->
+

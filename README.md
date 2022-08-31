@@ -14,7 +14,7 @@ Supporting materials from Previous Sessions .
 # Introduction to finding datasets for Text and Data Mining (TDM)
 * What goes into learning how to do a text mining project?
 * How do you find and prepare a data set for a text mining project? 
-   * [how to use JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
+   * [How to use JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
    * [How to use HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
 * **[Go to content for: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md)** 
 
