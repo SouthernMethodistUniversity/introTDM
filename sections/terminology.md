@@ -1,7 +1,3 @@
----
-
----
-
 # Terminology used in sessions
 
 ## Text analysis glossery 

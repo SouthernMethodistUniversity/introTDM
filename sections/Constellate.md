@@ -1,15 +1,9 @@
----
-
----
-
 # JSTOR Constellate
 
 * [Quickstart](https://constellate.org/news/user-quick-start)
 
 * [What is Constellate?](https://constellate.org/docs/what-is-constellate/)
 * [Constellate](https://labs.jstor.org/projects/text-mining/) is text analytics platform from ITHAKA. 
-
-
   
   * *teach and learn* text analytics
     * [Constellate tutorials](https://constellate.org/tutorials/)
@@ -21,7 +15,6 @@
     * *visualize and analyze* their datasets.
      * [Working with Dataset Files](https://constellate.org/tutorials/working-with-dataset-files)
 
-<!-- #endregion -->
 
 
 # Login to JSTOR & CONSTELLATE    

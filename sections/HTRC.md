@@ -1,7 +1,3 @@
----
-
----
-
 # HathiTrust Research Center
 
 * [HathiTrust Digital Library](https://www.hathitrust.org/digital_library)
@@ -27,7 +23,6 @@
 
 * HathiTrust Research Center (HTRC) enters the workflow *at the points of providing digitized text at scale* from HathiTrust Digital Library (HTDL) and providing tools and services that enable computational research. 
 * The researcher, of course, still brings her own analysis to bear on the results.
-
 
 
 # TDM tools 

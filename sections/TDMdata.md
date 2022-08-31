@@ -1,7 +1,3 @@
----
-
----
-
 For a discussion of what is text and data mining? Refer to this [introductory session](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md)
 
 # How do you find data for TDM projects ?

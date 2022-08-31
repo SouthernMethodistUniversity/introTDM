@@ -1,6 +1,3 @@
----
-
----
 
 <img align="left" src="https://ithaka-labs.s3.amazonaws.com/static-files/images/tdm/tdmdocs/CC_BY.png"><br />
 
@@ -300,10 +297,6 @@ Named entity extraction, which uses computers to learn about what names of peopl
 * Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
 
 
-
-<!-- #region -->
-
-
 ## Related 
 
 ### *Machine Learning(ML)* 
@@ -335,14 +328,12 @@ ___
 * Read about using Natural Language Processing [(NLP)](https://constellate.org/docs/key-terms/#nlp) to [analyze the Wall Street Bets Reddit group](https://medium.com/swlh/analyzing-the-wall-street-bets-reddit-group-with-natural-language-processing-296465f90f26)
 
 
-<!-- #endregion -->
 
-<!-- #region -->
 [![theoretical Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/idealwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/idealwf.png)
 
 
 [![Actual Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)
-<!-- #endregion -->
+
 
 ## Looking for more learning materials? *Check out the following*
 
