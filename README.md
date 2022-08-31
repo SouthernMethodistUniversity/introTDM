@@ -7,23 +7,20 @@ Here are some resources for getting started with Text Mining.
 
 Supporting materials from Previous Sessions . 
 # Introduction to Text and Data Mining (TDM)
-## What goes into learning how to do a text mining project?
+* What goes into learning how to do a text mining project?
 * This section consists of an overview of the fundamental text analysis methods common in digital humanities and digital scholarship.  
-
-**[Go to content for: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md)**  
+* **[Go to content for: Introduction to TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md)**  
 
 # Introduction to finding datasets for Text and Data Mining (TDM)
-## What goes into learning how to do a text mining project?
+* What goes into learning how to do a text mining project?
 * How do you find and prepare a data set for a text mining project? 
-   * [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
-   * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
-**[Go to content for: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md)** 
+   * [how to use JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
+   * [How to use HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
+* **[Go to content for: Introduction to finding datasets TDM >>>](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md)** 
 
 #  Introduction to Python for Text and Data Mining (TDM)
-
-## What goes into learning how to use Python for a text mining project?
-* How do you use coding (Python) for a text mining project? This session will consist of an introduction to Python for text mining. In this session we will focus on introducing Python basics and the use of Python notebooks.
-**[Go to content for: Text Mining With Python >>>](https://github.com/SouthernMethodistUniversity/pythonintro#text-mining-with-python)** 
+* What goes into learning how to use Python for a text mining project?
+* **[Go to content for: Text Mining With Python >>>](https://github.com/SouthernMethodistUniversity/pythonintro#text-mining-with-python)** 
 
 
 -----
