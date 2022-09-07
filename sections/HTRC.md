@@ -4,7 +4,7 @@
 * [HathiTrust Research Center](https://analytics.hathitrust.org/)
     * The HathiTrust Research Center (HTRC) enables computational analysis of the HathiTrust corpus.
     * Log in with your partner institution (SMU) account to access the largest number of volumes and features.
-    * [Clikc here for a list of HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
+    * [Click here for a list of HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
 
 
 # Worksets
