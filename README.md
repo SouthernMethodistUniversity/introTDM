@@ -1,4 +1,6 @@
-Here are some resources for getting started with Text Data Mining (TDM). 
+
+
+[Introduction to Text Data Mining (TDM) workshop content](https://southernmethodistuniversity.github.io/introTDM/index.html)
 
 * [Register for upcoming Scholarship & Research workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=55599&inc=0)
 * [Link to SMU Libraries guide for Text Mining workshops. Links to any recorded sessions are on the guide.](https://guides.smu.edu/textmining)
