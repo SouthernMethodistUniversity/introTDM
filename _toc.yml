@@ -1,0 +1,16 @@
+root: README
+entries:
+- file: index
+  entries:
+  - file: sections/tdm
+  - file: sections/tools
+  - file: sections/voyant
+  - file: sections/htrc
+  - file: sections/constellate
+  - file: sections/python
+  - file: sections/terms
+  - file: sections/continue
+
+    
+
+
