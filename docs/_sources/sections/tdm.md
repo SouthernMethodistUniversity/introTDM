@@ -7,22 +7,23 @@
     * *"Unstructured”* means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database. 
         * An [*algorithm*](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) is simply a computational process that creates an output from an input. 
             * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. 
-      [![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
+      [![data life cycle](../sections/images/rdc.jpg)]
 
 ## TDM
-"The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts." -[What Is Text Mining? -Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
+"The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts." 
+    -[What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
 * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. -[IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
  
 
 ### TDM project 
 For a TDM project you need to complete the following steps:
-     1. Identify a research question or topic of interest.
-     2. Search for and identify a data set that is available for use and relevant to your research interests. 
-        - For an introductory project we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
-     3. Apply the relevant computational methods.
-        - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
-        - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
-        - **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
+1. Identify a research question or topic of interest.
+2. Search for and identify a data set that is available for use and relevant to your research interests. 
+    - For an introductory project we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
+3. Apply the relevant computational methods.
+    - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
+     - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
+     - **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
 
 # How does text analysis work in general? 
 Text analysis usually follows these steps:
@@ -117,8 +118,7 @@ Consider the data's current form as well as your current skill level or the size
 # What are the stages of data ?
 * We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
 
-[![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)
-
+[![data life cycle](../sections/images/rdc.jpg)]
 
 ## Raw data 
 * Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.
@@ -189,15 +189,15 @@ Read more:
     * Removing certain words or punctuation marks.
     * Making text into lowercase.
     
-[![Chunking text](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/chunktext.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/chunktext.png)
+[![Chunking text](../sections/images/chunktext.png)]
 * As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
 
-[![Grouping text](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/groupingtext.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/groupingtext.png)
+[![Grouping text](../sections/images/groupingtext.png)]
 * An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
 
 Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
 
-[![Tokenizations](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/token.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/token.png)
+[![Tokenizations](../sections/images/token.png)]
 * An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
 Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens. 
 While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
@@ -337,7 +337,7 @@ ___
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
-[![N-gram)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ngram.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/ngram.png)
+[![N-gram)](../sections/images/Cngram.png)]
 
 In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
 * Unigrams- A single-word construction, for example: "vegetable".
@@ -376,12 +376,11 @@ ___
 
 # Topic modeling
 * Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
-* This image visualizes what happens in a topic model. 
-[![Topic Modeling](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)
+* This image visualizes what happens in a topic model.
 * For this kind of analysis, the text is [chunked](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md#preparing-data), and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
-[![Bag Of Words](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)
+[![Bag Of Words](../sections/images/bagwords.png)]
 
 * Here are some tips for topic modeling:
 * Treat topic modeling as one part of a larger analysis.
@@ -490,10 +489,10 @@ ___
 
 
 
-[![theoretical Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/idealwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/idealwf.png)
+[![theoretical Workflow](../sections/images/idealwf.png)]
 
 
-[![Actual Workflow](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/realwf.png)
+[![Actual Workflow](../sections/images/realwf.png)]
 
 
 ## [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/terminology.md)

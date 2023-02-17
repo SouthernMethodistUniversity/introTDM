@@ -1,4 +1,5 @@
-# Workshop objectives?
+# Workshop objectives
+
 In this beginner-level workshop, participants will get an introduction to the general principles of TDM, and learn about a few of the many tools and methods for quantitative analysis of text data, including word frequency, topic modeling, and sentiment analysis. No prior experience in TDM is necessary. 
 
 * [Register for upcoming Scholarship & Research workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=55599&inc=0)
