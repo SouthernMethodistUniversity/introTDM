@@ -27,7 +27,7 @@ There are many ways to represent data, just as there are many sources of data. F
     * For example, is "big data" "raw data"? How do we understand data that we have "scraped"?
 
 ## Processed/transformed
-* Processing data puts it into a state more readily available for analysis, and makes the data legible. We will discuss what this means for text datat in a fe wminutes. )OCR, Tokenizing etc.). For instance it could be rendered as **structured data**. This can also take many forms, e.g., a table. 
+* Processing data puts it into a state more readily available for analysis, and makes the data legible. For instance it could be rendered as **structured data**. This can also take many forms, e.g., a table. We will discuss what this means for text data (OCR, Tokenizing, etc.). 
 
 # Data mining      
  * Data mining is looking for patterns using computational methods, often across large data sets. 
@@ -156,7 +156,7 @@ The considerations you should keep in mind for [creating a data set,](https://re
    * Data that is not structured or cleaned is referred to as unstructured, noisy or dirty. *A messy data set can be used but you will need to spend time [processing that data:](https://www.usgs.gov/data-management/process) either cleaning, structuring and/or organizing it.* 
 
 ## Read more 
-* Read more about [Data in digital humanities](https://github.com/SouthernMethodistUniversity/data) 
+* Read more about [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities) 
 * [Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1](https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/)
 * [DH@ Berkley:Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning)
 * "Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled." 
@@ -199,21 +199,21 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 
 
 ### The importance of using open data formats
-A small detour to discuss (the ethics of?) data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats. A demonstration:
+A small detour to discuss (the ethics of?) data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats.
 
-Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:
+* Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:
 
-* ASCII
-* PDF 
-* .csv
-* FLAC
-* TIFF
-* JPEG2000
-* MPEG-4
-* XML
-* RDF
-* .txt
-* .r
+    * ASCII
+    * PDF 
+    * .csv
+    * FLAC
+    * TIFF
+    * JPEG2000
+    * MPEG-4
+    * XML
+    * RDF
+    * .txt
+    * .r
 
 How do you decide the formats to store your data when you transition from 'raw' to 'processed/transformed' data? What are some of your considerations?
 
@@ -281,9 +281,8 @@ Depending on the the type of data, the collecting agency or you field their migh
 * Your discipline may have a OA repository, such as [arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 
-### *Highly recommended practice:* Read the Data and methodology sections of research and/or data journalism articles
-
-When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies. 
+#### *Highly recommended practice
+* Read the Data and methodology sections of research and/or data journalism articles! When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies. 
 * When reading these articles, pay particular attentions to the literature review, and to the *data and methodology sections.* 
 * Where did these researchers find their data set they are using? 
 * If they created it, did they make it accessible in a repository on a website, or a Github repository?
@@ -293,7 +292,7 @@ Read some data journalism articles on [The Pudding](https://pudding.cool/), [Pro
 # Types of Text Mining
 ## What disciplinary questions can text analysis answer?
 
-*You can use text analysis to answer a wide variety of questions. 
+* You can use text analysis to answer a wide variety of questions. 
 
 * Here are a few that are common:
 1. What are these texts about?
@@ -358,7 +357,7 @@ ___
 # Topic modeling
 * Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
 * This image visualizes what happens in a topic model.
-* For this kind of analysis, the text is [chunked](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md#preparing-data), and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
+* For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
 
@@ -383,10 +382,11 @@ ___
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
 * The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
 
+<!-->
 <font color="red">Read more</font>
 
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
-* Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)
+* Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)-->
 ___
 **Network Analysis** 
 * How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”
