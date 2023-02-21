@@ -281,7 +281,7 @@ Depending on the the type of data, the collecting agency or you field their migh
 * Your discipline may have a OA repository, such as [arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 
-#### *Highly recommended practice
+* **Highly recommended practice**
 * Read the Data and methodology sections of research and/or data journalism articles! When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies. 
 * When reading these articles, pay particular attentions to the literature review, and to the *data and methodology sections.* 
 * Where did these researchers find their data set they are using? 
@@ -306,24 +306,29 @@ Read some data journalism articles on [The Pudding](https://pudding.cool/), [Pro
 ___
 
 **Word Frequency** 
-* Counting the frequency of a word in any given text. This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on women?”
+* Counting the frequency of a word in any given text. 
+relative frequency – how often do words appear relative to other words in the text, typically a percentage
+Common as a baseline for more sophisticated methods
+This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on women?”
 * If you search for digital humanities in [Google image search](https://www.google.com/search?q=digital+humanities&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmhrrwjeL0AhWvkIkEHfAbCfoQ_AUoA3oECAEQBQ), the most common result is a [word cloud](https://docs.constellate.org/key-terms/#tag-cloud). A word cloud visualizes the most frequent content words in a text or corpus. 
     * Before you can create a word cloud, however, you need to collect the word frequencies for all the words in your text. You may also need to use a [stop words list](https://docs.constellate.org/key-terms/#stop-words) to remove common [function words](https://docs.constellate.org/key-terms/#function-words) (grammatical word constructions like "the", "of", and "or").
 
-<font color="red">Start learning</font> [Word Frequency Analysis](https://constellate.org/tutorials/exploring-word-frequencies.ipynb) and create a word cloud
-
+![word cloud](../sections/images/wc.png)Image source:[Voyant Cirrus image, Austen corpus](https://voyant-tools.org/?corpus=austen&view=Cirrus)  
 ___
 
 **Collocation** 
 * Examining where words occur close to one another. Example: “Where are women mentioned in relation to home ownership?”
+
+![Collocation](../sections/images/colo.png)Image source:[Voyant Collocation image, Austen corpus](https://voyant-tools.org/?corpus=austen)  
+
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
 ![N-gram)](../sections/images/ngram.png)
 
-In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
-* Unigrams- A single-word construction, for example: "vegetable".
-* Bigrams- An two-word construction, for example: "vegetable stock".
+In the cases where a database (such as Constellate or Hathitrust) cannot supply full-text due to copyright laws, they may supply three n-gram counts:
+* Unigrams - A single-word construction, for example: "vegetable".
+* Bigrams - An two-word construction, for example: "vegetable stock".
     * Notice how in the bigram example above the window of the gram slides across the text, so in bigrams, a word will occur with both the word preceding and following it. 
 * Trigrams- A three-word construction, for example: "homemade vegetable stock".
 
@@ -382,9 +387,7 @@ ___
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
 * The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
 
-<!-->
-<font color="red">Read more</font>
-
+<!-- <font color="red">Read more</font>
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
 * Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)-->
 ___
@@ -397,7 +400,6 @@ ___
 Sentiment analysis, which uses computers to explore what emotions are present in the text. Does the author use positive or negative language? Example: “How do presidents describe gun control?”
 Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning), or both.
 
-<font color="red">Start learning</font> [Sentiment Analysis with VADER](https://constellate.org/tutorials/finding-significant-terms.ipynb)
 
 Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed)
 
@@ -423,12 +425,14 @@ Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha
 * Patrick Juola [How a Computer Program Helped Show J.K. Rowling Wrote A Cuckoo's Calling](https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoos-calling/) (2013)
 * Ros Barber [Big data or not enough? Zeta test reliability and the attribution of Henry VI](https://academic.oup.com/dsh/article-abstract/36/3/542/5918973?redirectedFrom=fulltext)
 
-
 **Clustering**
+* Clustering is unsupervised machine learning.  
 * Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
 
-**Supervised Machine Learning**
+**Classification** 
+* Classification is supervised machine learning
 * Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
+
 
 ## Related 
 

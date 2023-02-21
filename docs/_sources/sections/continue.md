@@ -19,10 +19,12 @@
 * [List of Even More DH Text Analysis Teaching/Learning Materials from TAPI](https://labs.jstor.org/projects/text-analysis-pedagogy-institute-2/#more-dh-text-analysis)
     * [Optical Character Recognition Basics](https://constellate.org/tutorials/ocr-basics.ipynb)
     * [Tokenize Text Files](https://constellate.org/tutorials/tokenizing-text-files.ipynb)
+    * [Word Frequency Analysis](https://constellate.org/tutorials/exploring-word-frequencies.ipynb)
     * [Start learning Pandas 1](https://constellate.org/tutorials/pandas-1.ipynb)
     * [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb)
     * [Significant Terms Analysis](https://constellate.org/tutorials/finding-significant-terms.ipynb)
     * [Topic Analysis](https://constellate.org/tutorials/finding-significant-terms.ipynb)
+    * [Sentiment Analysis with VADER](https://constellate.org/tutorials/finding-significant-terms.ipynb)
 
 * [CodeLab](https://github.com/ZoeLeBlanc/CodeLab) by [Shane Lin](https://www.library.virginia.edu/staff/ssl2ab), [Zoe LeBlanc](https://zoeleblanc.com/), and [Brandon Walsh](https://scholarslab.lib.virginia.edu/people/brandon-walsh/)
 
