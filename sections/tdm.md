@@ -16,7 +16,7 @@
 * Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
 
 
-[![data life cycle](../sections/images/rdc.png)]
+![data life cycle](../sections/images/rdc.png)
 
 ## Forms of data
 There are many ways to represent data, just as there are many sources of data. For the purposes of this series we are focusing on already digitized text. 
@@ -35,7 +35,6 @@ There are many ways to represent data, just as there are many sources of data. F
     * *"Unstructured”* means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database. 
     * An [*algorithm*](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) is simply a computational process that creates an output from an input. 
             * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. 
-      [![data life cycle](../sections/images/rdc.png)]
 
 # What is TDM?
 "The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts." 
@@ -182,12 +181,12 @@ The considerations you should keep in mind for [creating a data set,](https://re
 ![Chunking text](../sections/images/chunktext.png)
 * As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
 
-[![Grouping text](../sections/images/groupingtext.png)]
+![Grouping text](../sections/images/groupingtext.png)
 * An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
 
 Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
 
-[![Tokenizations](../sections/images/token.png)]
+![Tokenizations](../sections/images/token.png)
 * An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
 Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens. 
 While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
@@ -262,7 +261,7 @@ Look back at our example of cats to see how they may or may not follow those gui
 * Research in which computational analysis is performed on text, but *not* research in which a researcher reads or displays substantial portions of the text to understand the expressive content presented within it.
 * Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”). 
     * Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”). 
-* Foundation of [HTRC](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md) work.
+* Foundation of [HTRC](https://www.hathitrust.org/htrc_ncup) work.
 
 
 **Open access (OA) or Public Domain information**
@@ -321,7 +320,7 @@ ___
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
-[![N-gram)](../sections/images/ngram.png)]
+![N-gram)](../sections/images/ngram.png)
 
 In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
 * Unigrams- A single-word construction, for example: "vegetable".
@@ -345,8 +344,6 @@ ___
 **Significant Terms** 
 * Search engines use significant terms analysis to match a user query with a list of appropriate documents. This method could be useful if you want to search your corpus for the most significant texts based on a word (or set of words). It can also be useful in reverse. For a given document, you could create a list of the ten most significant terms. This can be useful for summarizing the content of a document. 
 
-<font color="red">Start learning</font> [Significant Terms Analysis](https://constellate.org/tutorials/finding-significant-terms.ipynb) and create a simple search engine
-
 ___
 **Topic Analysis** (or Topic Modeling)
 * Discovering the topics within a group of texts. Example: “What are the most frequent topics discussed in this newspaper?” 
@@ -365,7 +362,7 @@ ___
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
 
-[![Bag Of Words](../sections/images/bagwords.png)]
+![Bag Of Words](../sections/images/bagwords.png)
 
 * Here are some tips for topic modeling:
 * Treat topic modeling as one part of a larger analysis.
@@ -378,8 +375,6 @@ ___
 
 <font color="red">Read more</font>
 Keli Du's [A Survey on LDA Topic Modeling in Digital Humanities](https://www.researchgate.net/profile/Keli-Du/publication/349279379_A_Survey_On_LDA_Topic_Modeling_In_Digital_Humanities/links/6027a55ea6fdcc37a8222850/A-Survey-On-LDA-Topic-Modeling-In-Digital-Humanities.pdf)
-
-<font color="red">Start learning</font> [Topic Analysis](https://constellate.org/tutorials/finding-significant-terms.ipynb) and create an interactive visualization
 
 
 ## 2. How are these texts connected?
@@ -409,16 +404,12 @@ Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha
 ## 4. What names are used in these texts?
 **Named Entity Recognition** (or NER)
 * Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.
+* You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
 
 <font color="red">Read more</font>
 
-* Melanie Walsh [Named Entity Recognition](https://melaniewalsh.github.io/Intro-Cultural-Analytics/05-Text-Analysis/12-Named-Entity-Recognition.html) 2021
-* Zoe LeBlanc [Named Entity Recognition](https://nkelber.github.io/tapi2021/book/courses/ner.html) TAP Institute 2021
 * Miguel Won, Patricia Murrieta-Flores, and Bruno Martins [Ensemble Named Entity Recognition (NER): Evaluating NER Tools in the Identification of Place Names in Historical Corpora](https://www.frontiersin.org/articles/10.3389/fdigh.2018.00002/full) (2018)
 * Read about about how hyphenated names are hard to study [here](https://pudding.cool/2019/05/hyphens/) 
-**Named Entity Recognition**
-List every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
-Named entity extraction, which uses computers to learn about what names of people, places, and organizations are in the text.
 
 
 ## 5. Which of these texts are most similar?
@@ -438,7 +429,6 @@ Named entity extraction, which uses computers to learn about what names of peopl
 
 **Supervised Machine Learning**
 * Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
-
 
 ## Related 
 
