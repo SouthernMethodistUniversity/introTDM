@@ -14,7 +14,7 @@
 ##  Algorithms
 * [HTRC Algorithms](https://analytics.hathitrust.org/statisticalalgorithms) are web-based, click-and-run tools to perform computational text analysis on volumes in the HathiTrust Digital Library. 
 
-[![HTRC for text analysis](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/htrcta.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/htrcta.png)
+[![HTRC for text analysis](..sections/images/htrcta.png)
 
 * In a basic text analysis workflow, a researcher:
     * Gathers digitized text (text that has been scanned and OCR-ed) Note: OCR (Optical character recognition) refers to the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text. 
@@ -33,25 +33,7 @@
 * How do you choose which HTRC algorithm to use? Naturally, it depends on what you want to do. 
 * Some of the algorithms are task oriented. For example, there are ones for running spellcheck reports, for creating word counts, for visualizing more frequently used words, and for generating a list of named entities. 
 * Others algorithms are more analytic, like one that generates topic models, and another that compares salient words in two worksets.
-
-#### Topic Modeling
-* An example of specific text analysis method is *topic modeling.* One concept closely related to topic modeling is the bag-of-words model. 
-    * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
-    [![Bag of Words](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/bagwords.png)
-* Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
- [![topic model](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/topicmodel.png)
-* For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
-* The computer treats the textual documents as bags of words, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. 
-* So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
-
-* Here are some tips for topic modeling:
-    * Treat topic modeling as one part of a larger analysis.
-    * Understand what you input, including how you set your parameters, will affect the output. Some points to note are:
-    * Be careful with how you set the number of texts analyzed, as well as number of topics generated
-    * Be familiar with your input data
-    * Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.
-    * You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
-    * Also, try to gain some basic understanding of your tool. **Reading some relevant documentation is especially important when the tool is within a “black box”.** Speaking of understanding your tools, it’s important to note that the HTRC algorithm only has two parameters you can set right now, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, the HTRC topic modeling algorithm can be a good place to start.
+* Try to gain some basic understanding of your tool. **Reading some relevant documentation is especially important when the tool is within a “black box”.** Speaking of understanding your tools, it’s important to note that the HTRC algorithm only has two parameters you can set right now, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, the HTRC topic modeling algorithm can be a good place to start.
 
 # Login to HTDL & HTRC 
 ## First, let’s go to the HathiTrust Digital Library (HTDL) interface. 
@@ -99,7 +81,7 @@
  * You will need the URL for a public HathiTrust collection. Private collections cannot be imported by URL.
     * After entering the URL, click on Fetch collection. after the collections is successfully fetched, you will see the text *Data retrieved from source*  
     * Enter Name and Description, then click on Create Workset. 
-* **Algorithms**:: Now, we are ready to apply HTRC Algorithms to our worksets.  
+* **Algorithms**: Now, we are ready to apply HTRC Algorithms to our worksets.  
     * Click on the [“Algorithm” option on the header menu.](https://analytics.hathitrust.org/algorithms) 
         * Choose one of the Algorithms to Execute. 
             * If you have questions about what preset choices the Algorithm is making, read the documentation.
@@ -115,7 +97,8 @@
     * Did you find any challenges?
     * Remember you can always click on Read Documentation or Learn More to find additional contextual information. 
 
-
+## All HTRC Tutorials
+*  [A comprehensive list of all HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
 
 Some content in this session based on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
 

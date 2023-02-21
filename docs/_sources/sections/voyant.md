@@ -2,8 +2,9 @@
 
 * Voyant Tools is a web-based text reading and analysis environment. It is a scholarly project that is designed to facilitate reading and interpretive practices for digital humanities students and scholars as well as for the general public.-[About Voyant](https://voyant-tools.org/docs/#!/guide/about)
 *If you are new to text analysis and want to see what is possible, Voyant is a good tool to start with.* 
--[Voyant guides](https://voyant-tools.org/docs/#!/guide)
--[Getting started](https://voyant-tools.org/docs/#!/guide/tutorial)
+
+* [Voyant guides](https://voyant-tools.org/docs/#!/guide)
+* [Getting started](https://voyant-tools.org/docs/#!/guide/tutorial)
 
 ## Step 1: [Create a Corpus](https://voyant-tools.org/docs/#!/guide/corpuscreator)
 There are four main ways of creating and using a corpus in Voyant ("corpus" is another word for a set of documents):
@@ -16,11 +17,13 @@ There are four main ways of creating and using a corpus in Voyant ("corpus" is a
 ## Step 2: [Explore a Corpus](https://voyant-tools.org/docs/#!/guide/tutorial-section-explore-a-corpus)
 - Once you create a corpus you will arrive at the default "skin" or arrangement of [tools.](https://voyant-tools.org/docs/#!/guide/tools)
 
-## [Examples](https://voyant-tools.org/docs/#!/guide/gallery)
+## [Voyant Examples](https://voyant-tools.org/docs/#!/guide/gallery)
 
-## Use of Voyant in classroom setting
-- [A workshop on the text analysis tool Voyant, designed for instructors considering using the tool in the classroom.-M Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md)
-- [Using Voyant-Tools to Formulate Research Questions for Textual Data](https://digitalfellows.commons.gc.cuny.edu/2018/11/01/using-voyant-tools-to-formulate-research-questions-for-textual-data/)
+## [Recording on Voyant workshop for UCSC library](https://guides.library.ucsc.edu/DS/Events/Voyant)
+
+## Read More: Use of Voyant in classroom setting
+* [A workshop on the text analysis tool Voyant, designed for instructors considering using the tool in the classroom.-M Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md)
+* [Using Voyant-Tools to Formulate Research Questions for Textual Data](https://digitalfellows.commons.gc.cuny.edu/2018/11/01/using-voyant-tools-to-formulate-research-questions-for-textual-data/)
 
 
-### [Key terms](https://constellate.org/docs/key-terms)
+### [Constellate Text analysis glossary](https://constellate.org/docs/key-terms)

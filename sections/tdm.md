@@ -7,12 +7,13 @@
     * *"Unstructured”* means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database. 
         * An [*algorithm*](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) is simply a computational process that creates an output from an input. 
             * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. 
-      [![data life cycle](../sections/images/rdc.jpg)]
+      [![data life cycle](../sections/images/rdc.png)]
 
 ## TDM
 "The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts." 
-    -[What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
-* Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. -[IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
+    * [What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
+* Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
+    * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
  
 
 ### TDM project 
@@ -118,7 +119,7 @@ Consider the data's current form as well as your current skill level or the size
 # What are the stages of data ?
 * We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
 
-[![data life cycle](../sections/images/rdc.jpg)]
+[![data life cycle](../sections/images/rdc.png)]
 
 ## Raw data 
 * Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.
@@ -166,7 +167,7 @@ The considerations you should keep in mind for [creating a data set,](https://re
     
    * Data that is not structured or cleaned is referred to as unstructured, noisy or dirty. *A messy data set can be used but you will need to spend time [processing that data:](https://www.usgs.gov/data-management/process) either cleaning, structuring and/or organizing it.* 
 
-Read more: 
+## Read more 
 * Read more about [Data in digital humanities](https://github.com/SouthernMethodistUniversity/data) 
 * [Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1](https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/)
 * [DH@ Berkley:Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning)
@@ -188,8 +189,8 @@ Read more:
     * Splitting or combining files. 
     * Removing certain words or punctuation marks.
     * Making text into lowercase.
-    
-[![Chunking text](../sections/images/chunktext.png)]
+ 
+![Chunking text](../sections/images/chunktext.png)
 * As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
 
 [![Grouping text](../sections/images/groupingtext.png)]
@@ -337,7 +338,7 @@ ___
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
-[![N-gram)](../sections/images/Cngram.png)]
+[![N-gram)](../sections/images/ngram.png)]
 
 In the cases where a database (such as Constellate) cannot supply full-text due to copyright laws (JSTOR and Portico content), they may supply three n-gram counts:
 * Unigrams- A single-word construction, for example: "vegetable".
@@ -380,6 +381,7 @@ ___
 * For this kind of analysis, the text is [chunked](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMdata.md#preparing-data), and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
+
 [![Bag Of Words](../sections/images/bagwords.png)]
 
 * Here are some tips for topic modeling:
@@ -389,8 +391,7 @@ ___
     * Be familiar with your input data
 * Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.
 * You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
-* Also, try to gain some basic understanding of your tool. *Reading some relevant documentation is especially important when the tool is within a “black box”.*
-    * For example the HTRC algorithm only has a few parameters you can set, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, [the HTRC topic modeling algorithm can be a good place to start!](https://analytics.hathitrust.org/algorithms)
+
 
 
 <font color="red">Read more</font>
@@ -489,16 +490,17 @@ ___
 
 
 
-[![theoretical Workflow](../sections/images/idealwf.png)]
+![theoretical Workflow](../sections/images/idealwf.png)
 
 
-[![Actual Workflow](../sections/images/realwf.png)]
+![Actual Workflow](../sections/images/realwf.png)
 
 
 ## [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/terminology.md)
 * [Keywords in Digital Pedagogy in the Humanities: Text analysis](https://digitalpedagogy.mla.hcommons.org/keywords/text-analysis/)
 * [Text analysis glossary](https://constellate.org/docs/key-terms/)
 * When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
+* [List of Even More DH Text Analysis Teaching/Learning Materials from TAPI](https://labs.jstor.org/projects/text-analysis-pedagogy-institute-2/#more-dh-text-analysis)
 
 
 #### Attribution: Some content on this page adapted from:
@@ -508,7 +510,7 @@ ___
 * [BOSTON COLLEGE LIBRARIES:Text & Data Mining](https://libguides.bc.edu/textdatamining/overview) and used under a [Creative Commons Attribution 4.0 International License.](https://creativecommons.org/licenses/by/4.0/).
 * [NYU Text Data Mining](https://guides.nyu.edu/tdm/start)and used under a [ Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/).
 * [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
-* USGS data management](https://www.usgs.gov/data-management) 
+* [USGS data management](https://www.usgs.gov/data-management) 
 
 
 
