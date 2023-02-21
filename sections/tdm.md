@@ -1,31 +1,48 @@
 
 # Text data mining (TDM)
-* What is it? 
-## Data mining      
+    * What is Data?
+    * What is Text data mining (TDM)?
+    * What is Text as Data?
+    * What are Types of Text Mining?
+
+# What is Data ?
+* We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
+    * "What are the differences between data, a dataset, and a database?
+        * *Data* are observations or measurements (unprocessed or processed) represented as text, numbers, or multimedia.
+        * A *dataset* is a **structured** collection of data generally associated with a unique body of work.
+        * A *database* is an **organized collection of data stored as multiple datasets.** Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. - [Definition via USGS](https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.) 
+* For the purposes of this workshop, we recommend finding an already existing data set for your project, as creating, cleaning and/or structuring a new dataset is often time and labor intensive. 
+    * Remember that just because data may be avaible digitally, it does *not* automatically exist as a dataset. You may have to do works manually (copying and pasting into a spreadsheet) or computationally (scarping the data) to create a dataset usable for computational analysis.  
+* Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
+
+
+[![data life cycle](../sections/images/rdc.png)]
+
+## Forms of data
+There are many ways to represent data, just as there are many sources of data. For the purposes of this series we are focusing on already digitized text. 
+
+## Raw data 
+* Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.
+* But "raw data" is a relative term, inasmuch as when one person finishes processing data and presents it as a finished product, another person may take that product and work on it further, and for them that data is "raw data". 
+    * For example, is "big data" "raw data"? How do we understand data that we have "scraped"?
+
+## Processed/transformed
+* Processing data puts it into a state more readily available for analysis, and makes the data legible. We will discuss what this means for text datat in a fe wminutes. )OCR, Tokenizing etc.). For instance it could be rendered as **structured data**. This can also take many forms, e.g., a table. 
+
+# Data mining      
  * Data mining is looking for patterns using computational methods, often across large data sets. 
  * Computer algorithms can discern patterns in bodies of (often unstructured) text. 
     * *"Unstructured”* means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database. 
-        * An [*algorithm*](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) is simply a computational process that creates an output from an input. 
+    * An [*algorithm*](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) is simply a computational process that creates an output from an input. 
             * In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text. 
       [![data life cycle](../sections/images/rdc.png)]
 
-## TDM
+# What is TDM?
 "The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts." 
     * [What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
 * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
     * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
  
-
-### TDM project 
-For a TDM project you need to complete the following steps:
-1. Identify a research question or topic of interest.
-2. Search for and identify a data set that is available for use and relevant to your research interests. 
-    - For an introductory project we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
-3. Apply the relevant computational methods.
-    - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
-     - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. 
-     - **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
-
 # How does text analysis work in general? 
 Text analysis usually follows these steps:
 * First, the text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
@@ -35,8 +52,7 @@ Text analysis usually follows these steps:
     * The number of these counts can be used to identify characteristics of texts. 
 * Then, researchers can apply computational statistics to the counts of textual features, and develop hypotheses based on these counts.
 
-# How does it impact research?
-
+## How does it impact research?
 * In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called [*“distant reading.”*](https://uta.pressbooks.pub/datanotebook/chapter/1-4-distant-reading/) 
     * This is a term attributed to Franco Moretti, meaning “reading” literature not by studying particular texts, but by aggregating and analyzing massive amounts of texts and “reading” them at a “distance”. This scaling-up and “distancing” can bring out more insights from a very different vantage point. 
     * It is also worth mentioning that text analysis doesn’t have to be the primary method in a research project. It may be just one step in the entire process, or it can be combined with close reading. This approach has been called *“intermediate reading” or “distant-close reading”.*
@@ -50,12 +66,10 @@ Text analysis usually follows these steps:
     * Change over time 
     * Pattern recognition 
     * Comparative analysis 
-    
-<!--[Examples for discussion](https://teach.htrc.illinois.edu/teaching-resources/text-analysis-research-examples/) 
-* How do the projects involve change over time, pattern recognition, or comparative analysis?
-* What kind of text data do they use (time period, source, etc.)?
-* What are their findings? -->
-
+    * [Text analysis research examples from HTRC](https://teach.htrc.illinois.edu/teaching-resources/text-analysis-research-examples/) 
+        * How do the projects involve change over time, pattern recognition, or comparative analysis?
+        * What kind of text data do they use (time period, source, etc.)?
+        * What are their findings?
 
 ## What kind of texts do I need for text analysis?
 
@@ -67,14 +81,17 @@ Text analysis depends on having a large number of texts in an accessible format.
 In practice, "easily-readable" means that you *could* hypothetically copy and paste the text. This may be made complicated if working with works which are in copyright. If it is not possible to access "full-text" due to applicable copyright laws, the ideal corpus will give readers access to metadata or [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. (N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain.) 
 * While having the full texts for the documents in your corpus is ideal, a great deal can be still be discovered through the use of unigrams. Even when researchers have access to the full-texts of a corpus, it is common for them to create a list of n-gram counts for analysis. 
 
-<!--___
-<font color="red">Read more</font>
-* [Constellate Dataset Builder: full-text and n-gram content](https://constellate.org/docs/data-sources)
-* [Bring your own data into Constellate](https://constellate.org/docs/import-data-into-constellate)
-* [Hathitrust Digital Library](https://www.hathitrust.org/help_digital_library)-->
+### TDM projects 
+For a TDM project you need to complete the following steps:
+1. Identify a research question or topic of interest.
+2. Search for and identify a data set that is available for use and relevant to your research interests. 
+    - For an introductory project, we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
+3. Apply the relevant computational methods.
+    - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
+     - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
 
 
-## I have my own data. What will it take to get it ready?
+#### I have my own data. What will it take to get it ready?
 
 *Finding, cleaning and structuring data is often time consuming and labor intensive.* 
 One of the most significant benefits of using a database such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. 
@@ -83,17 +100,14 @@ One of the most significant benefits of using a database such as HathiTrust Digi
 
 If you have your own data, you will need to assess what it will take to make it ready for analysis. Here are some questions you should ask:
 
-* How can I convert my data into plain text? 
-    * <font color="red">Start learning</font> [Optical Character Recognition Basics](https://constellate.org/tutorials/ocr-basics.ipynb)
-* How can I tokenize my texts (break up and separate the words)? 
-    * <font color="red">Start learning</font> [Tokenize Text Files](https://constellate.org/tutorials/tokenizing-text-files.ipynb)
-    * <font color="red">Start learning</font> [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb)
+* You may need to use Optical Character Recognition (OCR) to convert your data into plain text? 
+* You may need to tokenize  (break up and separate the words) your texts? 
     
 Consider the data's current form as well as your current skill level or the size and skill of your project staff. The corpus creation process could take anywhere from a few hours to many years of labor. 
 * If there is a significant amount of labor, you may need to write a grant proposal to hire help. 
     * If writing a grant, contact your library with questions about [Research Data Management](https://www.smu.edu/Libraries/scholarship/data/data-policy) since funding agencies often require your corpus to be committed to a disciplinary or institutional repository.
 
-* In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. Some of this is discussed in [Tokenize Text Files with NLTK](https://constellate.org/tutorials/tokenize-text-files-with-nltk-for-research.ipynb), but it would also help to have some experience with working with data at scale with either Excel or Python Pandas.
+* In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. It helps to have some experience with working with data at scale with either Excel or Python Pandas.
 
 <!--* Read about downloading historical SEC filings via EDGAR: [Textual Analysis on SEC Filings](https://mingze-gao.com/posts/textual-analysis-on-sec-filings/)-->
 
@@ -103,34 +117,9 @@ Consider the data's current form as well as your current skill level or the size
 
 * Read about [The Emergence of Literary Diction](http://journalofdigitalhumanities.org/1-2/the-emergence-of-literary-diction-by-ted-underwood-and-jordan-sellers/)
 
-<!--Start learning Pandas 1(https://constellate.org/tutorials/pandas-1.ipynb)-->
 
 
-# How do you find data for TDM projects?
-"What are the differences between data, a dataset, and a database?
-  * *Data* are observations or measurements (unprocessed or processed) represented as text, numbers, or multimedia.
-  * A *dataset* is a **structured** collection of data generally associated with a unique body of work.
-  * A *database* is an **organized collection of data stored as multiple datasets.** Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. - [Definition via USGS](https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.) 
-* For the purposes of this workshop, we recommend finding an already existing data set for your project, as creating, cleaning and/or structuring a new dataset is often time and labor intensive. 
-    * Remember that just because data may be avaible digitally, it does *not* automatically exist as a dataset. You may have to do works manually (copying and pasting into a spreadsheet) or computationally (scarping the data) to create a dataset usable for computational analysis.  
-* Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
-
-
-# What are the stages of data ?
-* We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
-
-[![data life cycle](../sections/images/rdc.png)]
-
-## Raw data 
-* Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.
-* But "raw data" is a relative term, inasmuch as when one person finishes processing data and presents it as a finished product, another person may take that product and work on it further, and for them that data is "raw data". 
-    * For example, is "big data" "raw data"? How do we understand data that we have "scraped"?
-
-## Processed/transformed
-
-* Processing data puts it into a state more readily available for analysis, and makes the data legible. For instance it could be rendered as **structured data**. This can also take many forms, e.g., a table. 
-
-# Text as Data 
+# What is Text as Data ?
 
 When approaching text as data, here are some things to keep in mind:
 * First, having textual data of sufficient quality is important. Textual data quality is determined by how it’s created. Hand-keyed text is often of the best quality, while text obtained by OCR, Optical Character Recognition, can vary in quality. Raw, uncorrected OCR text is dirty, and it can only become clean until it is corrected. (For example, Please note that HathiTrust OCR is dirty and uncorrected.
@@ -210,11 +199,6 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 * [An argument against cleaning data](https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/07154de9-4903-428e-9c61-7a92a6f22e51)
 
 
-# Approaches to TDM
-* See our [introduction to TM methods ](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/TDMintro.md).
-* The TDM approaches you want to use will dictate your preprocessing choices.  
-
-
 ### The importance of using open data formats
 A small detour to discuss (the ethics of?) data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats. A demonstration:
 
@@ -254,20 +238,19 @@ Look back at our example of cats to see how they may or may not follow those gui
 
  <sup>1</sup>[Wickham, Hadley. "Tidy Data". Journal of Statistical Software.](https://www.jstatsoft.org/article/view/v059i10)
 
-## Forms of data
 
-There are many ways to represent data, just as there are many sources of data. For the purposes of this series we are focusing on already digitized text. In the next session workshop in this series, you will see how a .csv file can be processed an analysed using Python. 
-
-# You can search for already existing datasets in the following:
+# Searching for Text Data 
+* You can search for already existing datasets in the following:
 
 **Databases**
 
 # *Licensed content in Library databases*
-* Only some databases allow for text mining. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
+* Only some databases allow for text mining withour additional permssions. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
 * [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
-* Additional resources for [Datasets and Data Repositories](https://guides.smu.edu/data/overview)
 * [Text data sets guide](https://guides.smu.edu/textdata)
+    * Additional resources for [Datasets and Data Repositories](https://guides.smu.edu/data/overview)
+
 
 *Policies for Mining Licensed Content* 
 * If you are thinking of basing a research project on data extracted from a library database, contact your [subject librarian](https://www.smu.edu/libraries/help/librarian) to discuss issues around permissions (copyright and licensing agreements), formats and fees.
@@ -308,7 +291,7 @@ When you are considering learning new methodologies, we highly recommend searchi
 
 Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
 
-#Types of Text Mining
+# Types of Text Mining
 ## What disciplinary questions can text analysis answer?
 
 *You can use text analysis to answer a wide variety of questions. 
@@ -391,7 +374,6 @@ ___
     * Be familiar with your input data
 * Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.
 * You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.
-
 
 
 <font color="red">Read more</font>
@@ -496,11 +478,10 @@ ___
 ![Actual Workflow](../sections/images/realwf.png)
 
 
-## [Terminology](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/terminology.md)
+## [Terminology](https://southernmethodistuniversity.github.io/introTDM/sections/terms.html)
 * [Keywords in Digital Pedagogy in the Humanities: Text analysis](https://digitalpedagogy.mla.hcommons.org/keywords/text-analysis/)
-* [Text analysis glossary](https://constellate.org/docs/key-terms/)
 * When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
-* [List of Even More DH Text Analysis Teaching/Learning Materials from TAPI](https://labs.jstor.org/projects/text-analysis-pedagogy-institute-2/#more-dh-text-analysis)
+s)
 
 
 #### Attribution: Some content on this page adapted from:
