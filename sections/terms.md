@@ -1,7 +1,10 @@
 # Terminology used in sessions
 
 ## Text analysis glossery 
-* [Text analysis glossary](https://constellate.org/docs/key-terms/)
+* [Text analysis glossary from Ithaka](https://constellate.org/docs/key-terms/)
+
+## DH terms
+* [Digital Humanities Terms from Folger Shakespeare Library](https://folgerpedia.folger.edu/Glossary_of_digital_humanities_terms)
 
 
 # Specific terms

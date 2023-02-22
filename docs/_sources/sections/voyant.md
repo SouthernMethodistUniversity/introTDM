@@ -20,6 +20,7 @@ There are four main ways of creating and using a corpus in Voyant ("corpus" is a
 ## [Voyant Examples](https://voyant-tools.org/docs/#!/guide/gallery)
 
 ## [Recording on Voyant workshop for UCSC library](https://guides.library.ucsc.edu/DS/Events/Voyant)
+* [What is Voyant Tools? Ch. 4.4 in *The Data Notebook*](https://uta.pressbooks.pub/datanotebook/chapter/4-4-voyant/)
 
 ## Read More: Use of Voyant in classroom setting
 * [A workshop on the text analysis tool Voyant, designed for instructors considering using the tool in the classroom.-M Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md)

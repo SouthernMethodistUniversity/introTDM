@@ -41,15 +41,27 @@ There are many ways to represent data, just as there are many sources of data. F
     * [What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
 * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
     * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
+
  
-# How does text analysis work in general? 
-Text analysis usually follows these steps:
-* First, the text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
-* The text is broken into smaller pieces and abstracted (reduced) into things that a computer can process.
+### TDM projects 
+For a TDM project you need to complete the following steps:
+* Identify a research question or topic of interest.
+* Data gathering or Data Search
+    * Search for and identify a data set that is available for use and relevant to your research interests. 
+    * For an introductory project, we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
+* Data preparation
+    * The text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
+    * The text is broken into smaller pieces and abstracted (reduced) into things that a computer can process.
+* Text analysis           
 * *Counting* is often what happens next.
-    * Some of the things that are often counted include words, phrases, and parts of speech. 
+    * Some of the things that are often counted include words, phrases, and parts of speech (POS). 
     * The number of these counts can be used to identify characteristics of texts. 
 * Then, researchers can apply computational statistics to the counts of textual features, and develop hypotheses based on these counts.
+    - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
+     - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
+* Visualization
+    * How will you [communicate your findings?](https://uta.pressbooks.pub/datanotebook/chapter/2-6-tell/)        
+* [What are the stages in text analysis?-AWS](https://aws.amazon.com/what-is/text-analysis/)
 
 ## How does it impact research?
 * In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called [*“distant reading.”*](https://uta.pressbooks.pub/datanotebook/chapter/1-4-distant-reading/) 
@@ -80,27 +92,23 @@ Text analysis depends on having a large number of texts in an accessible format.
 In practice, "easily-readable" means that you *could* hypothetically copy and paste the text. This may be made complicated if working with works which are in copyright. If it is not possible to access "full-text" due to applicable copyright laws, the ideal corpus will give readers access to metadata or [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. (N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain.) 
 * While having the full texts for the documents in your corpus is ideal, a great deal can be still be discovered through the use of unigrams. Even when researchers have access to the full-texts of a corpus, it is common for them to create a list of n-gram counts for analysis. 
 
-### TDM projects 
-For a TDM project you need to complete the following steps:
-1. Identify a research question or topic of interest.
-2. Search for and identify a data set that is available for use and relevant to your research interests. 
-    - For an introductory project, we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
-3. Apply the relevant computational methods.
-    - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
-     - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
+# What is Text as Data ?
 
+When approaching text as data, here are some things to keep in mind:
+* First, having textual data of sufficient quality is important. Textual data quality is determined by how it’s created. Hand-keyed text is often of the best quality, while text obtained by OCR, Optical Character Recognition, can vary in quality. Raw, uncorrected OCR text is dirty, and it can only become clean until it is corrected. (For example, Please note that HathiTrust OCR is dirty and uncorrected.
+* When viewing text as data, we usually analyze them by corpus or corpora. As mentioned in previous modules, a “corpus” of text can refer to both a digital collection and an individual's research text dataset. Text corpora are bodies of text.
+* When preparing text, one can think in terms of what [Geoffrey Rockwell has called text decomposition or re-composition.](https://geoffreyrockwell.com/publications/WhatIsTAnalysis.pdf) The text will be split, combined, or represented in ways that distinguish it from human readable text. It may involve discarding some text, and requires the researcher to shift their understanding of the text from human-legible object to data. What stays, what goes, and how things are manipulated is a researcher’s choice. While there are emerging best practices, there isn’t a step-by-step guide to follow.
 
 #### I have my own data. What will it take to get it ready?
 
-*Finding, cleaning and structuring data is often time consuming and labor intensive.* 
-One of the most significant benefits of using a database such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. 
+*Finding, cleaning and structuring data is often time consuming and labor intensive.*  One of the most significant benefits of using a database such as HathiTrust Digital Library, Constellate by ITHAKA or [any database](https://guides.smu.edu/az.php?t=45104) with a dataset builder is that it takes out *the vast majority* of effort in doing text analysis. 
 
 * For a major text analysis project, such as UNC Chapel Hill's [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/), about *90% of the labor is creating the corpus.* For your initial project we suggest assembling a data set from one of the previously mentioned databases.
 
 If you have your own data, you will need to assess what it will take to make it ready for analysis. Here are some questions you should ask:
 
-* You may need to use Optical Character Recognition (OCR) to convert your data into plain text? 
-* You may need to tokenize  (break up and separate the words) your texts? 
+* Do I need to use Optical Character Recognition (OCR) to convert my data into plain text? 
+* Do i need to tokenize (break up and separate the words) my texts? 
     
 Consider the data's current form as well as your current skill level or the size and skill of your project staff. The corpus creation process could take anywhere from a few hours to many years of labor. 
 * If there is a significant amount of labor, you may need to write a grant proposal to hire help. 
@@ -116,14 +124,6 @@ Consider the data's current form as well as your current skill level or the size
 
 * Read about [The Emergence of Literary Diction](http://journalofdigitalhumanities.org/1-2/the-emergence-of-literary-diction-by-ted-underwood-and-jordan-sellers/)
 
-
-
-# What is Text as Data ?
-
-When approaching text as data, here are some things to keep in mind:
-* First, having textual data of sufficient quality is important. Textual data quality is determined by how it’s created. Hand-keyed text is often of the best quality, while text obtained by OCR, Optical Character Recognition, can vary in quality. Raw, uncorrected OCR text is dirty, and it can only become clean until it is corrected. (For example, Please note that HathiTrust OCR is dirty and uncorrected.
-* When viewing text as data, we usually analyze them by corpus or corpora. As mentioned in previous modules, a “corpus” of text can refer to both a digital collection and an individual's research text dataset. Text corpora are bodies of text.
-* When preparing text, one can think in terms of what [Geoffrey Rockwell has called text decomposition or re-composition.](https://geoffreyrockwell.com/publications/WhatIsTAnalysis.pdf) The text will be split, combined, or represented in ways that distinguish it from human readable text. It may involve discarding some text, and requires the researcher to shift their understanding of the text from human-legible object to data. What stays, what goes, and how things are manipulated is a researcher’s choice. While there are emerging best practices, there isn’t a step-by-step guide to follow.
 ## Cleaning text data can involve…
 - Removing Duplicates
 - Correcting Errors
@@ -137,36 +137,6 @@ When approaching text as data, here are some things to keep in mind:
 - Making text into lowercase.
 
 
-## What makes a useful dataset?
-For the purposes of completing a project in a semester, we recommend choosing an already existing 'good' data set so that you can start [your analysis.](https://www.usgs.gov/data-management/analyze)
-
-* What do we mean by a 'good' data set? 
-
-The considerations you should keep in mind for [creating a data set,](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) are the same things you want to look for when searching for a dataset for research. 
-    
-   * Is there a [Data dictionary](https://www.usgs.gov/data-management/data-dictionaries) or any kind of documentation that states how the date was derived and why it was recording in the way it was. 
-    
-   * Good documentation makes material *understandable, verifiable, and reusable* (by you or by others).
-    
-   * What are the file naming conventions? 
-    
-   * Is there metadata?
-       * Metadata is simply ‘data about data’.  It is related to the broader contextual information that describes your data, but is usually more structured in that it conforms to set standards and is machine readable.  One typical use of metadata is to create a catalogue record for a dataset held in an archive. By using a standard set of tags, an automatic system can tell where the information about the title, creator, description and so forth begin and end.
-    
-   * Data that is not structured or cleaned is referred to as unstructured, noisy or dirty. *A messy data set can be used but you will need to spend time [processing that data:](https://www.usgs.gov/data-management/process) either cleaning, structuring and/or organizing it.* 
-
-## Read more 
-* Read more about [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities) 
-* [Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1](https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/)
-* [DH@ Berkley:Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning)
-* "Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled." 
-    * How do you clean data?
-        * Step 1: Remove duplicate or irrelevant observations
-        * Step 2: Fix structural errors
-        * Step 3: Filter unwanted outliers
-        * Step 4: Handle missing data
-        * Step 5: Validate and QA (quality assurance)
-            * [Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data](https://www.tableau.com/learn/articles/what-is-data-cleaning) 
 
 # Preparing Data
 * After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed ot as pre-processing the data). Preparing data can take a lot of time and effort.
@@ -199,7 +169,7 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 
 
 ### The importance of using open data formats
-A small detour to discuss (the ethics of?) data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats.
+A small detour to discuss data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats.
 
 * Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:
 
@@ -223,7 +193,6 @@ There are guidelines to the processing of data, sometimes referred to as **Tidy 
 2. Each observation is a row.
 3. Each value is a cell.
 
-Look back at our example of cats to see how they may or may not follow those guidelines. **Important note**: Some data formats allow for more than one dimension of data! How might that complicate the concept of **Tidy Data**?
 
 ```
 {"Cats":[
@@ -243,7 +212,7 @@ Look back at our example of cats to see how they may or may not follow those gui
 
 **Databases**
 
-# *Licensed content in Library databases*
+ *Licensed content in Library databases*
 * Only some databases allow for text mining withour additional permssions. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
 * [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
@@ -339,7 +308,9 @@ Read about using n-grams to [get a sense of language usage and change on Reddit]
 ___
 
 **TF/IDF** 
-* Tf-IDF (term frequency–inverse document frequency) is about finding the significant words within a text. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
+* Tf-IDF (term frequency–inverse document frequency) is intended to reflect how important a word is to a document in a collection or corpus. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
+![TF-IDF](../sections/images/tfidf.png)Image source:[Writing icon by kholis muasaroh from Noun Project (CCBY3.0)](https://thenounproject.com/icon/writing-5482033/)  
+
 
 Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here.](https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html)
 
@@ -349,8 +320,12 @@ ___
 * Search engines use significant terms analysis to match a user query with a list of appropriate documents. This method could be useful if you want to search your corpus for the most significant texts based on a word (or set of words). It can also be useful in reverse. For a given document, you could create a list of the ten most significant terms. This can be useful for summarizing the content of a document. 
 
 ___
-**Topic Analysis** (or Topic Modeling)
-* Discovering the topics within a group of texts. Example: “What are the most frequent topics discussed in this newspaper?” 
+**Topic Modeling**
+* Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
+![Topic modeling simple](../sections/images/topicmodsimple.png)Image source: [Anna Ristilä from Wikimedia, Creative Commons Share Alike](https://fi.wikipedia.org/wiki/Tiedosto:Topic_modeling_oversimplified.png) 
+
+* For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. * 
+Discovering the topics within a group of texts. Example: “What are the most frequent topics discussed in this newspaper?” 
 * While significant terms analysis reveals terms commonly found in a given document, a topic analysis can tell us what words tend to cluster together across a corpus. For example, if we were to study newspapers, we would expect that certain words would cluster together into topics that match the sections of the newspaper. We might see something like:
 
 * Topic 1: baseball, ball, player, trade, score, win, defeat
@@ -359,10 +334,9 @@ ___
 
 * We can recognize that these words tend to cluster together within newspaper sections such as "Sports", "Finance", and "Politics". If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning) to discover the topics in a given document automatically.
 
-# Topic modeling
-* Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
-* This image visualizes what happens in a topic model.
-* For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. 
+![Topic modeling](../sections/images/topicmodel.png)
+
+
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
 
@@ -387,26 +361,33 @@ ___
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
 * The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
 
+![Shakespeare concordance: all instances of "cousin"](../sections/images/concor.png)Image source: [Concordance of Shakespeare's complete works](https://www.opensourceshakespeare.org/concordance/o/?i=763860) 
 <!-- <font color="red">Read more</font>
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
 * Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)-->
 ___
 **Network Analysis** 
 * How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”
+![Network visualisation](../sections/images/viraltexts.png)Image source: [Network of Shared Reprints Among Newspapers & Magazines, 1836-1860](http://networks.viraltexts.org/1836to1860-simple/)
 
 ## 3. What emotions (or affects) are found within these texts?
 
-**Sentiment Analysis** (Intermediate)
+**Sentiment Analysis** 
 Sentiment analysis, which uses computers to explore what emotions are present in the text. Does the author use positive or negative language? Example: “How do presidents describe gun control?”
 Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning), or both.
 
+![Network visualisation incorporating sentiment analysis](../sections/images/sa.png)Image source: [Siobhán Grayson, Wikimedia, CC-SA license. SA indicated by the colour scales according to how negative (red) to positive (blue) a response is](https://commons.wikimedia.org/wiki/File:Network_visualisation_incorporating_sentiment_analysis_of_the_subreddit_%27skeptic%27_from_Reddit.png) 
 
-Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed)
+
+Read about:
+* [using sentiment analysis on SEC Filings](https://medium.com/@oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed)
+* [using sentiment analysis on WHEN WOMEN MAKE HEADLINES](https://pudding.cool/2022/02/women-in-headlines/)
 
 ## 4. What names are used in these texts?
 **Named Entity Recognition** (or NER)
 * Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.
 * You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
+![Named Entity Recognition](../sections/images/ne.png)Image source: [SpaCy Named Entity](https://spacy.io/usage/spacy-101#annotations-nerg) 
 
 <font color="red">Read more</font>
 
@@ -428,6 +409,7 @@ Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha
 **Clustering**
 * Clustering is unsupervised machine learning.  
 * Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
+![clustering](../sections/images/cluster.png)Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
 
 **Classification** 
 * Classification is supervised machine learning
@@ -437,14 +419,24 @@ Read about [using sentiment analysis on SEC Filings](https://medium.com/@oshojha
 ## Related 
 
 ### *Machine Learning(ML)* 
-* Another key approach to text analysis is *Machine Learning (ML)*, 
-You can use ML which is training computers to recognize patterns in text without explicit human programming. 
+* Another key approach to text analysis is *Machine Learning (ML). ML is training computers to recognize patterns in text.
 * Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* 
+![ML](../sections/images/ml.png)Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
+
 * Here are some common, specific methods that are based on machine learning:  
     * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
     * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
 * One key approach in ML for TDM is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. 
 * Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.
+
+**Clustering**
+* Clustering is unsupervised machine learning.  
+* Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
+![clustering](../sections/images/cluster.png)Image source: [CreightonMA, Wikimedia, CC Attribution Share alike](https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png)
+
+**Classification** 
+* Classification is supervised machine learning
+* Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
     **Supervised Machine Learning** 
        * The advent of *supervised machine learning techniques have rapidly changed text analysis in the digital humanities. These methods "train" computers to identify and classify similar items based on data that has been labeled or tagged by experts. For example, [On the Books: Jim Crow and Algorithms of Resistance](https://onthebooks.lib.unc.edu/) was able to [use machine learning](https://github.com/UNC-Libraries-data/OnTheBooks) to [identify 1939 North Carolina Jim Crow laws enacted between Reconstruction and the Civil Rights Movement.](https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/) 
 
@@ -471,8 +463,19 @@ ___
 
 ![Actual Workflow](../sections/images/realwf.png)
 
-
-## [Terminology](https://southernmethodistuniversity.github.io/introTDM/sections/terms.html)
+## Read more 
+* [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities) 
+* [Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1](https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/)
+* [DH@ Berkley:Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning)
+* "Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled." 
+    * How do you clean data?
+        * Step 1: Remove duplicate or irrelevant observations
+        * Step 2: Fix structural errors
+        * Step 3: Filter unwanted outliers
+        * Step 4: Handle missing data
+        * Step 5: Validate and QA (quality assurance)
+            * [Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data](https://www.tableau.com/learn/articles/what-is-data-cleaning)     
+* [Terminology](https://southernmethodistuniversity.github.io/introTDM/sections/terms.html)
 * [Keywords in Digital Pedagogy in the Humanities: Text analysis](https://digitalpedagogy.mla.hcommons.org/keywords/text-analysis/)
 * When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
 s)
