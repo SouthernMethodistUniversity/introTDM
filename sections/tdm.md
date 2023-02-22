@@ -1,4 +1,3 @@
-
 # Text data mining (TDM)
     * What is Data?
     * What is Text data mining (TDM)?
@@ -124,89 +123,6 @@ Consider the data's current form as well as your current skill level or the size
 
 * Read about [The Emergence of Literary Diction](http://journalofdigitalhumanities.org/1-2/the-emergence-of-literary-diction-by-ted-underwood-and-jordan-sellers/)
 
-## Cleaning text data can involve…
-- Removing Duplicates
-- Correcting Errors
-- Removing Outliers
-- Adjusting for Missing data
-- Correcting OCR errors.
-- Removing title and header information
-- Removing html or xml tags.
-- Splitting or combining files.
-- Removing certain words or punctuation marks.
-- Making text into lowercase.
-
-
-
-# Preparing Data
-* After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed ot as pre-processing the data). Preparing data can take a lot of time and effort.
-* Examples of what may be necessary to do before the data is in a workable state: 
-    * Correcting OCR errors.
-    * Removing title and header information.
-    * Removing html or xml tags.
-    * Splitting or combining files. 
-    * Removing certain words or punctuation marks.
-    * Making text into lowercase.
- 
-![Chunking text](../sections/images/chunktext.png)
-* As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
-
-![Grouping text](../sections/images/groupingtext.png)
-* An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
-
-Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
-
-![Tokenizations](../sections/images/token.png)
-* An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
-Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens. 
-While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
-
-* It is important to note that *different choices in text preparation will affect the results of the analysis.* 
-* Depending on the amount of text and size of chunks, which stop words are removed and which characters are included, and whether to lowercase and normalize words, the eventual text that is ready for analysis can be very different. Additionally, preparation for analysis takes a lot of time and effort. This is where scripting becomes useful!
-
-* [Additional information about how text preparation impacts results](https://ssrn.com/abstract=2849145)  
-* [An argument against cleaning data](https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/07154de9-4903-428e-9c61-7a92a6f22e51)
-
-
-### The importance of using open data formats
-A small detour to discuss data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats.
-
-* Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:
-
-    * ASCII
-    * PDF 
-    * .csv
-    * FLAC
-    * TIFF
-    * JPEG2000
-    * MPEG-4
-    * XML
-    * RDF
-    * .txt
-    * .r
-
-How do you decide the formats to store your data when you transition from 'raw' to 'processed/transformed' data? What are some of your considerations?
-
-## Tidy data
-There are guidelines to the processing of data, sometimes referred to as **Tidy Data**.<sup>1</sup> One manifestation of these rules:
-1. Each variable is in a column.
-2. Each observation is a row.
-3. Each value is a cell.
-
-
-```
-{"Cats":[
-    {"Calico":[
-    { "firstName":"Smally", "lastName":"McTiny" },
-    { "firstName":"Kitty", "lastName":"Kitty" }],
-    "Tortoiseshell":[
-    { "firstName":"Foots", "lastName":"Smith" }, 
-    { "firstName":"Tiger", "lastName":"Jaws" }]}]}
-```
-
- <sup>1</sup>[Wickham, Hadley. "Tidy Data". Journal of Statistical Software.](https://www.jstatsoft.org/article/view/v059i10)
-
-
 # Searching for Text Data 
 * You can search for already existing datasets in the following:
 
@@ -258,6 +174,84 @@ Depending on the the type of data, the collecting agency or you field their migh
 
 Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
 
+
+# Preparing Data (Cleaning and Transforming)
+* After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed to as pre-processing the data). Preparing data can take a lot of time and effort.
+* Cleaning text data can involve…
+- Removing Duplicates
+- Correcting Errors
+- Removing Outliers
+- Adjusting for Missing data
+- Correcting OCR errors.
+- Removing title and header information
+- Removing html or xml tags.
+- Splitting or combining files.
+- Removing certain words or punctuation marks.
+- Making text into lowercase.
+
+
+### The importance of using open data formats
+A small detour to discuss data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats.
+
+* Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:
+
+    * ASCII
+    * PDF 
+    * .csv
+    * FLAC
+    * TIFF
+    * JPEG2000
+    * MPEG-4
+    * XML
+    * RDF
+    * .txt
+    * .r
+
+How do you decide the formats to store your data when you transition from 'raw' to 'processed/transformed' data? What are some of your considerations?
+
+## Tidy data
+There are guidelines to the processing of data, sometimes referred to as **Tidy Data**.<sup>1</sup> One manifestation of these rules:
+1. Each variable is in a column.
+2. Each observation is a row.
+3. Each value is a cell.
+
+
+```
+{"Cats":[
+    {"Calico":[
+    { "firstName":"Smally", "lastName":"McTiny" },
+    { "firstName":"Kitty", "lastName":"Kitty" }],
+    "Tortoiseshell":[
+    { "firstName":"Foots", "lastName":"Smith" }, 
+    { "firstName":"Tiger", "lastName":"Jaws" }]}]}
+```
+
+ <sup>1</sup>[Wickham, Hadley. "Tidy Data". Journal of Statistical Software.](https://www.jstatsoft.org/article/view/v059i10)
+
+ 
+## Chunking text
+ ![Chunking text](../sections/images/chunktext.png)
+* As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
+
+## Grouping text
+![Grouping text](../sections/images/groupingtext.png)
+* An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
+
+Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
+
+## Tokenization
+![Tokenization](../sections/images/token.png)
+* An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
+Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens. 
+While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
+
+* It is important to note that *different choices in text preparation will affect the results of the analysis.* 
+* Depending on the amount of text and size of chunks, which stop words are removed and which characters are included, and whether to lowercase and normalize words, the eventual text that is ready for analysis can be very different. Additionally, preparation for analysis takes a lot of time and effort. This is where scripting becomes useful!
+
+* [Additional information about how text preparation impacts results](https://ssrn.com/abstract=2849145)  
+* [An argument against cleaning data](https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/07154de9-4903-428e-9c61-7a92a6f22e51)
+
+
 # Types of Text Mining
 ## What disciplinary questions can text analysis answer?
 
@@ -270,11 +264,11 @@ Read some data journalism articles on [The Pudding](https://pudding.cool/), [Pro
 4. What names are used in these texts?
 5. Which of these texts are most similar?
 
-## 1. What are these texts about?
+# 1. What are these texts about?
 * When it comes to a large body of texts, scholars tend to be most curious about the text's contents. What are the words, topics, concepts, and significant terms in these documents? There are a number of methods often used which vary in complexity and difficulty.
 ___
 
-**Word Frequency** 
+## Word Frequency
 * Counting the frequency of a word in any given text. 
 relative frequency – how often do words appear relative to other words in the text, typically a percentage
 Common as a baseline for more sophisticated methods
@@ -285,7 +279,7 @@ This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on
 ![word cloud](../sections/images/wc.png)Image source:[Voyant Cirrus image, Austen corpus](https://voyant-tools.org/?corpus=austen&view=Cirrus)  
 ___
 
-**Collocation** 
+## Collocation
 * Examining where words occur close to one another. Example: “Where are women mentioned in relation to home ownership?”
 
 ![Collocation](../sections/images/colo.png)Image source:[Voyant Collocation image, Austen corpus](https://voyant-tools.org/?corpus=austen)  
@@ -307,7 +301,7 @@ Read about using n-grams to [get a sense of language usage and change on Reddit]
 
 ___
 
-**TF/IDF** 
+## TF/IDF
 * Tf-IDF (term frequency–inverse document frequency) is intended to reflect how important a word is to a document in a collection or corpus. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
 ![TF-IDF](../sections/images/tfidf.png)Image source:[Writing icon by kholis muasaroh from Noun Project (CCBY3.0)](https://thenounproject.com/icon/writing-5482033/)  
 
@@ -316,11 +310,11 @@ Read more about how to do TF/IDF [here](https://programminghistorian.org/en/less
 
 ___
 
-**Significant Terms** 
+## Significant Terms
 * Search engines use significant terms analysis to match a user query with a list of appropriate documents. This method could be useful if you want to search your corpus for the most significant texts based on a word (or set of words). It can also be useful in reverse. For a given document, you could create a list of the ten most significant terms. This can be useful for summarizing the content of a document. 
 
 ___
-**Topic Modeling**
+## Topic Modeling
 * Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
 ![Topic modeling simple](../sections/images/topicmodsimple.png)Image source: [Anna Ristilä from Wikimedia, Creative Commons Share Alike](https://fi.wikipedia.org/wiki/Tiedosto:Topic_modeling_oversimplified.png) 
 
@@ -336,7 +330,7 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 
 ![Topic modeling](../sections/images/topicmodel.png)
 
-
+## bags of words
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
 
@@ -355,9 +349,9 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 Keli Du's [A Survey on LDA Topic Modeling in Digital Humanities](https://www.researchgate.net/profile/Keli-Du/publication/349279379_A_Survey_On_LDA_Topic_Modeling_In_Digital_Humanities/links/6027a55ea6fdcc37a8222850/A-Survey-On-LDA-Topic-Modeling-In-Digital-Humanities.pdf)
 
 
-## 2. How are these texts connected?
+# 2. How are these texts connected?
 ___
-**Concordance** 
+## Concordance
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
 * The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
 
@@ -366,13 +360,13 @@ ___
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
 * Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)-->
 ___
-**Network Analysis** 
+## Network Analysis
 * How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”
 ![Network visualisation](../sections/images/viraltexts.png)Image source: [Network of Shared Reprints Among Newspapers & Magazines, 1836-1860](http://networks.viraltexts.org/1836to1860-simple/)
 
-## 3. What emotions (or affects) are found within these texts?
+# 3. What emotions (or affects) are found within these texts?
 
-**Sentiment Analysis** 
+## Sentiment Analysis
 Sentiment analysis, which uses computers to explore what emotions are present in the text. Does the author use positive or negative language? Example: “How do presidents describe gun control?”
 Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning), or both.
 
@@ -383,8 +377,8 @@ Read about:
 * [using sentiment analysis on SEC Filings](https://medium.com/@oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed)
 * [using sentiment analysis on WHEN WOMEN MAKE HEADLINES](https://pudding.cool/2022/02/women-in-headlines/)
 
-## 4. What names are used in these texts?
-**Named Entity Recognition** (or NER)
+# 4. What names are used in these texts?
+## Named Entity Recognition** (or NER)
 * Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.
 * You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
 ![Named Entity Recognition](../sections/images/ne.png)Image source: [SpaCy Named Entity](https://spacy.io/usage/spacy-101#annotations-nerg) 
@@ -395,9 +389,9 @@ Read about:
 * Read about about how hyphenated names are hard to study [here](https://pudding.cool/2019/05/hyphens/) 
 
 
-## 5. Which of these texts are most similar?
+# 5. Which of these texts are most similar?
 
-**Stylometrics and Authorship Attribution** 
+## Stylometrics and Authorship Attribution
 * Stylometrics uses computers to speculate who wrote the text based on language style. You could use it to find the author of an anonymous document. 
     * Example: “Who wrote The Federalist Papers?”
 * The digital humanities, and its precursor Humanities Computing, have a long history in the analysis of literature, particularly for analyzing genre and authorship. For example, the New Oxford Shakespeare surprised many scholars by assigning significant authorship of Shakespeare's "Henry VI," Parts 1, 2, and 3. It also lists as co-authors many Shakespeare contemporaries such as Thomas Nashe, George, Peele, Thomas Heywood, Ben Jonson, George Wilkins, Thomas Middleton, and John Fletcher.
@@ -406,19 +400,10 @@ Read about:
 * Patrick Juola [How a Computer Program Helped Show J.K. Rowling Wrote A Cuckoo's Calling](https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoos-calling/) (2013)
 * Ros Barber [Big data or not enough? Zeta test reliability and the attribution of Henry VI](https://academic.oup.com/dsh/article-abstract/36/3/542/5918973?redirectedFrom=fulltext)
 
-**Clustering**
-* Clustering is unsupervised machine learning.  
-* Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
-![clustering](../sections/images/cluster.png)Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
 
-**Classification** 
-* Classification is supervised machine learning
-* Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
+--
 
-
-## Related 
-
-### *Machine Learning(ML)* 
+## *Machine Learning(ML)* 
 * Another key approach to text analysis is *Machine Learning (ML). ML is training computers to recognize patterns in text.
 * Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* 
 ![ML](../sections/images/ml.png)Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
@@ -429,12 +414,12 @@ Read about:
 * One key approach in ML for TDM is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. 
 * Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.
 
-**Clustering**
+### Clustering
 * Clustering is unsupervised machine learning.  
 * Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
 ![clustering](../sections/images/cluster.png)Image source: [CreightonMA, Wikimedia, CC Attribution Share alike](https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png)
 
-**Classification** 
+### Classification
 * Classification is supervised machine learning
 * Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
     **Supervised Machine Learning** 
@@ -447,7 +432,7 @@ Read about:
 
 ___
 
-# **Text Visualization** 
+## Text Visualization
 
  * Data visualization is the process of converting data sources into a visual representation. This representation is usually in graphical form. Broadly speaking, anything that displays data in some visual form can be called a data visualization, including both traditional graphs and charts, as well as more innovative data art. 
 * Visualizations present particular ways of interpreting data. It is not a transparent, objective projection of what the data is. By selecting different types of visualization and adjusting parameters, the resulting visualization is a researcher’s specific way of interpreting and presenting data. 
@@ -481,8 +466,8 @@ ___
 s)
 
 
-#### Attribution: Some content on this page adapted from:
-
+#### Attribution
+* Some content on this page adapted from:
 * *Text Analysis: What Every Digital Humanist Should Know* created by [Nathan Kelber](http://nkelber.com) for [JSTOR Labs](https://labs.jstor.org/) under [Creative Commons CC BY License.](https://creativecommons.org/licenses/by/4.0/) For notebooks from Text Analysis Pedagogy Institute, see [the TAPI site](https://nkelber.github.io/tapi2021/book/intro.html).  
  * [Research Data Oxford](https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/) and used under a [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/).
 * [BOSTON COLLEGE LIBRARIES:Text & Data Mining](https://libguides.bc.edu/textdatamining/overview) and used under a [Creative Commons Attribution 4.0 International License.](https://creativecommons.org/licenses/by/4.0/).
