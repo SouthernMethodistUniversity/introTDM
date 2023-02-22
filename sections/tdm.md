@@ -368,6 +368,8 @@ ___
 ___
 ## Network Analysis
 * How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”
+* in the image below, The circles (nodes) in the graph represent individual newspapers or magazines, while the lines between them (edges) represent shared texts.
+
 ![Network visualisation](../sections/images/viraltexts.jpg)
 - Image source: [Network of Shared Reprints Among Newspapers & Magazines, 1836-1860](http://networks.viraltexts.org/1836to1860-simple/)
 
