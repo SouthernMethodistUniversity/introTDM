@@ -7,6 +7,7 @@
 # What is Data ?
 * We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
     * "What are the differences between data, a dataset, and a database?
+![data defintion](../sections/images/datadef.jpg)    
         * *Data* are observations or measurements (unprocessed or processed) represented as text, numbers, or multimedia.
         * A *dataset* is a **structured** collection of data generally associated with a unique body of work.
         * A *database* is an **organized collection of data stored as multiple datasets.** Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. - [Definition via USGS](https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.) 
@@ -276,13 +277,15 @@ This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on
 * If you search for digital humanities in [Google image search](https://www.google.com/search?q=digital+humanities&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmhrrwjeL0AhWvkIkEHfAbCfoQ_AUoA3oECAEQBQ), the most common result is a [word cloud](https://docs.constellate.org/key-terms/#tag-cloud). A word cloud visualizes the most frequent content words in a text or corpus. 
     * Before you can create a word cloud, however, you need to collect the word frequencies for all the words in your text. You may also need to use a [stop words list](https://docs.constellate.org/key-terms/#stop-words) to remove common [function words](https://docs.constellate.org/key-terms/#function-words) (grammatical word constructions like "the", "of", and "or").
 
-![word cloud](../sections/images/wc.png)Image source:[Voyant Cirrus image, Austen corpus](https://voyant-tools.org/?corpus=austen&view=Cirrus)  
+![word cloud](../sections/images/wc.png)
+- Image source:[Voyant Cirrus image, Austen corpus](https://voyant-tools.org/?corpus=austen&view=Cirrus)  
 ___
 
 ## Collocation
 * Examining where words occur close to one another. Example: “Where are women mentioned in relation to home ownership?”
 
-![Collocation](../sections/images/colo.png)Image source:[Voyant Collocation image, Austen corpus](https://voyant-tools.org/?corpus=austen)  
+![Collocation](../sections/images/colo.png)
+- Image source:[Voyant Collocation image, Austen corpus](https://voyant-tools.org/?corpus=austen)  
 
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
@@ -303,7 +306,8 @@ ___
 
 ## TF/IDF
 * Tf-IDF (term frequency–inverse document frequency) is intended to reflect how important a word is to a document in a collection or corpus. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
-![TF-IDF](../sections/images/tfidf.png)Image source:[Writing icon by kholis muasaroh from Noun Project (CCBY3.0)](https://thenounproject.com/icon/writing-5482033/)  
+![TF-IDF](../sections/images/tfidf.png)
+- Image source:[Writing icon by kholis muasaroh from Noun Project (CCBY3.0)](https://thenounproject.com/icon/writing-5482033/)  
 
 
 Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here.](https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html)
@@ -316,7 +320,8 @@ ___
 ___
 ## Topic Modeling
 * Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
-![Topic modeling simple](../sections/images/topicmodsimple.png)Image source: [Anna Ristilä from Wikimedia, Creative Commons Share Alike](https://fi.wikipedia.org/wiki/Tiedosto:Topic_modeling_oversimplified.png) 
+![Topic modeling simple](../sections/images/topicmodsimple.png)
+- Image source: [Anna Ristilä from Wikimedia, Creative Commons Share Alike](https://fi.wikipedia.org/wiki/Tiedosto:Topic_modeling_oversimplified.png) 
 
 * For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. * 
 Discovering the topics within a group of texts. Example: “What are the most frequent topics discussed in this newspaper?” 
@@ -355,14 +360,16 @@ ___
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
 * The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
 
-![Shakespeare concordance: all instances of "cousin"](../sections/images/concor.png)Image source: [Concordance of Shakespeare's complete works](https://www.opensourceshakespeare.org/concordance/o/?i=763860) 
+![Shakespeare concordance: all instances of "cousin"](../sections/images/concor.png)
+- Image source: [Concordance of Shakespeare's complete works](https://www.opensourceshakespeare.org/concordance/o/?i=763860) 
 <!-- <font color="red">Read more</font>
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
 * Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)-->
 ___
 ## Network Analysis
 * How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”
-![Network visualisation](../sections/images/viraltexts.png)Image source: [Network of Shared Reprints Among Newspapers & Magazines, 1836-1860](http://networks.viraltexts.org/1836to1860-simple/)
+![Network visualisation](../sections/images/viraltexts.jpg)
+- Image source: [Network of Shared Reprints Among Newspapers & Magazines, 1836-1860](http://networks.viraltexts.org/1836to1860-simple/)
 
 # 3. What emotions (or affects) are found within these texts?
 
@@ -370,7 +377,8 @@ ___
 Sentiment analysis, which uses computers to explore what emotions are present in the text. Does the author use positive or negative language? Example: “How do presidents describe gun control?”
 Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning), or both.
 
-![Network visualisation incorporating sentiment analysis](../sections/images/sa.png)Image source: [Siobhán Grayson, Wikimedia, CC-SA license. SA indicated by the colour scales according to how negative (red) to positive (blue) a response is](https://commons.wikimedia.org/wiki/File:Network_visualisation_incorporating_sentiment_analysis_of_the_subreddit_%27skeptic%27_from_Reddit.png) 
+![Network visualisation incorporating sentiment analysis](../sections/images/sa.png)
+- Image source: [Siobhán Grayson, Wikimedia, CC-SA license. SA indicated by the colour scales according to how negative (red) to positive (blue) a response is](https://commons.wikimedia.org/wiki/File:Network_visualisation_incorporating_sentiment_analysis_of_the_subreddit_%27skeptic%27_from_Reddit.png) 
 
 
 Read about:
@@ -381,7 +389,8 @@ Read about:
 ## Named Entity Recognition** (or NER)
 * Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.
 * You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
-![Named Entity Recognition](../sections/images/ne.png)Image source: [SpaCy Named Entity](https://spacy.io/usage/spacy-101#annotations-nerg) 
+![Named Entity Recognition](../sections/images/ne.png)
+- Image source: [SpaCy Named Entity](https://spacy.io/usage/spacy-101#annotations-nerg) 
 
 <font color="red">Read more</font>
 
@@ -406,7 +415,8 @@ Read about:
 ## *Machine Learning(ML)* 
 * Another key approach to text analysis is *Machine Learning (ML). ML is training computers to recognize patterns in text.
 * Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* 
-![ML](../sections/images/ml.png)Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
+![ML](../sections/images/ml.png)
+- Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
 
 * Here are some common, specific methods that are based on machine learning:  
     * Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach. 
@@ -417,7 +427,8 @@ Read about:
 ### Clustering
 * Clustering is unsupervised machine learning.  
 * Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
-![clustering](../sections/images/cluster.png)Image source: [CreightonMA, Wikimedia, CC Attribution Share alike](https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png)
+![clustering](../sections/images/cluster.png)
+- Image source: [CreightonMA, Wikimedia, CC Attribution Share alike](https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png)
 
 ### Classification
 * Classification is supervised machine learning
@@ -447,6 +458,7 @@ ___
 
 
 ![Actual Workflow](../sections/images/realwf.png)
+
 
 ## Read more 
 * [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities) 
