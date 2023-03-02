@@ -38,28 +38,29 @@ There are many ways to represent data, just as there are many sources of data. F
 
 # What is TDM?
 "The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts." 
-    * [What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
+   * [What Is Text Mining? by Marti Hearst.](https://people.ischool.berkeley.edu/~hearst/text-mining.html) 
+
 * Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail. 
     * [IBM Cloud Computing Education Definition of TDM](https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c) 
 
  
 ### TDM projects 
 For a TDM project you need to complete the following steps:
-* Identify a research question or topic of interest.
-* Data gathering or Data Search
+* *Identify a research question or topic of interest.*
+* *Data gathering or Data Search*
     * Search for and identify a data set that is available for use and relevant to your research interests. 
     * For an introductory project, we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.
-* Data preparation
+* *Data preparation*
     * The text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”. 
     * The text is broken into smaller pieces and abstracted (reduced) into things that a computer can process.
-* Text analysis           
-* *Counting* is often what happens next.
+* *Text analysis*           
+* **Counting** is often what happens next.
     * Some of the things that are often counted include words, phrases, and parts of speech (POS). 
     * The number of these counts can be used to identify characteristics of texts. 
 * Then, researchers can apply computational statistics to the counts of textual features, and develop hypotheses based on these counts.
     - Do you have a specific question you are trying to answer or are you doing an exploratory project? 
      - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
-* Visualization
+* *Visualization*
     * How will you [communicate your findings?](https://uta.pressbooks.pub/datanotebook/chapter/2-6-tell/)        
 * [What are the stages in text analysis?-AWS](https://aws.amazon.com/what-is/text-analysis/)
 
@@ -167,18 +168,18 @@ Depending on the the type of data, the collecting agency or you field their migh
 * Your discipline may have a OA repository, such as [arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 
-* **Highly recommended practice**
+### **Highly recommended practice**
 * Read the Data and methodology sections of research and/or data journalism articles! When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies. 
 * When reading these articles, pay particular attentions to the literature review, and to the *data and methodology sections.* 
 * Where did these researchers find their data set they are using? 
 * If they created it, did they make it accessible in a repository on a website, or a Github repository?
 
-Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
+* Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
 
 
 # Preparing Data (Cleaning and Transforming)
 * After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed to as pre-processing the data). Preparing data can take a lot of time and effort.
-* Cleaning text data can involve…
+* *Cleaning text data can involve…*
 - Removing Duplicates
 - Correcting Errors
 - Removing Outliers
@@ -238,7 +239,7 @@ There are guidelines to the processing of data, sometimes referred to as **Tidy 
 ![Grouping text](../sections/images/groupingtext.png)
 * An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
 
-Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
+Both chunking and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln's speeches to all of George Washington's speeched. They could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
 
 ## Tokenization
 ![Tokenization](../sections/images/token.png)
@@ -258,12 +259,12 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 
 * You can use text analysis to answer a wide variety of questions. 
 
-* Here are a few that are common:
-1. What are these texts about?
-2. How are these texts connected?
-3. What emotions (or affects) are found within these texts?
-4. What names are used in these texts?
-5. Which of these texts are most similar?
+* *Here are a few that are common:*
+1. **What are these texts about?**
+2. **How are these texts connected?**
+3. **What emotions (or affects) are found within these texts?**
+4. **What names are used in these texts?**
+5. **Which of these texts are most similar?**
 
 # 1. What are these texts about?
 * When it comes to a large body of texts, scholars tend to be most curious about the text's contents. What are the words, topics, concepts, and significant terms in these documents? There are a number of methods often used which vary in complexity and difficulty.
@@ -286,7 +287,7 @@ ___
 
 ![Collocation](../sections/images/colo.png)
 - Image source:[Voyant Collocation image, Austen corpus](https://voyant-tools.org/?corpus=austen)  
-
+___
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
@@ -335,7 +336,7 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 
 ![Topic modeling](../sections/images/topicmodel.png)
 
-## bags of words
+## Bag of words
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
 
@@ -352,7 +353,7 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 
 <font color="red">Read more</font>
 Keli Du's [A Survey on LDA Topic Modeling in Digital Humanities](https://www.researchgate.net/profile/Keli-Du/publication/349279379_A_Survey_On_LDA_Topic_Modeling_In_Digital_Humanities/links/6027a55ea6fdcc37a8222850/A-Survey-On-LDA-Topic-Modeling-In-Digital-Humanities.pdf)
-
+___
 
 # 2. How are these texts connected?
 ___
@@ -386,8 +387,9 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 Read about:
 * [using sentiment analysis on SEC Filings](https://medium.com/@oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed)
 * [using sentiment analysis on WHEN WOMEN MAKE HEADLINES](https://pudding.cool/2022/02/women-in-headlines/)
-
+___
 # 4. What names are used in these texts?
+___
 ## Named Entity Recognition** (or NER)
 * Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.
 * You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
@@ -399,9 +401,9 @@ Read about:
 * Miguel Won, Patricia Murrieta-Flores, and Bruno Martins [Ensemble Named Entity Recognition (NER): Evaluating NER Tools in the Identification of Place Names in Historical Corpora](https://www.frontiersin.org/articles/10.3389/fdigh.2018.00002/full) (2018)
 * Read about about how hyphenated names are hard to study [here](https://pudding.cool/2019/05/hyphens/) 
 
-
+___
 # 5. Which of these texts are most similar?
-
+___
 ## Stylometrics and Authorship Attribution
 * Stylometrics uses computers to speculate who wrote the text based on language style. You could use it to find the author of an anonymous document. 
     * Example: “Who wrote The Federalist Papers?”
@@ -412,7 +414,7 @@ Read about:
 * Ros Barber [Big data or not enough? Zeta test reliability and the attribution of Henry VI](https://academic.oup.com/dsh/article-abstract/36/3/542/5918973?redirectedFrom=fulltext)
 
 
---
+___
 
 ## *Machine Learning(ML)* 
 * Another key approach to text analysis is *Machine Learning (ML). ML is training computers to recognize patterns in text.
@@ -425,13 +427,13 @@ Read about:
     * Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to. 
 * One key approach in ML for TDM is *Natural Language Processing (NLP)*, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method. 
 * Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.
-
+___
 ### Clustering
 * Clustering is unsupervised machine learning.  
 * Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
 ![clustering](../sections/images/cluster.png)
 - Image source: [CreightonMA, Wikimedia, CC Attribution Share alike](https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png)
-
+___
 ### Classification
 * Classification is supervised machine learning
 * Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
@@ -460,7 +462,7 @@ ___
 
 
 ![Actual Workflow](../sections/images/realwf.png)
-
+___
 
 ## Read more 
 * [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities) 
@@ -477,9 +479,7 @@ ___
 * [Terminology](https://southernmethodistuniversity.github.io/introTDM/sections/terms.html)
 * [Keywords in Digital Pedagogy in the Humanities: Text analysis](https://digitalpedagogy.mla.hcommons.org/keywords/text-analysis/)
 * When getting started with computational methods, looking up terms [(such as Text Mining)](https://en.wikipedia.org/wiki/Text_mining) on Wikipedia is helpful.  
-s)
-
-
+___
 #### Attribution
 * Some content on this page adapted from:
 * *Text Analysis: What Every Digital Humanist Should Know* created by [Nathan Kelber](http://nkelber.com) for [JSTOR Labs](https://labs.jstor.org/) under [Creative Commons CC BY License.](https://creativecommons.org/licenses/by/4.0/) For notebooks from Text Analysis Pedagogy Institute, see [the TAPI site](https://nkelber.github.io/tapi2021/book/intro.html).  

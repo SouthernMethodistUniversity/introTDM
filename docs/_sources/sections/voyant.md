@@ -12,19 +12,19 @@ There are four main ways of creating and using a corpus in Voyant ("corpus" is a
 - type or paste text into the main text box (this creates a corpus with one document)
 - type or paste one or more URLs into the main text box (one URL per line)
 - click the "Upload" button under the text box to use files from your computer
-- [Project Gutenberg](https://www.gutenberg.org/)
+- You can download texts from [Project Gutenberg](https://www.gutenberg.org/). The file formats that Voyant supports are: plain text, HTML and XML.
 
 ## Step 2: [Explore a Corpus](https://voyant-tools.org/docs/#!/guide/tutorial-section-explore-a-corpus)
 - Once you create a corpus you will arrive at the default "skin" or arrangement of [tools.](https://voyant-tools.org/docs/#!/guide/tools)
 
 ## [Voyant Examples](https://voyant-tools.org/docs/#!/guide/gallery)
 
-## [Recording on Voyant workshop for UCSC library](https://guides.library.ucsc.edu/DS/Events/Voyant)
-* [What is Voyant Tools? Ch. 4.4 in *The Data Notebook*](https://uta.pressbooks.pub/datanotebook/chapter/4-4-voyant/)
 
-## Read More: Use of Voyant in classroom setting
+## Read More
+* [Recording on Voyant workshop for UCSC library](https://guides.library.ucsc.edu/DS/Events/Voyant)
+* [What is Voyant Tools? Ch. 4.4 in *The Data Notebook*](https://uta.pressbooks.pub/datanotebook/chapter/4-4-voyant/)
 * [A workshop on the text analysis tool Voyant, designed for instructors considering using the tool in the classroom.-M Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md)
 * [Using Voyant-Tools to Formulate Research Questions for Textual Data](https://digitalfellows.commons.gc.cuny.edu/2018/11/01/using-voyant-tools-to-formulate-research-questions-for-textual-data/)
 
 
-### [Constellate Text analysis glossary](https://constellate.org/docs/key-terms)
+### [Constellate Text Analysis glossary](https://constellate.org/docs/key-terms)

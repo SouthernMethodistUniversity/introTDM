@@ -1,6 +1,6 @@
 # TDM tools 
 * For performing text analysis, there are both pre-built tools and do-it-yourself tools that you can choose from. 
-[![stairs](../sections/images/tool.png)]
+![stairs](../sections/images/tool.png)
 ## Pre-built
 * The benefits of pre-built tools are they are usually easy to use, they don’t require too much technical knowledge, and they can be very useful in teaching.
 

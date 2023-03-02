@@ -14,7 +14,7 @@
 ##  Algorithms
 * [HTRC Algorithms](https://analytics.hathitrust.org/statisticalalgorithms) are web-based, click-and-run tools to perform computational text analysis on volumes in the HathiTrust Digital Library. 
 
-[![HTRC for text analysis](..sections/images/htrcta.png)
+![HTRC for text analysis](..sections/images/htrcta.png)
 
 * In a basic text analysis workflow, a researcher:
     * Gathers digitized text (text that has been scanned and OCR-ed) Note: OCR (Optical character recognition) refers to the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text. 
@@ -36,7 +36,7 @@
 * Try to gain some basic understanding of your tool. **Reading some relevant documentation is especially important when the tool is within a “black box”.** Speaking of understanding your tools, it’s important to note that the HTRC algorithm only has two parameters you can set right now, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, the HTRC topic modeling algorithm can be a good place to start.
 
 # Login to HTDL & HTRC 
-## First, let’s go to the HathiTrust Digital Library (HTDL) interface. 
+## First, go to the HathiTrust Digital Library (HTDL) interface. 
 * [Go to HTDL site](https://www.hathitrust.org/)
 * Click on the “LOG IN” button on the right to sign in.
 * If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in.
@@ -60,7 +60,7 @@
             * You will not be able to upload the JSON metadata of your collection to HTRC Analytics, so make sure to select the TSV option.
 
 
-## Second, let’s go to the HathiTrust Research Center (HTRC) Analytics interface. 
+## Second, go to the HathiTrust Research Center (HTRC) Analytics interface. 
 * Go to [HTRC Analytics](https://analytics.hathitrust.org/)
 * Look for the sign in/ sign up section on the top right part of the page.
     * If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in.[FAQ page for sign in](https://wiki.htrc.illinois.edu/display/COM/Troubleshooting+and+FAQs#TroubleshootingandFAQs-UserAccountsandSign-in)

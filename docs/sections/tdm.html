@@ -413,6 +413,15 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#searching-for-text-data">
    Searching for Text Data
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#highly-recommended-practice">
+     <strong>
+      Highly recommended practice
+     </strong>
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preparing-data-cleaning-and-transforming">
@@ -489,8 +498,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bags-of-words">
-     bags of words
+    <a class="reference internal nav-link" href="#bag-of-words">
+     Bag of words
     </a>
    </li>
   </ul>
@@ -673,6 +682,15 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#searching-for-text-data">
    Searching for Text Data
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#highly-recommended-practice">
+     <strong>
+      Highly recommended practice
+     </strong>
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preparing-data-cleaning-and-transforming">
@@ -749,8 +767,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bags-of-words">
-     bags of words
+    <a class="reference internal nav-link" href="#bag-of-words">
+     Bag of words
     </a>
    </li>
   </ul>
@@ -923,9 +941,9 @@ title="Print to PDF"
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="what-is-tdm">
 <h1>What is TDM?<a class="headerlink" href="#what-is-tdm" title="Permalink to this headline">#</a></h1>
-<p>“The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts.”
-* <a class="reference external" href="https://people.ischool.berkeley.edu/~hearst/text-mining.html">What Is Text Mining? by Marti Hearst.</a></p>
+<p>“The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts.”</p>
 <ul class="simple">
+<li><p><a class="reference external" href="https://people.ischool.berkeley.edu/~hearst/text-mining.html">What Is Text Mining? by Marti Hearst.</a></p></li>
 <li><p>Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail.</p>
 <ul>
 <li><p><a class="reference external" href="https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c">IBM Cloud Computing Education Definition of TDM</a></p></li>
@@ -936,21 +954,21 @@ title="Print to PDF"
 <h2>TDM projects<a class="headerlink" href="#tdm-projects" title="Permalink to this headline">#</a></h2>
 <p>For a TDM project you need to complete the following steps:</p>
 <ul class="simple">
-<li><p>Identify a research question or topic of interest.</p></li>
-<li><p>Data gathering or Data Search</p>
+<li><p><em>Identify a research question or topic of interest.</em></p></li>
+<li><p><em>Data gathering or Data Search</em></p>
 <ul>
 <li><p>Search for and identify a data set that is available for use and relevant to your research interests.</p></li>
 <li><p>For an introductory project, we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.</p></li>
 </ul>
 </li>
-<li><p>Data preparation</p>
+<li><p><em>Data preparation</em></p>
 <ul>
 <li><p>The text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”.</p></li>
 <li><p>The text is broken into smaller pieces and abstracted (reduced) into things that a computer can process.</p></li>
 </ul>
 </li>
-<li><p>Text analysis</p></li>
-<li><p><em>Counting</em> is often what happens next.</p>
+<li><p><em>Text analysis</em></p></li>
+<li><p><strong>Counting</strong> is often what happens next.</p>
 <ul>
 <li><p>Some of the things that are often counted include words, phrases, and parts of speech (POS).</p></li>
 <li><p>The number of these counts can be used to identify characteristics of texts.</p></li>
@@ -962,7 +980,7 @@ title="Print to PDF"
 <li><p>What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. <strong>The data and methodology sections are always useful to read</strong> to see where people are finding data and how they are analyzing it.</p></li>
 </ul>
 </li>
-<li><p>Visualization</p>
+<li><p><em>Visualization</em></p>
 <ul>
 <li><p>How will you <a class="reference external" href="https://uta.pressbooks.pub/datanotebook/chapter/2-6-tell/">communicate your findings?</a></p></li>
 </ul>
@@ -1104,19 +1122,23 @@ Try searching:</p>
 <ul class="simple">
 <li><p>Data collected by the <a class="reference external" href="https://usafacts.org/data/">U.S. government may be publicly available.</a></p></li>
 <li><p>Your discipline may have a OA repository, such as <a class="reference external" href="https://arxiv.org/">arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.</a></p></li>
-<li><p><strong>Highly recommended practice</strong></p></li>
+</ul>
+<section id="highly-recommended-practice">
+<h2><strong>Highly recommended practice</strong><a class="headerlink" href="#highly-recommended-practice" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
 <li><p>Read the Data and methodology sections of research and/or data journalism articles! When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies.</p></li>
 <li><p>When reading these articles, pay particular attentions to the literature review, and to the <em>data and methodology sections.</em></p></li>
 <li><p>Where did these researchers find their data set they are using?</p></li>
 <li><p>If they created it, did they make it accessible in a repository on a website, or a Github repository?</p></li>
+<li><p>Read some data journalism articles on <a class="reference external" href="https://pudding.cool/">The Pudding</a>, <a class="reference external" href="https://www.propublica.org/datastore">ProPublica</a> or this <a class="reference external" href="https://datajournalism.com/read/blog/best-data-journalism-projects-2021">roundup of data journalism projects from 2021</a></p></li>
 </ul>
-<p>Read some data journalism articles on <a class="reference external" href="https://pudding.cool/">The Pudding</a>, <a class="reference external" href="https://www.propublica.org/datastore">ProPublica</a> or this <a class="reference external" href="https://datajournalism.com/read/blog/best-data-journalism-projects-2021">roundup of data journalism projects from 2021</a></p>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="preparing-data-cleaning-and-transforming">
 <h1>Preparing Data (Cleaning and Transforming)<a class="headerlink" href="#preparing-data-cleaning-and-transforming" title="Permalink to this headline">#</a></h1>
 <ul class="simple">
 <li><p>After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed to as pre-processing the data). Preparing data can take a lot of time and effort.</p></li>
-<li><p>Cleaning text data can involve…</p></li>
+<li><p><em>Cleaning text data can involve…</em></p></li>
 </ul>
 <ul class="simple">
 <li><p>Removing Duplicates</p></li>
@@ -1184,7 +1206,7 @@ Try searching:</p>
 <ul class="simple">
 <li><p>An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group.</p></li>
 </ul>
-<p>Both chunking (from the previous image) and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln to all of George Washington, then they could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen.</p>
+<p>Both chunking and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln’s speeches to all of George Washington’s speeched. They could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen.</p>
 </section>
 <section id="tokenization">
 <h2>Tokenization<a class="headerlink" href="#tokenization" title="Permalink to this headline">#</a></h2>
@@ -1206,14 +1228,14 @@ While the tokens can still be parsed by a human, it isn’t in a form we regular
 <h2>What disciplinary questions can text analysis answer?<a class="headerlink" href="#what-disciplinary-questions-can-text-analysis-answer" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>You can use text analysis to answer a wide variety of questions.</p></li>
-<li><p>Here are a few that are common:</p></li>
+<li><p><em>Here are a few that are common:</em></p></li>
 </ul>
 <ol class="simple">
-<li><p>What are these texts about?</p></li>
-<li><p>How are these texts connected?</p></li>
-<li><p>What emotions (or affects) are found within these texts?</p></li>
-<li><p>What names are used in these texts?</p></li>
-<li><p>Which of these texts are most similar?</p></li>
+<li><p><strong>What are these texts about?</strong></p></li>
+<li><p><strong>How are these texts connected?</strong></p></li>
+<li><p><strong>What emotions (or affects) are found within these texts?</strong></p></li>
+<li><p><strong>What names are used in these texts?</strong></p></li>
+<li><p><strong>Which of these texts are most similar?</strong></p></li>
 </ol>
 </section>
 </section>
@@ -1251,6 +1273,7 @@ This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on
 <ul class="simple">
 <li><p>Image source:<a class="reference external" href="https://voyant-tools.org/?corpus=austen">Voyant Collocation image, Austen corpus</a></p></li>
 </ul>
+<hr class="docutils" />
 <ul class="simple">
 <li><p>A type of collocation is <a class="reference external" href="https://docs.constellate.org/key-terms/#n-gram">n-gram</a> counts.</p></li>
 <li><p>N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain.</p></li>
@@ -1309,8 +1332,8 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 </ul>
 <p><img alt="Topic modeling" src="../_images/topicmodel.png" /></p>
 </section>
-<section id="bags-of-words">
-<h2>bags of words<a class="headerlink" href="#bags-of-words" title="Permalink to this headline">#</a></h2>
+<section id="bag-of-words">
+<h2>Bag of words<a class="headerlink" href="#bag-of-words" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>The computer treats the textual documents as <strong>bags of words</strong>, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.</p>
 <ul>
@@ -1335,6 +1358,7 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 Keli Du’s <a class="reference external" href="https://www.researchgate.net/profile/Keli-Du/publication/349279379_A_Survey_On_LDA_Topic_Modeling_In_Digital_Humanities/links/6027a55ea6fdcc37a8222850/A-Survey-On-LDA-Topic-Modeling-In-Digital-Humanities.pdf">A Survey on LDA Topic Modeling in Digital Humanities</a></p>
 </section>
 </section>
+<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="how-are-these-texts-connected">
 <h1>2. How are these texts connected?<a class="headerlink" href="#how-are-these-texts-connected" title="Permalink to this headline">#</a></h1>
 <hr class="docutils" />
@@ -1382,8 +1406,10 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 </ul>
 </section>
 </section>
+<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="what-names-are-used-in-these-texts">
 <h1>4. What names are used in these texts?<a class="headerlink" href="#what-names-are-used-in-these-texts" title="Permalink to this headline">#</a></h1>
+<hr class="docutils" />
 <section id="named-entity-recognition-or-ner">
 <h2>Named Entity Recognition** (or NER)<a class="headerlink" href="#named-entity-recognition-or-ner" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -1401,8 +1427,10 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 </ul>
 </section>
 </section>
+<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="which-of-these-texts-are-most-similar">
 <h1>5. Which of these texts are most similar?<a class="headerlink" href="#which-of-these-texts-are-most-similar" title="Permalink to this headline">#</a></h1>
+<hr class="docutils" />
 <section id="stylometrics-and-authorship-attribution">
 <h2>Stylometrics and Authorship Attribution<a class="headerlink" href="#stylometrics-and-authorship-attribution" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -1418,8 +1446,8 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 <li><p>Patrick Juola <a class="reference external" href="https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoos-calling/">How a Computer Program Helped Show J.K. Rowling Wrote A Cuckoo’s Calling</a> (2013)</p></li>
 <li><p>Ros Barber <a class="reference external" href="https://academic.oup.com/dsh/article-abstract/36/3/542/5918973?redirectedFrom=fulltext">Big data or not enough? Zeta test reliability and the attribution of Henry VI</a></p></li>
 </ul>
-<p>–</p>
 </section>
+<hr class="docutils" />
 <section id="machine-learning-ml">
 <h2><em>Machine Learning(ML)</em><a class="headerlink" href="#machine-learning-ml" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -1440,6 +1468,7 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 <li><p>One key approach in ML for TDM is <em>Natural Language Processing (NLP)</em>, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method.</p></li>
 <li><p>Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.</p></li>
 </ul>
+<hr class="docutils" />
 <section id="clustering">
 <h3>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
@@ -1451,6 +1480,7 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 <li><p>Image source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png">CreightonMA, Wikimedia, CC Attribution Share alike</a></p></li>
 </ul>
 </section>
+<hr class="docutils" />
 <section id="classification">
 <h3>Classification<a class="headerlink" href="#classification" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
@@ -1481,6 +1511,7 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 <p><img alt="theoretical Workflow" src="../_images/idealwf.png" /></p>
 <p><img alt="Actual Workflow" src="../_images/realwf.png" /></p>
 </section>
+<hr class="docutils" />
 <section id="read-more">
 <h2>Read more<a class="headerlink" href="#read-more" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -1506,9 +1537,9 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 </li>
 <li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/introTDM/sections/terms.html">Terminology</a></p></li>
 <li><p><a class="reference external" href="https://digitalpedagogy.mla.hcommons.org/keywords/text-analysis/">Keywords in Digital Pedagogy in the Humanities: Text analysis</a></p></li>
-<li><p>When getting started with computational methods, looking up terms <a class="reference external" href="https://en.wikipedia.org/wiki/Text_mining">(such as Text Mining)</a> on Wikipedia is helpful.<br />
-s)</p></li>
+<li><p>When getting started with computational methods, looking up terms <a class="reference external" href="https://en.wikipedia.org/wiki/Text_mining">(such as Text Mining)</a> on Wikipedia is helpful.</p></li>
 </ul>
+<hr class="docutils" />
 <section id="attribution">
 <h3>Attribution<a class="headerlink" href="#attribution" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
