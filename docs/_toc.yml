@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+  - file: tdm
+  - file: tools
+  - file: voyant
+  - file: htrc
+  - file: constellate
+  - file: python
+  - file: terms
+  - file: continue
+
+    
+
+
