@@ -1,0 +1,738 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>HathiTrust Research Center &#8212; Introduction to TDM (Text Data Mining)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'htrc';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="JSTOR Constellate" href="constellate.html" />
+    <link rel="prev" title="Voyant" href="voyant.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to TDM (Text Data Mining) - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to TDM (Text Data Mining) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Workshop objectives
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tdm.html">Text data mining (TDM)</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tools.html">TDM tools</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="voyant.html">Voyant</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">HathiTrust Research Center</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="constellate.html">JSTOR Constellate</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python for Text Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terms.html">Terminology used in sessions</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="continue.html">Looking for more learning materials?</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/introTDM" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/introTDM/issues/new?title=Issue%20on%20page%20%2Fhtrc.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/htrc.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>HathiTrust Research Center</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">HathiTrust Research Center</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#worksets">Worksets</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithms">Algorithms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#htrc-tools">HTRC tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#login-to-htdl-htrc">Login to HTDL &amp; HTRC</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-go-to-the-hathitrust-digital-library-htdl-interface">First, go to the HathiTrust Digital Library (HTDL) interface.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#second-go-to-the-hathitrust-research-center-htrc-analytics-interface">Second, go to the HathiTrust Research Center (HTRC) Analytics interface.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#all-htrc-tutorials">All HTRC Tutorials</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="hathitrust-research-center">
+<h1>HathiTrust Research Center<a class="headerlink" href="#hathitrust-research-center" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.hathitrust.org/digital_library">HathiTrust Digital Library</a></p></li>
+<li><p><a class="reference external" href="https://analytics.hathitrust.org/">HathiTrust Research Center</a></p>
+<ul>
+<li><p>The HathiTrust Research Center (HTRC) enables computational analysis of the HathiTrust corpus.</p></li>
+<li><p>Log in with your partner institution (SMU) account to access the largest number of volumes and features.</p></li>
+<li><p><a class="reference external" href="https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials">Click here for a list of HTRC tutorials to walk you through the steps for using HTRC tools and data.</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="worksets">
+<h1>Worksets<a class="headerlink" href="#worksets" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://analytics.hathitrust.org/staticrecommendedworksets">Recommended Worksets</a> are curated worksets created by real researchers of projects that utilize resources from the HathiTrust Digital Library and can be analyzed with tools built by the HTRC.</p></li>
+<li><p><a class="reference external" href="https://analytics.hathitrust.org/staticworksets#top">Creating datasets/worksets</a></p></li>
+</ul>
+<section id="algorithms">
+<h2>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://analytics.hathitrust.org/statisticalalgorithms">HTRC Algorithms</a> are web-based, click-and-run tools to perform computational text analysis on volumes in the HathiTrust Digital Library.</p></li>
+</ul>
+<p><img alt="HTRC for text analysis" src="..sections/images/htrcta.png" /></p>
+<ul class="simple">
+<li><p>In a basic text analysis workflow, a researcher:</p>
+<ul>
+<li><p>Gathers digitized text (text that has been scanned and OCR-ed) Note: OCR (Optical character recognition) refers to the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text.</p></li>
+<li><p>Applies computational methods to that text, such as word counts, classification techniques, and topic modeling</p></li>
+<li><p>And then analyzes the results generated by the algorithm or technique</p></li>
+</ul>
+</li>
+<li><p>HathiTrust Research Center (HTRC) enters the workflow <em>at the points of providing digitized text at scale</em> from HathiTrust Digital Library (HTDL) and providing tools and services that enable computational research.</p></li>
+<li><p>The researcher, of course, still brings her own analysis to bear on the results.</p></li>
+</ul>
+<section id="htrc-tools">
+<h3>HTRC tools<a class="headerlink" href="#htrc-tools" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Use the HTRC algorithms as an example of how to use a pre-built tool for text analysis. The HTRC provides some algorithms through HTRC Analytics, and they can be used to analyze HTRC worksets.</p></li>
+<li><p>An algorithm is just a way of saying a computer function - text goes in, process happens, and results come out.</p></li>
+<li><p>HTRC algorithms can extract, refine, analyze, and visualize worksets. They can basically perform “plug-and-play” text analysis.</p></li>
+<li><p>Because they are built into HTRC Analytics, they are mostly limited in how much they can be tweaked or customized. The algorithms are primarily for users who don’t know how or don’t want to work with custom code. It can be a good tool for learning and just trying things out.</p></li>
+<li><p>How do you choose which HTRC algorithm to use? Naturally, it depends on what you want to do.</p></li>
+<li><p>Some of the algorithms are task oriented. For example, there are ones for running spellcheck reports, for creating word counts, for visualizing more frequently used words, and for generating a list of named entities.</p></li>
+<li><p>Others algorithms are more analytic, like one that generates topic models, and another that compares salient words in two worksets.</p></li>
+<li><p>Try to gain some basic understanding of your tool. <strong>Reading some relevant documentation is especially important when the tool is within a “black box”.</strong> Speaking of understanding your tools, it’s important to note that the HTRC algorithm only has two parameters you can set right now, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, the HTRC topic modeling algorithm can be a good place to start.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="login-to-htdl-htrc">
+<h1>Login to HTDL &amp; HTRC<a class="headerlink" href="#login-to-htdl-htrc" title="Permalink to this heading">#</a></h1>
+<section id="first-go-to-the-hathitrust-digital-library-htdl-interface">
+<h2>First, go to the HathiTrust Digital Library (HTDL) interface.<a class="headerlink" href="#first-go-to-the-hathitrust-digital-library-htdl-interface" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.hathitrust.org/">Go to HTDL site</a></p></li>
+<li><p>Click on the “LOG IN” button on the right to sign in.</p></li>
+<li><p>If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in.</p></li>
+<li><p>Once you are logged in, click on the “FULL-TEXT” tab to search in full text. Now you can start thinking about a search query to find volumes for your collection. Try building your own collection.</p></li>
+<li><p>View search results. You can facet in the sidebar, then select volumes.</p></li>
+<li><p>When you’re satisfied with your selection, click on the “Select Collection” bar and choose “[CREATE NEW COLLECTION]” from the drop-down menu. Then hit the “Add Selected” button on the right.</p></li>
+<li><p>A pop-up window will appear that prompts you to add some metadata to your collection before the system creates it for you.</p>
+<ul>
+<li><p>Fill in the name and description of your new collection.</p></li>
+<li><p>You can choose to make the collection public or private, and we recommend writing a short description whenever you make collections public.</p></li>
+<li><p>When done, click on “Save Changes” to create your collection.</p></li>
+</ul>
+</li>
+<li><p>After the collection is successfully created, you should see a a confirmation message above the search results.</p>
+<ul>
+<li><p>To view your collection, click on “My Collections” near the top right of the page.</p></li>
+</ul>
+</li>
+<li><p>This will bring you to all your collections.
+*You can manage your collections here by viewing collections, changing the public or private status of a collection, and deleting collections you don’t need.</p>
+<ul>
+<li><p>Click on the title of the collection you just created to view it.</p></li>
+<li><p>While viewing a collection, you will see <em>Collection Tools</em></p>
+<ul>
+<li><p>There will be an option for a sharable link to this collection (only sharable and usable in HTRC if you choose to make your collections public)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>You will be able to see the title and description of your collection, as well as all the items in it.</p>
+<ul>
+<li><p>In order to import your newly created collection into HTRC Analytics for analysis, we need to download the metadata of the collection first.</p>
+<ul>
+<li><p>Click on the “Download Metadata” button on the left sidebar and select the “Download Item Metadata: Tab-Delimited Text (TSV)” option.</p>
+<ul>
+<li><p>You will not be able to upload the JSON metadata of your collection to HTRC Analytics, so make sure to select the TSV option.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="second-go-to-the-hathitrust-research-center-htrc-analytics-interface">
+<h2>Second, go to the HathiTrust Research Center (HTRC) Analytics interface.<a class="headerlink" href="#second-go-to-the-hathitrust-research-center-htrc-analytics-interface" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Go to <a class="reference external" href="https://analytics.hathitrust.org/">HTRC Analytics</a></p></li>
+<li><p>Look for the sign in/ sign up section on the top right part of the page.</p>
+<ul>
+<li><p>If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in.<a class="reference external" href="https://wiki.htrc.illinois.edu/display/COM/Troubleshooting+and+FAQs#TroubleshootingandFAQs-UserAccountsandSign-in">FAQ page for sign in</a></p></li>
+</ul>
+</li>
+<li><p><strong>Workset</strong>: Now, we are ready to import our HT Collection into HTRC Analytics as a workset.</p>
+<ul>
+<li><p>Click on the <a class="reference external" href="https://analytics.hathitrust.org/worksets">“Worksets” option on the header menu.</a></p>
+<ul>
+<li><p>Click on <em>Create A Workset.</em></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Import from file:</p>
+<ul>
+<li><p>To create a workset from a file of HathiTrust volume IDs ( in the TSV file you created in step 1) click on <em>upload file.</em></p></li>
+</ul>
+</li>
+<li><p>Name your workset and write a description if you like.</p>
+<ul>
+<li><p>When naming, please note that only characters A-Z, 0-9, (), -, or _  are allowed, so do not use spaces or other special characters.</p></li>
+<li><p>Click on “Choose file” to upload the TSV file we just downloaded.</p></li>
+<li><p>Check the “Make private workset” box if you want to create a private workset.</p></li>
+<li><p>Finally, hit the “Create Workset” button.</p></li>
+</ul>
+</li>
+<li><p>If successful, you should be brought back to your worksets page, and the new workset that you just created should be listed.</p>
+<ul>
+<li><p>Click on the name of the workset to view it.</p></li>
+</ul>
+</li>
+<li><p>Import from Hathitrust:</p></li>
+<li><p>Create a workset from an existing, public HathiTrust collection</p></li>
+<li><p>You will need the URL for a public HathiTrust collection. Private collections cannot be imported by URL.</p>
+<ul>
+<li><p>After entering the URL, click on Fetch collection. after the collections is successfully fetched, you will see the text <em>Data retrieved from source</em></p></li>
+<li><p>Enter Name and Description, then click on Create Workset.</p></li>
+</ul>
+</li>
+<li><p><strong>Algorithms</strong>: Now, we are ready to apply HTRC Algorithms to our worksets.</p>
+<ul>
+<li><p>Click on the <a class="reference external" href="https://analytics.hathitrust.org/algorithms">“Algorithm” option on the header menu.</a></p>
+<ul>
+<li><p>Choose one of the Algorithms to Execute.</p>
+<ul>
+<li><p>If you have questions about what preset choices the Algorithm is making, read the documentation.</p></li>
+</ul>
+</li>
+<li><p>Once you choose an Algorithm, click on execute.</p>
+<ul>
+<li><p>It will take you to page with a description and you will have to choose a Job Name, a workset for analysis, and any additional choices relevant to the algorithm you are choosing.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Once you make your choices, you will go to a page listing <a class="reference external" href="https://analytics.hathitrust.org/listjobs">current and past Jobs.</a></p>
+<ul>
+<li><p>Click on the Job name to see the output.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Workset review!</p>
+<ul>
+<li><p>How did it go?</p></li>
+<li><p>What kind of search criteria did you use?</p></li>
+<li><p>Did you find any challenges?</p></li>
+<li><p>Remember you can always click on Read Documentation or Learn More to find additional contextual information.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="all-htrc-tutorials">
+<h2>All HTRC Tutorials<a class="headerlink" href="#all-htrc-tutorials" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials">A comprehensive list of all HTRC tutorials to walk you through the steps for using HTRC tools and data.</a></p></li>
+</ul>
+<p>Some content in this session based on <a class="reference external" href="https://teach.htrc.illinois.edu/teaching-materials/">HTRC Digging Deeper, Reaching Further</a> used under a <a class="reference external" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License.</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="voyant.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Voyant</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="constellate.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">JSTOR Constellate</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">HathiTrust Research Center</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#worksets">Worksets</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithms">Algorithms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#htrc-tools">HTRC tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#login-to-htdl-htrc">Login to HTDL &amp; HTRC</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-go-to-the-hathitrust-digital-library-htdl-interface">First, go to the HathiTrust Digital Library (HTDL) interface.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#second-go-to-the-hathitrust-research-center-htrc-analytics-interface">Second, go to the HathiTrust Research Center (HTRC) Analytics interface.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#all-htrc-tutorials">All HTRC Tutorials</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Some rights reserved. Chapters are &#34;CC-BY-NC&#34; or &#34;CC-BY-SA&#34;.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

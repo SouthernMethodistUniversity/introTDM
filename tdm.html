@@ -1,0 +1,1347 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Text data mining (TDM) &#8212; Introduction to TDM (Text Data Mining)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tdm';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="TDM tools" href="tools.html" />
+    <link rel="prev" title="Workshop objectives" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to TDM (Text Data Mining) - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to TDM (Text Data Mining) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Workshop objectives
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Text data mining (TDM)</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tools.html">TDM tools</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="voyant.html">Voyant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="htrc.html">HathiTrust Research Center</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="constellate.html">JSTOR Constellate</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python for Text Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terms.html">Terminology used in sessions</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="continue.html">Looking for more learning materials?</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/introTDM" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/introTDM/issues/new?title=Issue%20on%20page%20%2Ftdm.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tdm.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Text data mining (TDM)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Text data mining (TDM)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-data">What is Data ?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forms-of-data">Forms of data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-data">Raw data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processed-transformed">Processed/transformed</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-mining">Data mining</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-tdm">What is TDM?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tdm-projects">TDM projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-does-it-impact-research">How does it impact research?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-kind-of-texts-do-i-need-for-text-analysis">What kind of texts do I need for text analysis?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-text-as-data">What is Text as Data ?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-have-my-own-data-what-will-it-take-to-get-it-ready">I have my own data. What will it take to get it ready?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#searching-for-text-data">Searching for Text Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#highly-recommended-practice"><strong>Highly recommended practice</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-data-cleaning-and-transforming">Preparing Data (Cleaning and Transforming)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-importance-of-using-open-data-formats">The importance of using open data formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidy-data">Tidy data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chunking-text">Chunking text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-text">Grouping text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">Tokenization</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-text-mining">Types of Text Mining</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-disciplinary-questions-can-text-analysis-answer">What disciplinary questions can text analysis answer?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-these-texts-about">1. What are these texts about?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#word-frequency">Word Frequency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collocation">Collocation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF/IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-terms">Significant Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-modeling">Topic Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bag-of-words">Bag of words</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-are-these-texts-connected">2. How are these texts connected?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concordance">Concordance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-analysis">Network Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-emotions-or-affects-are-found-within-these-texts">3. What emotions (or affects) are found within these texts?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis">Sentiment Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-names-are-used-in-these-texts">4. What names are used in these texts?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#named-entity-recognition-or-ner">Named Entity Recognition** (or NER)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#which-of-these-texts-are-most-similar">5. Which of these texts are most similar?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stylometrics-and-authorship-attribution">Stylometrics and Authorship Attribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-ml"><em>Machine Learning(ML)</em></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification">Classification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-visualization">Text Visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">Read more</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="text-data-mining-tdm">
+<h1>Text data mining (TDM)<a class="headerlink" href="#text-data-mining-tdm" title="Permalink to this heading">#</a></h1>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* What is Data?
+* What is Text data mining (TDM)?
+* What is Text as Data?
+* What are Types of Text Mining?
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-is-data">
+<h1>What is Data ?<a class="headerlink" href="#what-is-data" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>We begin without data. Then it is <em>observed</em>, or <em>made</em>, or <em>imagined</em>, or <em>generated.</em> After that, it goes through further transformations.</p>
+<ul>
+<li><p>“What are the differences between data, a dataset, and a database?
+<img alt="data defintion" src="../sections/images/datadef.jpg" /></p>
+<ul>
+<li><p><em>Data</em> are observations or measurements (unprocessed or processed) represented as text, numbers, or multimedia.</p></li>
+<li><p>A <em>dataset</em> is a <strong>structured</strong> collection of data generally associated with a unique body of work.</p></li>
+<li><p>A <em>database</em> is an <strong>organized collection of data stored as multiple datasets.</strong> Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. - <a class="reference external" href="https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.">Definition via USGS</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>For the purposes of this workshop, we recommend finding an already existing data set for your project, as creating, cleaning and/or structuring a new dataset is often time and labor intensive.</p>
+<ul>
+<li><p>Remember that just because data may be avaible digitally, it does <em>not</em> automatically exist as a dataset. You may have to do works manually (copying and pasting into a spreadsheet) or computationally (scarping the data) to create a dataset usable for computational analysis.</p></li>
+</ul>
+</li>
+<li><p>Read more about <a class="reference external" href="https://digitalhumanities.berkeley.edu/data-prep-and-cleaning">Data Prep and Cleaning</a> and <a class="reference external" href="https://medhieval.com/classes/hh2019/labs/cleaning-text-data/">Cleaning Text Data</a></p></li>
+</ul>
+<p><img alt="data life cycle" src="../sections/images/rdc.png" /></p>
+<section id="forms-of-data">
+<h2>Forms of data<a class="headerlink" href="#forms-of-data" title="Permalink to this heading">#</a></h2>
+<p>There are many ways to represent data, just as there are many sources of data. For the purposes of this series we are focusing on already digitized text.</p>
+</section>
+<section id="raw-data">
+<h2>Raw data<a class="headerlink" href="#raw-data" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Raw data is yet to be processed, meaning it has yet to be manipulated by a human or computer. Received or collected data could be in any number of formats, locations, etc.. It could be in any number of forms.</p></li>
+<li><p>But “raw data” is a relative term, inasmuch as when one person finishes processing data and presents it as a finished product, another person may take that product and work on it further, and for them that data is “raw data”.</p>
+<ul>
+<li><p>For example, is “big data” “raw data”? How do we understand data that we have “scraped”?</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="processed-transformed">
+<h2>Processed/transformed<a class="headerlink" href="#processed-transformed" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Processing data puts it into a state more readily available for analysis, and makes the data legible. For instance it could be rendered as <strong>structured data</strong>. This can also take many forms, e.g., a table. We will discuss what this means for text data (OCR, Tokenizing, etc.).</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-mining">
+<h1>Data mining<a class="headerlink" href="#data-mining" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Data mining is looking for patterns using computational methods, often across large data sets.</p></li>
+<li><p>Computer algorithms can discern patterns in bodies of (often unstructured) text.</p>
+<ul>
+<li><p><em>“Unstructured”</em> means that little is known about the semantic meaning of the text data and that it does not fit a defined data model or database.</p></li>
+<li><p>An <a class="reference external" href="https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/"><em>algorithm</em></a> is simply a computational process that creates an output from an input.
+* In text analysis, the input would be the unstructured text, and the output would be indicators to help you reveal different things about the text.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-is-tdm">
+<h1>What is TDM?<a class="headerlink" href="#what-is-tdm" title="Permalink to this heading">#</a></h1>
+<p>“The difference between regular data mining and text mining is that in text mining the patterns are extracted from natural language text rather than from structured databases of facts.”</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://people.ischool.berkeley.edu/~hearst/text-mining.html">What Is Text Mining? by Marti Hearst.</a></p></li>
+<li><p>Text analysis can be used for a variety of purposes. It can be used for exploratory and analytical research, such as seeking out patterns in scientific literature to pick up trends in medical research otherwise difficult to see from the vantage point of an individual reader. It can also be used in developing tools that we use in our daily lives, for example creating spam filters to identify spam e-mail.</p>
+<ul>
+<li><p><a class="reference external" href="https://www.ibm.com/cloud/learn/text-mining#toc-what-is-te-FY0KJh4c">IBM Cloud Computing Education Definition of TDM</a></p></li>
+</ul>
+</li>
+</ul>
+<section id="tdm-projects">
+<h2>TDM projects<a class="headerlink" href="#tdm-projects" title="Permalink to this heading">#</a></h2>
+<p>For a TDM project you need to complete the following steps:</p>
+<ul class="simple">
+<li><p><em>Identify a research question or topic of interest.</em></p></li>
+<li><p><em>Data gathering or Data Search</em></p>
+<ul>
+<li><p>Search for and identify a data set that is available for use and relevant to your research interests.</p></li>
+<li><p>For an introductory project, we recommend you find and use an already existing data set, rather then creating and/or cleaning a new dataset.</p></li>
+</ul>
+</li>
+<li><p><em>Data preparation</em></p>
+<ul>
+<li><p>The text needs to be transformed from a form that human readers are familiar with to something that the computer can “read”.</p></li>
+<li><p>The text is broken into smaller pieces and abstracted (reduced) into things that a computer can process.</p></li>
+</ul>
+</li>
+<li><p><em>Text analysis</em></p></li>
+<li><p><strong>Counting</strong> is often what happens next.</p>
+<ul>
+<li><p>Some of the things that are often counted include words, phrases, and parts of speech (POS).</p></li>
+<li><p>The number of these counts can be used to identify characteristics of texts.</p></li>
+</ul>
+</li>
+<li><p>Then, researchers can apply computational statistics to the counts of textual features, and develop hypotheses based on these counts.</p>
+<ul>
+<li><p>Do you have a specific question you are trying to answer or are you doing an exploratory project?</p></li>
+<li><p>What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. <strong>The data and methodology sections are always useful to read</strong> to see where people are finding data and how they are analyzing it.</p></li>
+</ul>
+</li>
+<li><p><em>Visualization</em></p>
+<ul>
+<li><p>How will you <a class="reference external" href="https://uta.pressbooks.pub/datanotebook/chapter/2-6-tell/">communicate your findings?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://aws.amazon.com/what-is/text-analysis/">What are the stages in text analysis?-AWS</a></p></li>
+</ul>
+</section>
+<section id="how-does-it-impact-research">
+<h2>How does it impact research?<a class="headerlink" href="#how-does-it-impact-research" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called <a class="reference external" href="https://uta.pressbooks.pub/datanotebook/chapter/1-4-distant-reading/"><em>“distant reading.”</em></a></p>
+<ul>
+<li><p>This is a term attributed to Franco Moretti, meaning “reading” literature not by studying particular texts, but by aggregating and analyzing massive amounts of texts and “reading” them at a “distance”. This scaling-up and “distancing” can bring out more insights from a very different vantage point.</p></li>
+<li><p>It is also worth mentioning that text analysis doesn’t have to be the primary method in a research project. It may be just one step in the entire process, or it can be combined with close reading. This approach has been called <em>“intermediate reading” or “distant-close reading”.</em></p></li>
+</ul>
+</li>
+<li><p>This shift in research perspective allows for new kinds of research questions to be asked, or for old questions to be “answered” in new ways. Here are some of the possibilities that text analysis can bring to researchers:</p>
+<ul>
+<li><p>It can explore questions not provable by human reading alone</p></li>
+<li><p>It allows larger corpora for analysis</p></li>
+<li><p>It allows studies that cover longer time spans</p></li>
+</ul>
+</li>
+<li><p>Text analysis techniques are often best when combined with qualitative assessment and theoretical context.</p></li>
+<li><p>Text analysis research questions explore a wide range of topics, from biomedical discovery to literary history. Research questions that are conducive for text analysis methods may involve these characteristics:</p>
+<ul>
+<li><p>Change over time</p></li>
+<li><p>Pattern recognition</p></li>
+<li><p>Comparative analysis</p></li>
+<li><p><a class="reference external" href="https://teach.htrc.illinois.edu/teaching-resources/text-analysis-research-examples/">Text analysis research examples from HTRC</a></p>
+<ul>
+<li><p>How do the projects involve change over time, pattern recognition, or comparative analysis?</p></li>
+<li><p>What kind of text data do they use (time period, source, etc.)?</p></li>
+<li><p>What are their findings?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="what-kind-of-texts-do-i-need-for-text-analysis">
+<h2>What kind of texts do I need for text analysis?<a class="headerlink" href="#what-kind-of-texts-do-i-need-for-text-analysis" title="Permalink to this heading">#</a></h2>
+<p>Text analysis depends on having a large number of texts in an accessible format. Since many text analysis methods rely on statistical models, it is generally true that having more texts <a class="reference external" href="https://constellate.org/docs/key-terms/#corpus">(a text corpus)</a> will improve the outcomes of your analysis.</p>
+<ul class="simple">
+<li><p>It is also generally true that an ideal set of texts—or corpus—will be:</p>
+<ul>
+<li><p>Full-text</p></li>
+<li><p>Easily readable, such as plaintext files or Python strings</p></li>
+</ul>
+</li>
+</ul>
+<p>In practice, “easily-readable” means that you <em>could</em> hypothetically copy and paste the text. This may be made complicated if working with works which are in copyright. If it is not possible to access “full-text” due to applicable copyright laws, the ideal corpus will give readers access to metadata or <a class="reference external" href="https://docs.constellate.org/key-terms/#n-gram">n-gram</a> counts. (N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain.)</p>
+<ul class="simple">
+<li><p>While having the full texts for the documents in your corpus is ideal, a great deal can be still be discovered through the use of unigrams. Even when researchers have access to the full-texts of a corpus, it is common for them to create a list of n-gram counts for analysis.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-is-text-as-data">
+<h1>What is Text as Data ?<a class="headerlink" href="#what-is-text-as-data" title="Permalink to this heading">#</a></h1>
+<p>When approaching text as data, here are some things to keep in mind:</p>
+<ul class="simple">
+<li><p>First, having textual data of sufficient quality is important. Textual data quality is determined by how it’s created. Hand-keyed text is often of the best quality, while text obtained by OCR, Optical Character Recognition, can vary in quality. Raw, uncorrected OCR text is dirty, and it can only become clean until it is corrected. (For example, Please note that HathiTrust OCR is dirty and uncorrected.</p></li>
+<li><p>When viewing text as data, we usually analyze them by corpus or corpora. As mentioned in previous modules, a “corpus” of text can refer to both a digital collection and an individual’s research text dataset. Text corpora are bodies of text.</p></li>
+<li><p>When preparing text, one can think in terms of what <a class="reference external" href="https://geoffreyrockwell.com/publications/WhatIsTAnalysis.pdf">Geoffrey Rockwell has called text decomposition or re-composition.</a> The text will be split, combined, or represented in ways that distinguish it from human readable text. It may involve discarding some text, and requires the researcher to shift their understanding of the text from human-legible object to data. What stays, what goes, and how things are manipulated is a researcher’s choice. While there are emerging best practices, there isn’t a step-by-step guide to follow.</p></li>
+</ul>
+<section id="i-have-my-own-data-what-will-it-take-to-get-it-ready">
+<h2>I have my own data. What will it take to get it ready?<a class="headerlink" href="#i-have-my-own-data-what-will-it-take-to-get-it-ready" title="Permalink to this heading">#</a></h2>
+<p><em>Finding, cleaning and structuring data is often time consuming and labor intensive.</em>  One of the most significant benefits of using a database such as HathiTrust Digital Library, Constellate by ITHAKA or <a class="reference external" href="https://guides.smu.edu/az.php?t=45104">any database</a> with a dataset builder is that it takes out <em>the vast majority</em> of effort in doing text analysis.</p>
+<ul class="simple">
+<li><p>For a major text analysis project, such as UNC Chapel Hill’s <a class="reference external" href="https://onthebooks.lib.unc.edu/">On the Books: Jim Crow and Algorithms of Resistance</a>, about <em>90% of the labor is creating the corpus.</em> For your initial project we suggest assembling a data set from one of the previously mentioned databases.</p></li>
+</ul>
+<p>If you have your own data, you will need to assess what it will take to make it ready for analysis. Here are some questions you should ask:</p>
+<ul class="simple">
+<li><p>Do I need to use Optical Character Recognition (OCR) to convert my data into plain text?</p></li>
+<li><p>Do i need to tokenize (break up and separate the words) my texts?</p></li>
+</ul>
+<p>Consider the data’s current form as well as your current skill level or the size and skill of your project staff. The corpus creation process could take anywhere from a few hours to many years of labor.</p>
+<ul class="simple">
+<li><p>If there is a significant amount of labor, you may need to write a grant proposal to hire help.</p>
+<ul>
+<li><p>If writing a grant, contact your library with questions about <a class="reference external" href="https://www.smu.edu/Libraries/scholarship/data/data-policy">Research Data Management</a> since funding agencies often require your corpus to be committed to a disciplinary or institutional repository.</p></li>
+</ul>
+</li>
+<li><p>In addition to the cleaned-up texts for your corpus, you will also need a strategy for dealing with textual metadata, information such as author, year, etc. It helps to have some experience with working with data at scale with either Excel or Python Pandas.</p></li>
+</ul>
+<!--* Read about downloading historical SEC filings via EDGAR: [Textual Analysis on SEC Filings](https://mingze-gao.com/posts/textual-analysis-on-sec-filings/)-->
+<ul class="simple">
+<li><p>Read about analyzing <a class="reference external" href="https://pudding.cool/projects/votes-for-women/">U.S. political party platforms on women’s issues</a></p></li>
+<li><p>Read about <a class="reference external" href="https://pudding.cool/2018/01/chyrons/">examining chyrons (the text at the bottom of the screen) from three major cable networks</a></p></li>
+<li><p>Read about <a class="reference external" href="http://journalofdigitalhumanities.org/1-2/the-emergence-of-literary-diction-by-ted-underwood-and-jordan-sellers/">The Emergence of Literary Diction</a></p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="searching-for-text-data">
+<h1>Searching for Text Data<a class="headerlink" href="#searching-for-text-data" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>You can search for already existing datasets in the following:</p></li>
+</ul>
+<p><strong>Databases</strong></p>
+<p><em>Licensed content in Library databases</em></p>
+<ul class="simple">
+<li><p>Only some databases allow for text mining withour additional permssions. Those are <a class="reference external" href="https://guides.smu.edu/az.php?t=45104">marked on our A-Z list with the filter Text Mining</a></p></li>
+<li><p><a class="reference external" href="https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md">HathiTrust Research Center for TDM</a></p></li>
+<li><p><a class="reference external" href="https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md">JSTOR Constellate for TDM</a></p></li>
+<li><p><a class="reference external" href="https://guides.smu.edu/textdata">Text data sets guide</a></p>
+<ul>
+<li><p>Additional resources for <a class="reference external" href="https://guides.smu.edu/data/overview">Datasets and Data Repositories</a></p></li>
+</ul>
+</li>
+</ul>
+<p><em>Policies for Mining Licensed Content</em></p>
+<ul class="simple">
+<li><p>If you are thinking of basing a research project on data extracted from a library database, contact your <a class="reference external" href="https://www.smu.edu/libraries/help/librarian">subject librarian</a> to discuss issues around permissions (copyright and licensing agreements), formats and fees.</p></li>
+<li><p>In addition to <a class="reference external" href="https://www.smu.edu/Libraries/scholarship/copyright">copyright</a> considerations, we must take into account what the database vendors’ own policies specify in regard to this type of use. When providing access to a database, the library enters into licensing agreements, which also dictate what types of data can be extracted and used. Many prohibit text and data mining and the use of software such as scripts, agents, or robots, but it may be possible to negotiate text mining rights.</p></li>
+</ul>
+<p><em>Non-consumptive or non-expressive use</em></p>
+<ul class="simple">
+<li><p>Research in which computational analysis is performed on text, but <em>not</em> research in which a researcher reads or displays substantial portions of the text to understand the expressive content presented within it.</p></li>
+<li><p>Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”).</p>
+<ul>
+<li><p>Non-consumptive research complies with copyright law because of the distinction in law between “ideas” and “expressions”. It is sometimes called non-expressive use (because it works with “ideas” instead of specific “expressions”, hence the term “non-expressive”).</p></li>
+</ul>
+</li>
+<li><p>Foundation of <a class="reference external" href="https://www.hathitrust.org/htrc_ncup">HTRC</a> work.</p></li>
+</ul>
+<p><strong>Open access (OA) or Public Domain information</strong></p>
+<p>You can <a class="reference external" href="https://guides.smu.edu/internetsearching">search</a> the open web using a web browser such as Chrome or Firefox, adding specific terms such as: data, datasets, API, file format (such as .csv). <a class="reference external" href="https://www.google.com/advanced_search">Advanced search</a> options amy also allow for searching for specific file types.
+Try searching:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></p></li>
+<li><p><a class="reference external" href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></p></li>
+<li><p><a class="reference external" href="https://labs.loc.gov/">Library of Congress Labs</a></p></li>
+<li><p><a class="reference external" href="https://dp.la/">Digital Public Library</a></p></li>
+<li><p><a class="reference external" href="https://www.gutenberg.org/">Project Gutenberg</a></p></li>
+<li><p>You can also look at the archive for <a class="reference external" href="https://www.data-is-plural.com/"><em>Data Is Plural</em> a weekly newsletter of datasets</a></p></li>
+</ul>
+<p>Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.</p>
+<ul class="simple">
+<li><p>Data collected by the <a class="reference external" href="https://usafacts.org/data/">U.S. government may be publicly available.</a></p></li>
+<li><p>Your discipline may have a OA repository, such as <a class="reference external" href="https://arxiv.org/">arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.</a></p></li>
+</ul>
+<section id="highly-recommended-practice">
+<h2><strong>Highly recommended practice</strong><a class="headerlink" href="#highly-recommended-practice" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Read the Data and methodology sections of research and/or data journalism articles! When you are considering learning new methodologies, we highly recommend searching for academic or data journalism articles where the authors have asked similar questions or used related methodologies.</p></li>
+<li><p>When reading these articles, pay particular attentions to the literature review, and to the <em>data and methodology sections.</em></p></li>
+<li><p>Where did these researchers find their data set they are using?</p></li>
+<li><p>If they created it, did they make it accessible in a repository on a website, or a Github repository?</p></li>
+<li><p>Read some data journalism articles on <a class="reference external" href="https://pudding.cool/">The Pudding</a>, <a class="reference external" href="https://www.propublica.org/datastore">ProPublica</a> or this <a class="reference external" href="https://datajournalism.com/read/blog/best-data-journalism-projects-2021">roundup of data journalism projects from 2021</a></p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="preparing-data-cleaning-and-transforming">
+<h1>Preparing Data (Cleaning and Transforming)<a class="headerlink" href="#preparing-data-cleaning-and-transforming" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed to as pre-processing the data). Preparing data can take a lot of time and effort.</p></li>
+<li><p><em>Cleaning text data can involve…</em></p></li>
+</ul>
+<ul class="simple">
+<li><p>Removing Duplicates</p></li>
+<li><p>Correcting Errors</p></li>
+<li><p>Removing Outliers</p></li>
+<li><p>Adjusting for Missing data</p></li>
+<li><p>Correcting OCR errors.</p></li>
+<li><p>Removing title and header information</p></li>
+<li><p>Removing html or xml tags.</p></li>
+<li><p>Splitting or combining files.</p></li>
+<li><p>Removing certain words or punctuation marks.</p></li>
+<li><p>Making text into lowercase.</p></li>
+</ul>
+<section id="the-importance-of-using-open-data-formats">
+<h2>The importance of using open data formats<a class="headerlink" href="#the-importance-of-using-open-data-formats" title="Permalink to this heading">#</a></h2>
+<p>A small detour to discuss data formats. For accessibility, future-proofing, and preservation, keep your data in open, sustainable formats.</p>
+<ul class="simple">
+<li><p>Sustainable formats are generally unencrypted, uncompressed, and follow an open standard. A small list:</p>
+<ul>
+<li><p>ASCII</p></li>
+<li><p>PDF</p></li>
+<li><p>.csv</p></li>
+<li><p>FLAC</p></li>
+<li><p>TIFF</p></li>
+<li><p>JPEG2000</p></li>
+<li><p>MPEG-4</p></li>
+<li><p>XML</p></li>
+<li><p>RDF</p></li>
+<li><p>.txt</p></li>
+<li><p>.r</p></li>
+</ul>
+</li>
+</ul>
+<p>How do you decide the formats to store your data when you transition from ‘raw’ to ‘processed/transformed’ data? What are some of your considerations?</p>
+</section>
+<section id="tidy-data">
+<h2>Tidy data<a class="headerlink" href="#tidy-data" title="Permalink to this heading">#</a></h2>
+<p>There are guidelines to the processing of data, sometimes referred to as <strong>Tidy Data</strong>.<sup>1</sup> One manifestation of these rules:</p>
+<ol class="arabic simple">
+<li><p>Each variable is in a column.</p></li>
+<li><p>Each observation is a row.</p></li>
+<li><p>Each value is a cell.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;Cats&quot;</span><span class="p">:[</span>
+    <span class="p">{</span><span class="s2">&quot;Calico&quot;</span><span class="p">:[</span>
+    <span class="p">{</span> <span class="s2">&quot;firstName&quot;</span><span class="p">:</span><span class="s2">&quot;Smally&quot;</span><span class="p">,</span> <span class="s2">&quot;lastName&quot;</span><span class="p">:</span><span class="s2">&quot;McTiny&quot;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">&quot;firstName&quot;</span><span class="p">:</span><span class="s2">&quot;Kitty&quot;</span><span class="p">,</span> <span class="s2">&quot;lastName&quot;</span><span class="p">:</span><span class="s2">&quot;Kitty&quot;</span> <span class="p">}],</span>
+    <span class="s2">&quot;Tortoiseshell&quot;</span><span class="p">:[</span>
+    <span class="p">{</span> <span class="s2">&quot;firstName&quot;</span><span class="p">:</span><span class="s2">&quot;Foots&quot;</span><span class="p">,</span> <span class="s2">&quot;lastName&quot;</span><span class="p">:</span><span class="s2">&quot;Smith&quot;</span> <span class="p">},</span> 
+    <span class="p">{</span> <span class="s2">&quot;firstName&quot;</span><span class="p">:</span><span class="s2">&quot;Tiger&quot;</span><span class="p">,</span> <span class="s2">&quot;lastName&quot;</span><span class="p">:</span><span class="s2">&quot;Jaws&quot;</span> <span class="p">}]}]}</span>
+</pre></div>
+</div>
+<p><sup>1</sup><a class="reference external" href="https://www.jstatsoft.org/article/view/v059i10">Wickham, Hadley. “Tidy Data”. Journal of Statistical Software.</a></p>
+</section>
+<section id="chunking-text">
+<h2>Chunking text<a class="headerlink" href="#chunking-text" title="Permalink to this heading">#</a></h2>
+<p><img alt="Chunking text" src="../sections/images/chunktext.png" /></p>
+<ul class="simple">
+<li><p>As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.</p></li>
+</ul>
+</section>
+<section id="grouping-text">
+<h2>Grouping text<a class="headerlink" href="#grouping-text" title="Permalink to this heading">#</a></h2>
+<p><img alt="Grouping text" src="../sections/images/groupingtext.png" /></p>
+<ul class="simple">
+<li><p>An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group.</p></li>
+</ul>
+<p>Both chunking and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln’s speeches to all of George Washington’s speeched. They could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen.</p>
+</section>
+<section id="tokenization">
+<h2>Tokenization<a class="headerlink" href="#tokenization" title="Permalink to this heading">#</a></h2>
+<p><img alt="Tokenization" src="../sections/images/token.png" /></p>
+<ul class="simple">
+<li><p>An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process.
+Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens.
+While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer.</p></li>
+<li><p>It is important to note that <em>different choices in text preparation will affect the results of the analysis.</em></p></li>
+<li><p>Depending on the amount of text and size of chunks, which stop words are removed and which characters are included, and whether to lowercase and normalize words, the eventual text that is ready for analysis can be very different. Additionally, preparation for analysis takes a lot of time and effort. This is where scripting becomes useful!</p></li>
+<li><p><a class="reference external" href="https://ssrn.com/abstract=2849145">Additional information about how text preparation impacts results</a></p></li>
+<li><p><a class="reference external" href="https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/07154de9-4903-428e-9c61-7a92a6f22e51">An argument against cleaning data</a></p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="types-of-text-mining">
+<h1>Types of Text Mining<a class="headerlink" href="#types-of-text-mining" title="Permalink to this heading">#</a></h1>
+<section id="what-disciplinary-questions-can-text-analysis-answer">
+<h2>What disciplinary questions can text analysis answer?<a class="headerlink" href="#what-disciplinary-questions-can-text-analysis-answer" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>You can use text analysis to answer a wide variety of questions.</p></li>
+<li><p><em>Here are a few that are common:</em></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><strong>What are these texts about?</strong></p></li>
+<li><p><strong>How are these texts connected?</strong></p></li>
+<li><p><strong>What emotions (or affects) are found within these texts?</strong></p></li>
+<li><p><strong>What names are used in these texts?</strong></p></li>
+<li><p><strong>Which of these texts are most similar?</strong></p></li>
+</ol>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-are-these-texts-about">
+<h1>1. What are these texts about?<a class="headerlink" href="#what-are-these-texts-about" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>When it comes to a large body of texts, scholars tend to be most curious about the text’s contents. What are the words, topics, concepts, and significant terms in these documents? There are a number of methods often used which vary in complexity and difficulty.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="word-frequency">
+<h2>Word Frequency<a class="headerlink" href="#word-frequency" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Counting the frequency of a word in any given text.
+relative frequency – how often do words appear relative to other words in the text, typically a percentage
+Common as a baseline for more sophisticated methods
+This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on women?”</p></li>
+<li><p>If you search for digital humanities in <a class="reference external" href="https://www.google.com/search?q=digital+humanities&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjmhrrwjeL0AhWvkIkEHfAbCfoQ_AUoA3oECAEQBQ">Google image search</a>, the most common result is a <a class="reference external" href="https://docs.constellate.org/key-terms/#tag-cloud">word cloud</a>. A word cloud visualizes the most frequent content words in a text or corpus.</p>
+<ul>
+<li><p>Before you can create a word cloud, however, you need to collect the word frequencies for all the words in your text. You may also need to use a <a class="reference external" href="https://docs.constellate.org/key-terms/#stop-words">stop words list</a> to remove common <a class="reference external" href="https://docs.constellate.org/key-terms/#function-words">function words</a> (grammatical word constructions like “the”, “of”, and “or”).</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="word cloud" src="../sections/images/wc.png" /></p>
+<ul class="simple">
+<li><p>Image source:<a class="reference external" href="https://voyant-tools.org/?corpus=austen&amp;view=Cirrus">Voyant Cirrus image, Austen corpus</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="collocation">
+<h2>Collocation<a class="headerlink" href="#collocation" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Examining where words occur close to one another. Example: “Where are women mentioned in relation to home ownership?”</p></li>
+</ul>
+<p><img alt="Collocation" src="../sections/images/colo.png" /></p>
+<ul class="simple">
+<li><p>Image source:<a class="reference external" href="https://voyant-tools.org/?corpus=austen">Voyant Collocation image, Austen corpus</a></p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>A type of collocation is <a class="reference external" href="https://docs.constellate.org/key-terms/#n-gram">n-gram</a> counts.</p></li>
+<li><p>N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain.</p></li>
+</ul>
+<p><img alt="N-gram)" src="../sections/images/ngram.png" /></p>
+<p>In the cases where a database (such as Constellate or Hathitrust) cannot supply full-text due to copyright laws, they may supply three n-gram counts:</p>
+<ul class="simple">
+<li><p>Unigrams - A single-word construction, for example: “vegetable”.</p></li>
+<li><p>Bigrams - An two-word construction, for example: “vegetable stock”.</p>
+<ul>
+<li><p>Notice how in the bigram example above the window of the gram slides across the text, so in bigrams, a word will occur with both the word preceding and following it.</p></li>
+</ul>
+</li>
+<li><p>Trigrams- A three-word construction, for example: “homemade vegetable stock”.</p></li>
+</ul>
+<p>While having the full texts for the documents in your corpus is ideal, a great deal can be still be discovered through the use of unigrams. Even when researchers have access to the full-texts of a corpus, it is common for them to create a list of n-gram counts for analysis.</p>
+<p>Read about using n-grams to <a class="reference external" href="https://projects.fivethirtyeight.com/reddit-ngram/">get a sense of language usage and change on Reddit</a></p>
+</section>
+<hr class="docutils" />
+<section id="tf-idf">
+<h2>TF/IDF<a class="headerlink" href="#tf-idf" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Tf-IDF (term frequency–inverse document frequency) is intended to reflect how important a word is to a document in a collection or corpus. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
+<img alt="TF-IDF" src="../sections/images/tfidf.png" /></p></li>
+</ul>
+<ul class="simple">
+<li><p>Image source:<a class="reference external" href="https://thenounproject.com/icon/writing-5482033/">Writing icon by kholis muasaroh from Noun Project (CCBY3.0)</a></p></li>
+</ul>
+<p>Read more about how to do TF/IDF <a class="reference external" href="https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf">here</a> or <a class="reference external" href="https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html">here.</a></p>
+</section>
+<hr class="docutils" />
+<section id="significant-terms">
+<h2>Significant Terms<a class="headerlink" href="#significant-terms" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Search engines use significant terms analysis to match a user query with a list of appropriate documents. This method could be useful if you want to search your corpus for the most significant texts based on a word (or set of words). It can also be useful in reverse. For a given document, you could create a list of the ten most significant terms. This can be useful for summarizing the content of a document.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="topic-modeling">
+<h2>Topic Modeling<a class="headerlink" href="#topic-modeling" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Topic modeling is a method of using statistical models for discovering the abstract “topics” that occur in a collection of documents.
+<img alt="Topic modeling simple" src="../sections/images/topicmodsimple.png" /></p></li>
+</ul>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="https://fi.wikipedia.org/wiki/Tiedosto:Topic_modeling_oversimplified.png">Anna Ristilä from Wikimedia, Creative Commons Share Alike</a></p></li>
+</ul>
+<ul class="simple">
+<li><p>For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. *
+Discovering the topics within a group of texts. Example: “What are the most frequent topics discussed in this newspaper?”</p></li>
+<li><p>While significant terms analysis reveals terms commonly found in a given document, a topic analysis can tell us what words tend to cluster together across a corpus. For example, if we were to study newspapers, we would expect that certain words would cluster together into topics that match the sections of the newspaper. We might see something like:</p></li>
+<li><p>Topic 1: baseball, ball, player, trade, score, win, defeat</p></li>
+<li><p>Topic 2: market, dow, bull, trade, run, fund, stock</p></li>
+<li><p>Topic 3: campaign, democratic, polls, red, vote, defeat, state</p></li>
+<li><p>We can recognize that these words tend to cluster together within newspaper sections such as “Sports”, “Finance”, and “Politics”. If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using <a class="reference external" href="https://docs.constellate.org/key-terms/#machine-learning">Machine Learning</a> to discover the topics in a given document automatically.</p></li>
+</ul>
+<p><img alt="Topic modeling" src="../sections/images/topicmodel.png" /></p>
+</section>
+<section id="bag-of-words">
+<h2>Bag of words<a class="headerlink" href="#bag-of-words" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The computer treats the textual documents as <strong>bags of words</strong>, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.</p>
+<ul>
+<li><p>“Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Bag Of Words" src="../sections/images/bagwords.png" /></p>
+<ul class="simple">
+<li><p>Here are some tips for topic modeling:</p></li>
+<li><p>Treat topic modeling as one part of a larger analysis.</p>
+<ul>
+<li><p>Understand what you input, including how you set your parameters, will affect the output. Some points to note are:</p></li>
+<li><p>Be careful with how you set the number of texts analyzed, as well as number of topics generated</p></li>
+<li><p>Be familiar with your input data</p></li>
+</ul>
+</li>
+<li><p>Know that changing your stop word list can have really interesting impacts on your topics, so tread carefully/wisely.</p></li>
+<li><p>You’re going to want to go back to the text at some point. Make sure to examine your results to see if they make sense.</p></li>
+</ul>
+<p><font color="red">Read more</font>
+Keli Du’s <a class="reference external" href="https://www.researchgate.net/profile/Keli-Du/publication/349279379_A_Survey_On_LDA_Topic_Modeling_In_Digital_Humanities/links/6027a55ea6fdcc37a8222850/A-Survey-On-LDA-Topic-Modeling-In-Digital-Humanities.pdf">A Survey on LDA Topic Modeling in Digital Humanities</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="how-are-these-texts-connected">
+<h1>2. How are these texts connected?<a class="headerlink" href="#how-are-these-texts-connected" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="concordance">
+<h2>Concordance<a class="headerlink" href="#concordance" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”</p></li>
+<li><p>The concordance has a long history in humanities study and Roberto Busa’s concordance <em>Index Thomisticus</em>—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett’s 1982 reference book <em>A Complete Concordance to Shakespeare</em>—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase “honest Iago” in Othello? A historian might examine a particular politician’s speeches, looking for examples of a particular “dog whistle”.</p></li>
+</ul>
+<p><img alt="Shakespeare concordance: all instances of &quot;cousin&quot;" src="../sections/images/concor.png" /></p>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="https://www.opensourceshakespeare.org/concordance/o/?i=763860">Concordance of Shakespeare’s complete works</a></p></li>
+</ul>
+<!-- <font color="red">Read more</font>
+* Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
+* Julianne Nyhan and Marco Passarotti, eds. [One Origin of Digital Humanities: Fr Roberto Busa in His Own Words](https://www.amazon.com/One-Origin-Digital-Humanities-Roberto/dp/3030183114/) (2019)-->
+</section>
+<hr class="docutils" />
+<section id="network-analysis">
+<h2>Network Analysis<a class="headerlink" href="#network-analysis" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”</p></li>
+<li><p>in the image below, The circles (nodes) in the graph represent individual newspapers or magazines, while the lines between them (edges) represent shared texts.</p></li>
+</ul>
+<p><img alt="Network visualisation" src="../sections/images/viraltexts.jpg" /></p>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="http://networks.viraltexts.org/1836to1860-simple/">Network of Shared Reprints Among Newspapers &amp; Magazines, 1836-1860</a></p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-emotions-or-affects-are-found-within-these-texts">
+<h1>3. What emotions (or affects) are found within these texts?<a class="headerlink" href="#what-emotions-or-affects-are-found-within-these-texts" title="Permalink to this heading">#</a></h1>
+<section id="sentiment-analysis">
+<h2>Sentiment Analysis<a class="headerlink" href="#sentiment-analysis" title="Permalink to this heading">#</a></h2>
+<p>Sentiment analysis, which uses computers to explore what emotions are present in the text. Does the author use positive or negative language? Example: “How do presidents describe gun control?”
+Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, <a class="reference external" href="https://docs.constellate.org/key-terms/#machine-learning">Machine Learning</a>, or both.</p>
+<p><img alt="Network visualisation incorporating sentiment analysis" src="../sections/images/sa.png" /></p>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Network_visualisation_incorporating_sentiment_analysis_of_the_subreddit_%27skeptic%27_from_Reddit.png">Siobhán Grayson, Wikimedia, CC-SA license. SA indicated by the colour scales according to how negative (red) to positive (blue) a response is</a></p></li>
+</ul>
+<p>Read about:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://medium.com/&#64;oshojha/useful-sentiment-analysis-mining-sec-filings-part-1-358942fc98ed">using sentiment analysis on SEC Filings</a></p></li>
+<li><p><a class="reference external" href="https://pudding.cool/2022/02/women-in-headlines/">using sentiment analysis on WHEN WOMEN MAKE HEADLINES</a></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="what-names-are-used-in-these-texts">
+<h1>4. What names are used in these texts?<a class="headerlink" href="#what-names-are-used-in-these-texts" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="named-entity-recognition-or-ner">
+<h2>Named Entity Recognition** (or NER)<a class="headerlink" href="#named-entity-recognition-or-ner" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.</p></li>
+<li><p>You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
+<img alt="Named Entity Recognition" src="../sections/images/ne.png" /></p></li>
+</ul>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="https://spacy.io/usage/spacy-101#annotations-nerg">SpaCy Named Entity</a></p></li>
+</ul>
+<p><font color="red">Read more</font></p>
+<ul class="simple">
+<li><p>Miguel Won, Patricia Murrieta-Flores, and Bruno Martins <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fdigh.2018.00002/full">Ensemble Named Entity Recognition (NER): Evaluating NER Tools in the Identification of Place Names in Historical Corpora</a> (2018)</p></li>
+<li><p>Read about about how hyphenated names are hard to study <a class="reference external" href="https://pudding.cool/2019/05/hyphens/">here</a></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="which-of-these-texts-are-most-similar">
+<h1>5. Which of these texts are most similar?<a class="headerlink" href="#which-of-these-texts-are-most-similar" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="stylometrics-and-authorship-attribution">
+<h2>Stylometrics and Authorship Attribution<a class="headerlink" href="#stylometrics-and-authorship-attribution" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Stylometrics uses computers to speculate who wrote the text based on language style. You could use it to find the author of an anonymous document.</p>
+<ul>
+<li><p>Example: “Who wrote The Federalist Papers?”</p></li>
+</ul>
+</li>
+<li><p>The digital humanities, and its precursor Humanities Computing, have a long history in the analysis of literature, particularly for analyzing genre and authorship. For example, the New Oxford Shakespeare surprised many scholars by assigning significant authorship of Shakespeare’s “Henry VI,” Parts 1, 2, and 3. It also lists as co-authors many Shakespeare contemporaries such as Thomas Nashe, George, Peele, Thomas Heywood, Ben Jonson, George Wilkins, Thomas Middleton, and John Fletcher.</p></li>
+</ul>
+<p><font color="red">Read more</font></p>
+<ul class="simple">
+<li><p>Patrick Juola <a class="reference external" href="https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoos-calling/">How a Computer Program Helped Show J.K. Rowling Wrote A Cuckoo’s Calling</a> (2013)</p></li>
+<li><p>Ros Barber <a class="reference external" href="https://academic.oup.com/dsh/article-abstract/36/3/542/5918973?redirectedFrom=fulltext">Big data or not enough? Zeta test reliability and the attribution of Henry VI</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="machine-learning-ml">
+<h2><em>Machine Learning(ML)</em><a class="headerlink" href="#machine-learning-ml" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Another key approach to text analysis is *Machine Learning (ML). ML is training computers to recognize patterns in text.</p></li>
+<li><p>Machine learning can either be <em>unsupervised (with minimal human intervention)</em> or <em>supervised (with more human intervention).</em>
+<img alt="ML" src="../sections/images/ml.png" /></p></li>
+</ul>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Cluster-2.png">hellisp, Wikimedia</a></p></li>
+</ul>
+<ul class="simple">
+<li><p>Here are some common, specific methods that are based on machine learning:</p>
+<ul>
+<li><p>Topic modeling, which explores the thematic topics present in the text. Remember that topic modeling is a bag-of-words approach.</p></li>
+<li><p>Naïve Bayes classification, which explores the categorization of texts, i.e. determining what categories that the researcher have named does a certain text belong to.</p></li>
+</ul>
+</li>
+<li><p>One key approach in ML for TDM is <em>Natural Language Processing (NLP)</em>, meaning using computers to understand the meaning, relationships, and semantics within human-language text. Generally for natural language processing, full text is needed. It is not a bag-of-words method.</p></li>
+<li><p>Some common, specific methods under NLP are: Named entity extraction, Sentiment analysis and Stylometry.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="clustering">
+<h3>Clustering<a class="headerlink" href="#clustering" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Clustering is unsupervised machine learning.</p></li>
+<li><p>Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
+<img alt="clustering" src="../sections/images/cluster.png" /></p></li>
+</ul>
+<ul class="simple">
+<li><p>Image source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png">CreightonMA, Wikimedia, CC Attribution Share alike</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="classification">
+<h3>Classification<a class="headerlink" href="#classification" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Classification is supervised machine learning</p></li>
+<li><p>Are there other texts similar to this? Example: “Are there other Jim Crow laws like these we have already identified?
+<strong>Supervised Machine Learning</strong>
+* The advent of *supervised machine learning techniques have rapidly changed text analysis in the digital humanities. These methods “train” computers to identify and classify similar items based on data that has been labeled or tagged by experts. For example, <a class="reference external" href="https://onthebooks.lib.unc.edu/">On the Books: Jim Crow and Algorithms of Resistance</a> was able to <a class="reference external" href="https://github.com/UNC-Libraries-data/OnTheBooks">use machine learning</a> to <a class="reference external" href="https://onthebooks.lib.unc.edu/about/algorithms-of-resistance/">identify 1939 North Carolina Jim Crow laws enacted between Reconstruction and the Civil Rights Movement.</a></p></li>
+</ul>
+<p><font color="red">Read more</font></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://onthebooks.lib.unc.edu/otb-research/project-outcomes/">Project Outcomes for On the Books</a></p></li>
+<li><p>William Mattingly <a class="reference external" href="https://nkelber.github.io/tapi2021/book/courses/machine-learning-william.html">Introduction to Machine Learning</a> TAP Institute 2021</p></li>
+<li><p>Grant Glass <a class="reference external" href="https://nkelber.github.io/tapi2021/book/courses/machine-learning-grant.html">Introduction to Machine Learning</a> TAP Institute 2021</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="text-visualization">
+<h2>Text Visualization<a class="headerlink" href="#text-visualization" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Data visualization is the process of converting data sources into a visual representation. This representation is usually in graphical form. Broadly speaking, anything that displays data in some visual form can be called a data visualization, including both traditional graphs and charts, as well as more innovative data art.</p></li>
+<li><p>Visualizations present particular ways of interpreting data. It is not a transparent, objective projection of what the data is. By selecting different types of visualization and adjusting parameters, the resulting visualization is a researcher’s specific way of interpreting and presenting data.</p></li>
+<li><p><a class="reference external" href="https://www.pluralsight.com/guides/text-data-visualization-and-insights-in-python">“Text data [can be] a bit more challenging to use to represent insights in charts and graphs because it’s not numerical.”</a></p></li>
+<li><p>See examples of <a class="reference external" href="https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a">text visualizations</a></p></li>
+<li><p>Read about <a class="reference external" href="https://www.theinformedjd.com/2016/04/sec-visualizations-rank-and-file/">SEC Visualizations</a></p></li>
+<li><p>Read about using Natural Language Processing <a class="reference external" href="https://constellate.org/docs/key-terms/#nlp">(NLP)</a> to <a class="reference external" href="https://medium.com/swlh/analyzing-the-wall-street-bets-reddit-group-with-natural-language-processing-296465f90f26">analyze the Wall Street Bets Reddit group</a></p></li>
+</ul>
+<p><img alt="theoretical Workflow" src="../sections/images/idealwf.png" /></p>
+<p><img alt="Actual Workflow" src="../sections/images/realwf.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="read-more">
+<h2>Read more<a class="headerlink" href="#read-more" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities">Data in digital humanities</a></p></li>
+<li><p><a class="reference external" href="https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/">Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1</a></p></li>
+<li><p><a class="reference external" href="https://digitalhumanities.berkeley.edu/data-prep-and-cleaning">DH&#64; Berkley:Data Prep and Cleaning</a></p></li>
+<li><p>“Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled.”</p>
+<ul>
+<li><p>How do you clean data?</p>
+<ul>
+<li><p>Step 1: Remove duplicate or irrelevant observations</p></li>
+<li><p>Step 2: Fix structural errors</p></li>
+<li><p>Step 3: Filter unwanted outliers</p></li>
+<li><p>Step 4: Handle missing data</p></li>
+<li><p>Step 5: Validate and QA (quality assurance)</p>
+<ul>
+<li><p><a class="reference external" href="https://www.tableau.com/learn/articles/what-is-data-cleaning">Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/introTDM/sections/terms.html">Terminology</a></p></li>
+<li><p><a class="reference external" href="https://digitalpedagogy.mla.hcommons.org/keywords/text-analysis/">Keywords in Digital Pedagogy in the Humanities: Text analysis</a></p></li>
+<li><p>When getting started with computational methods, looking up terms <a class="reference external" href="https://en.wikipedia.org/wiki/Text_mining">(such as Text Mining)</a> on Wikipedia is helpful.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="attribution">
+<h3>Attribution<a class="headerlink" href="#attribution" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Some content on this page adapted from:</p></li>
+<li><p><em>Text Analysis: What Every Digital Humanist Should Know</em> created by <a class="reference external" href="http://nkelber.com">Nathan Kelber</a> for <a class="reference external" href="https://labs.jstor.org/">JSTOR Labs</a> under <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY License.</a> For notebooks from Text Analysis Pedagogy Institute, see <a class="reference external" href="https://nkelber.github.io/tapi2021/book/intro.html">the TAPI site</a>.</p></li>
+<li><p><a class="reference external" href="https://researchdata.ox.ac.uk/home/managing-your-data-at-oxford/organising-your-data/">Research Data Oxford</a> and used under a <a class="reference external" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License.</a>.</p></li>
+<li><p><a class="reference external" href="https://libguides.bc.edu/textdatamining/overview">BOSTON COLLEGE LIBRARIES:Text &amp; Data Mining</a> and used under a <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>.</p></li>
+<li><p><a class="reference external" href="https://guides.nyu.edu/tdm/start">NYU Text Data Mining</a>and used under a <a class="reference external" href="https://creativecommons.org/licenses/by-nc/4.0/"> Creative Commons Attribution-NonCommercial 4.0 International License.</a>.</p></li>
+<li><p><a class="reference external" href="https://teach.htrc.illinois.edu/teaching-materials/">HTRC Digging Deeper, Reaching Further</a> used under a <a class="reference external" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License.</a></p></li>
+<li><p><a class="reference external" href="https://www.usgs.gov/data-management">USGS data management</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Workshop objectives</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tools.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">TDM tools</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Text data mining (TDM)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-data">What is Data ?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forms-of-data">Forms of data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-data">Raw data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processed-transformed">Processed/transformed</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-mining">Data mining</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-tdm">What is TDM?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tdm-projects">TDM projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-does-it-impact-research">How does it impact research?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-kind-of-texts-do-i-need-for-text-analysis">What kind of texts do I need for text analysis?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-text-as-data">What is Text as Data ?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-have-my-own-data-what-will-it-take-to-get-it-ready">I have my own data. What will it take to get it ready?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#searching-for-text-data">Searching for Text Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#highly-recommended-practice"><strong>Highly recommended practice</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-data-cleaning-and-transforming">Preparing Data (Cleaning and Transforming)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-importance-of-using-open-data-formats">The importance of using open data formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidy-data">Tidy data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chunking-text">Chunking text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-text">Grouping text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">Tokenization</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-text-mining">Types of Text Mining</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-disciplinary-questions-can-text-analysis-answer">What disciplinary questions can text analysis answer?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-these-texts-about">1. What are these texts about?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#word-frequency">Word Frequency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collocation">Collocation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF/IDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-terms">Significant Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-modeling">Topic Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bag-of-words">Bag of words</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-are-these-texts-connected">2. How are these texts connected?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concordance">Concordance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-analysis">Network Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-emotions-or-affects-are-found-within-these-texts">3. What emotions (or affects) are found within these texts?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis">Sentiment Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-names-are-used-in-these-texts">4. What names are used in these texts?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#named-entity-recognition-or-ner">Named Entity Recognition** (or NER)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#which-of-these-texts-are-most-similar">5. Which of these texts are most similar?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stylometrics-and-authorship-attribution">Stylometrics and Authorship Attribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-ml"><em>Machine Learning(ML)</em></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification">Classification</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-visualization">Text Visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-more">Read more</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attribution">Attribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Some rights reserved. Chapters are &#34;CC-BY-NC&#34; or &#34;CC-BY-SA&#34;.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
