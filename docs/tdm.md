@@ -360,9 +360,9 @@ ___
 ___
 ## Concordance
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
-* The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
+* The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle". See in the image below,  all instances of "cousin" in a Shakespeare concordance.
 
-![Shakespeare concordance: all instances of "cousin"](../images/concor.png)
+![Shakespeare concordance](../images/concor.png)
 - Image source: [Concordance of Shakespeare's complete works](https://www.opensourceshakespeare.org/concordance/o/?i=763860) 
 <!-- <font color="red">Read more</font>
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
@@ -381,7 +381,7 @@ ___
 Sentiment analysis, which uses computers to explore what emotions are present in the text. Does the author use positive or negative language? Example: “How do presidents describe gun control?”
 Sentiment analysis can help determine the emotions expressed in a given text. This can be determined using rule-based algorithms, [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning), or both.
 
-![Network visualisation incorporating sentiment analysis](../sections/images/sa.png)
+![Network visualisation incorporating sentiment analysis](../images/sa.png)
 - Image source: [Siobhán Grayson, Wikimedia, CC-SA license. SA indicated by the colour scales according to how negative (red) to positive (blue) a response is](https://commons.wikimedia.org/wiki/File:Network_visualisation_incorporating_sentiment_analysis_of_the_subreddit_%27skeptic%27_from_Reddit.png) 
 
 
