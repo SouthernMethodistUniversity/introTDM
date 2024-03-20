@@ -16,6 +16,8 @@
 
 
 ![data life cycle](../sections/images/rdc.png)
+[![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)]<!--(https://example.com/jekyllbook)-->
+
 
 ## Forms of data
 There are many ways to represent data, just as there are many sources of data. For the purposes of this series we are focusing on already digitized text. 
