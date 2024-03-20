@@ -16,7 +16,7 @@
 
 
 ![data life cycle](../images/rdc.png)
-[![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)]<!--(https://example.com/jekyllbook)-->
+
 
 
 ## Forms of data
@@ -63,7 +63,7 @@ For a TDM project you need to complete the following steps:
      - What type of analysis are you interested in? It may be useful to look for an article in your field on a topic you are interested in to see what the process will be like. **The data and methodology sections are always useful to read** to see where people are finding data and how they are analyzing it.
 * *Visualization*
     * How will you [communicate your findings?](https://uta.pressbooks.pub/datanotebook/chapter/2-6-tell/)        
-* [What are the stages in text analysis?-AWS](https://aws.amazon.com/what-is/text-analysis/)
+* [What are the stages in text analysis? -AWS](https://aws.amazon.com/what-is/text-analysis/)
 
 ## How does it impact research?
 * In a general sense, the shift in the researcher’s perspective leads to shifts in research questions. Text analysis techniques are sometimes called [*“distant reading.”*](https://uta.pressbooks.pub/datanotebook/chapter/1-4-distant-reading/) 
@@ -133,8 +133,8 @@ Consider the data's current form as well as your current skill level or the size
 
  *Licensed content in Library databases*
 * Only some databases allow for text mining without additional permissions. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
-* [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
-* [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
+* [HathiTrust Research Center for TDM](https://southernmethodistuniversity.github.io/introTDM/htrc.html)
+* [JSTOR Constellate for TDM](https://southernmethodistuniversity.github.io/introTDM/constellate.html)
 * [Text data sets guide](https://guides.smu.edu/textdata)
     * Additional resources for [Datasets and Data Repositories](https://guides.smu.edu/data/overview)
 
@@ -279,20 +279,20 @@ This includes Bag of Words and TF-IDF. Example: “Which of these texts focus on
 * If you search for digital humanities in [Google image search](https://www.google.com/search?q=digital+humanities&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmhrrwjeL0AhWvkIkEHfAbCfoQ_AUoA3oECAEQBQ), the most common result is a [word cloud](https://docs.constellate.org/key-terms/#tag-cloud). A word cloud visualizes the most frequent content words in a text or corpus. 
     * Before you can create a word cloud, however, you need to collect the word frequencies for all the words in your text. You may also need to use a [stop words list](https://docs.constellate.org/key-terms/#stop-words) to remove common [function words](https://docs.constellate.org/key-terms/#function-words) (grammatical word constructions like "the", "of", and "or").
 
-![word cloud](../sections/images/wc.png)
+![word cloud](../images/wc.png)
 - Image source:[Voyant Cirrus image, Austen corpus](https://voyant-tools.org/?corpus=austen&view=Cirrus)  
 ___
 
 ## Collocation
 * Examining where words occur close to one another. Example: “Where are women mentioned in relation to home ownership?”
 
-![Collocation](../sections/images/colo.png)
+![Collocation](../images/colo.png)
 - Image source:[Voyant Collocation image, Austen corpus](https://voyant-tools.org/?corpus=austen)  
 ___
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
-![N-gram)](../sections/images/ngram.png)
+![N-gram)](../images/ngram.png)
 
 In the cases where a database (such as Constellate or Hathitrust) cannot supply full-text due to copyright laws, they may supply three n-gram counts:
 * Unigrams - A single-word construction, for example: "vegetable".
@@ -308,11 +308,11 @@ ___
 
 ## TF/IDF
 * Tf-IDF (term frequency–inverse document frequency) is intended to reflect how important a word is to a document in a collection or corpus. Example: “Given a decade of board reports, are there seasonal issues that crop up in summer vs. winter?”
-![TF-IDF](../sections/images/tfidf.png)
+![TF-IDF](../images/tfidf.png)
 - Image source:[Writing icon by kholis muasaroh from Noun Project (CCBY3.0)](https://thenounproject.com/icon/writing-5482033/)  
 
 
-Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here.](https://ithaka.github.io/tdm-notebooks/finding-significant-terms.html)
+Read more about how to do TF/IDF [here](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf) or [here.](https://constellate.org/dashboard/tutorials/finding-significant-terms?folder=Significant-terms)
 
 ___
 
@@ -322,7 +322,7 @@ ___
 ___
 ## Topic Modeling
 * Topic modeling is a method of using statistical models for discovering the abstract "topics" that occur in a collection of documents.
-![Topic modeling simple](../sections/images/topicmodsimple.png)
+![Topic modeling simple](../images/topicmodsimple.png)
 - Image source: [Anna Ristilä from Wikimedia, Creative Commons Share Alike](https://fi.wikipedia.org/wiki/Tiedosto:Topic_modeling_oversimplified.png) 
 
 * For this kind of analysis, the text is chunked, and stop words (frequently used words such as “the”, “and”, “if”) are removed since they reveal little about the substance of a text. * 
@@ -333,15 +333,15 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 * Topic 2: market, dow, bull, trade, run, fund, stock
 * Topic 3: campaign, democratic, polls, red, vote, defeat, state
 
-* We can recognize that these words tend to cluster together within newspaper sections such as "Sports", "Finance", and "Politics". If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using [Machine Learning](https://docs.constellate.org/key-terms/#machine-learning) to discover the topics in a given document automatically.
+* We can recognize that these words tend to cluster together within newspaper sections such as "Sports", "Finance", and "Politics". If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using [Machine Learning](https://constellate.org/docs/key-terms/#machine-learning) to discover the topics in a given document automatically.
 
-![Topic modeling](../sections/images/topicmodel.png)
+![Topic modeling](../images/topicmodel.png)
 
 ## Bag of words
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
     * “Bag-of-words” is a concept where grammar and word order of the original text are disregarded and frequency is maintained. Here is an example of the beginning of The Gettysburg Address as a bag of words.
 
-![Bag Of Words](../sections/images/bagwords.png)
+![Bag Of Words](../images/bagwords.png)
 
 * Here are some tips for topic modeling:
 * Treat topic modeling as one part of a larger analysis.
@@ -362,7 +362,7 @@ ___
 * Where is this word or phrase used in these documents? Example: “Which journal articles mention Maya Angelou’s phrase, ‘If you’re for the right thing, then you do it without thinking.’”
 * The concordance has a long history in humanities study and Roberto Busa's concordance *Index Thomisticus*—started in 1946—is arguably the first digital humanities project. Before computers were common, they were printed in large volumes such as John Bartlett's 1982 reference book *A Complete Concordance to Shakespeare*—it was 1909 pages pages long! A concordance gives the context of a given word or phrase in a body of texts. For example, a literary scholar might ask: how often and in what context does Shakespeare use the phrase "honest Iago" in Othello? A historian might examine a particular politician's speeches, looking for examples of a particular "dog whistle".
 
-![Shakespeare concordance: all instances of "cousin"](../sections/images/concor.png)
+![Shakespeare concordance: all instances of "cousin"](../images/concor.png)
 - Image source: [Concordance of Shakespeare's complete works](https://www.opensourceshakespeare.org/concordance/o/?i=763860) 
 <!-- <font color="red">Read more</font>
 * Steven E. Jones [Roberto Busa, S.J., and the Emergence of Humanities Computing](https://www.routledge.com/Roberto-Busa-S-J-and-the-Emergence-of-Humanities-Computing-The-Priest/Jones/p/book/9781138587250) (2016)
@@ -372,7 +372,7 @@ ___
 * How are the authors of these texts connected? Example: “What local communities formed around civil rights in 1963?”
 * in the image below, The circles (nodes) in the graph represent individual newspapers or magazines, while the lines between them (edges) represent shared texts.
 
-![Network visualisation](../sections/images/viraltexts.jpg)
+![Network visualisation](../images/viraltexts.jpg)
 - Image source: [Network of Shared Reprints Among Newspapers & Magazines, 1836-1860](http://networks.viraltexts.org/1836to1860-simple/)
 
 # 3. What emotions (or affects) are found within these texts?
@@ -394,7 +394,7 @@ ___
 ## Named Entity Recognition** (or NER)
 * Named Entity Recognition (NER) automatically identifies entities within a text and can helpful for extracting certain kinds of entities such as proper nouns. For example, NER could identify names of organizations, people, and places. It might also help identify things like dates, times, or dollar amounts.
 * You can use NER to list every example of a kind of entity from these texts. Example: “What are all of the geographic locations mentioned by Tolstoy?”
-![Named Entity Recognition](../sections/images/ne.png)
+![Named Entity Recognition](../images/ne.png)
 - Image source: [SpaCy Named Entity](https://spacy.io/usage/spacy-101#annotations-nerg) 
 
 <font color="red">Read more</font>
@@ -420,7 +420,7 @@ ___
 ## *Machine Learning(ML)* 
 * Another key approach to text analysis is *Machine Learning (ML). ML is training computers to recognize patterns in text.
 * Machine learning can either be *unsupervised (with minimal human intervention)* or *supervised (with more human intervention).* 
-![ML](../sections/images/ml.png)
+![ML](../images/ml.png)
 - Image source: [hellisp, Wikimedia](https://commons.wikimedia.org/wiki/File:Cluster-2.png)
 
 * Here are some common, specific methods that are based on machine learning:  
@@ -432,7 +432,7 @@ ___
 ### Clustering
 * Clustering is unsupervised machine learning.  
 * Which texts are the most similar? Example: “Is this play closer to comedy or tragedy?”
-![clustering](../sections/images/cluster.png)
+![clustering](../images/cluster.png)
 - Image source: [CreightonMA, Wikimedia, CC Attribution Share alike](https://commons.wikimedia.org/wiki/File:Sarkar%26Saha_Figure1A.png)
 ___
 ### Classification
@@ -459,16 +459,16 @@ ___
 
 
 
-![theoretical Workflow](../sections/images/idealwf.png)
+![theoretical Workflow](../images/idealwf.png)
 
 
-![Actual Workflow](../sections/images/realwf.png)
+![Actual Workflow](../images/realwf.png)
 ___
 
 ## Read more 
-* [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/sections/data1.html#data-in-the-humanities) 
+* [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/data1.htmles) 
 * [Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1](https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/)
-* [DH@ Berkley:Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning)
+* [DH@ Berkley:Data Prep and Cleaning](https://live-digital-humanities-berkeley.pantheon.berkeley.edu/data-prep-and-cleaning)
 * "Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled." 
     * How do you clean data?
         * Step 1: Remove duplicate or irrelevant observations
