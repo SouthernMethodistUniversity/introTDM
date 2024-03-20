@@ -20,23 +20,23 @@
 
 * Enter your keywords in *Build your dataset* and search. It will then run your search. You can use filters to refine and modify your search.
 
-[![Build](../images/buildconstellate.png)]
+![Build](../images/buildconstellate.png)
 
 * Once your results look interesting to you, click on *Build* your dataset. It will ask if you want to name your dataset.
 
-[![name dataset](../images/buildconstellate2.png)]
+![name dataset](../images/buildconstellate2.png)
 
 * You will then be at your *Dataset Dashboard* which displays recently viewed datasets and example datasets.
 
-[![dataset dashboard](../images/buildconstellate3.png)]
+![dataset dashboard](../images/buildconstellate3.png)
 * Scroll down to see the example datasets. 
 
-[![dataset dashboard](../images/buildconstellate4.png)]
+![dataset dashboard](../images/buildconstellate4.png)
 * **The options available to you are:** 
 
 * **Analyze**: This will allow you to analyze your dataset in the Constellate Lab by opening any of the tutorial Jupyter Notebooks (in the Python programming language) as seen below.
 
-[![Analyze](../images/analyzeconstellate.png)]
+![Analyze](../images/analyzeconstellate.png)
 
 * **Visualize**: This will allow you to do things like visualize terms across your dataset.
 
