@@ -1,6 +1,7 @@
 # [Voyant](https://voyant-tools.org/)
 
 * Voyant Tools is a web-based text reading and analysis environment. It is a scholarly project that is designed to facilitate reading and interpretive practices for digital humanities students and scholars as well as for the general public.-[About Voyant](https://voyant-tools.org/docs/#!/guide/about)
+
 *If you are new to text analysis and want to see what is possible, Voyant is a good tool to start with.* 
 
 * [Voyant guides](https://voyant-tools.org/docs/#!/guide)
@@ -27,4 +28,5 @@ There are four main ways of creating and using a corpus in Voyant ("corpus" is a
 * [Using Voyant-Tools to Formulate Research Questions for Textual Data](https://digitalfellows.commons.gc.cuny.edu/2018/11/01/using-voyant-tools-to-formulate-research-questions-for-textual-data/)
 
 
-### [Constellate Text Analysis glossary](https://constellate.org/docs/key-terms)
+### Text Analysis glossary
+* [Constellate Text Analysis glossary](https://constellate.org/docs/key-terms)
