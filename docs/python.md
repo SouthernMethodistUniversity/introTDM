@@ -1,4 +1,5 @@
 # Python for Text Mining
+# NOTE: this section is currently being updated. 
 
 Click on the link to see each lesson or click on [![Binder](../sections/images/binder.png)] to launch the [Jupyter Notebook](https://southernmethodistuniversity.github.io/dhri/sections/whycoding.html#jupyter-notebooks) in an interactive environment. 
 

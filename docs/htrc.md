@@ -14,7 +14,7 @@
 ##  Algorithms
 * [HTRC Algorithms](https://analytics.hathitrust.org/statisticalalgorithms) are web-based, click-and-run tools to perform computational text analysis on volumes in the HathiTrust Digital Library. 
 
-![HTRC for text analysis](..sections/images/htrcta.png)
+![HTRC for text analysis](../images/htrcta.png)
 
 * In a basic text analysis workflow, a researcher:
     * Gathers digitized text (text that has been scanned and OCR-ed) Note: OCR (Optical character recognition) refers to the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text. 
@@ -63,7 +63,7 @@
 ## Second, go to the HathiTrust Research Center (HTRC) Analytics interface. 
 * Go to [HTRC Analytics](https://analytics.hathitrust.org/)
 * Look for the sign in/ sign up section on the top right part of the page.
-    * If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in.[FAQ page for sign in](https://wiki.htrc.illinois.edu/display/COM/Troubleshooting+and+FAQs#TroubleshootingandFAQs-UserAccountsandSign-in)
+    * If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in. [FAQ page for sign in](https://wiki.htrc.illinois.edu/display/COM/Troubleshooting+and+FAQs#TroubleshootingandFAQs-UserAccountsandSign-in)
 * **Workset**: Now, we are ready to import our HT Collection into HTRC Analytics as a workset. 
     * Click on the [“Worksets” option on the header menu.](https://analytics.hathitrust.org/worksets) 
         * Click on *Create A Workset.* 
