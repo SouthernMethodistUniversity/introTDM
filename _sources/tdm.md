@@ -15,7 +15,7 @@
 * Read more about [Data Prep and Cleaning](https://live-digital-humanities-berkeley.pantheon.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
 
 
-![data life cycle](../sections/images/rdc.png)
+![data life cycle](../images/rdc.png)
 [![data life cycle](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/images/rdc.png)]<!--(https://example.com/jekyllbook)-->
 
 
