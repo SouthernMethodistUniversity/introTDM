@@ -292,7 +292,7 @@ ___
 * A type of collocation is [n-gram](https://docs.constellate.org/key-terms/#n-gram) counts. 
 * N-grams are a contiguous chain of n-items (i.e. words) where n is the number of items in the chain. 
 
-![N-gram)](../images/ngram.png)
+![N-gram](../images/ngram.png)
 
 In the cases where a database (such as Constellate or Hathitrust) cannot supply full-text due to copyright laws, they may supply three n-gram counts:
 * Unigrams - A single-word construction, for example: "vegetable".
