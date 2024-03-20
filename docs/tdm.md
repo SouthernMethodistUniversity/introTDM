@@ -7,13 +7,12 @@
 # What is Data ?
 * We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
     * "What are the differences between data, a dataset, and a database?
-![data defintion](../sections/images/datadef.jpg)    
         * *Data* are observations or measurements (unprocessed or processed) represented as text, numbers, or multimedia.
         * A *dataset* is a **structured** collection of data generally associated with a unique body of work.
         * A *database* is an **organized collection of data stored as multiple datasets.** Those datasets are generally stored and accessed electronically from a computer system that allows the data to be easily accessed, manipulated, and updated. - [Definition via USGS](https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database#:~:text=Data%20are%20observations%20or%20measurements,a%20unique%20body%20of%20work.) 
 * For the purposes of this workshop, we recommend finding an already existing data set for your project, as creating, cleaning and/or structuring a new dataset is often time and labor intensive. 
     * Remember that just because data may be avaible digitally, it does *not* automatically exist as a dataset. You may have to do works manually (copying and pasting into a spreadsheet) or computationally (scarping the data) to create a dataset usable for computational analysis.  
-* Read more about [Data Prep and Cleaning](https://digitalhumanities.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
+* Read more about [Data Prep and Cleaning](https://live-digital-humanities-berkeley.pantheon.berkeley.edu/data-prep-and-cleaning) and [Cleaning Text Data](https://medhieval.com/classes/hh2019/labs/cleaning-text-data/)
 
 
 ![data life cycle](../sections/images/rdc.png)
@@ -131,7 +130,7 @@ Consider the data's current form as well as your current skill level or the size
 **Databases**
 
  *Licensed content in Library databases*
-* Only some databases allow for text mining withour additional permssions. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
+* Only some databases allow for text mining without additional permissions. Those are [marked on our A-Z list with the filter Text Mining](https://guides.smu.edu/az.php?t=45104) 
 * [HathiTrust Research Center for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/HTRC.md)
 * [JSTOR Constellate for TDM](https://github.com/SouthernMethodistUniversity/introTDM/blob/main/sections/Constellate.md)
 * [Text data sets guide](https://guides.smu.edu/textdata)
@@ -232,17 +231,17 @@ There are guidelines to the processing of data, sometimes referred to as **Tidy 
 
  
 ## Chunking text
- ![Chunking text](../sections/images/chunktext.png)
+ ![Chunking text](../images/chunktext.png)
 * As mentioned, preparing text often involves splitting and combining files. In text analysis, splitting files is commonly referred to as chunking text. It means splitting text into smaller pieces before analysis. The text may be divided by paragraph, chapter, or a chosen number of words (e.g. 1000 word chunks). Let’s say that we have a whole text that consist of speeches of Abraham Lincoln. Before conducting analysis, the researcher may need to split the text into individual speeches. This process can be called chunking text.
 
 ## Grouping text
-![Grouping text](../sections/images/groupingtext.png)
+![Grouping text](../images/groupingtext.png)
 * An opposite process that needs to be done just as often is combining text into larger pieces before analysis, which can be referred to as grouping text. Let’s look at political speeches as an example. Say that this time we have individual texts of various speeches made by Abraham Lincoln as well as George Washington. Before conducting our analysis, we may need to group the texts by combining all speeches by Lincoln into one group and all speeches by Washington into another group. 
 
 Both chunking and grouping are ways of modifying the unit of analysis for the researcher, and it’s wholly dependent on what the researcher wants to study. Maybe someone wants to compare all of Abraham Lincoln's speeches to all of George Washington's speeched. They could create two large “buckets” of data via chunking. Or someone only wants to compare the chapters in John F. Kennedy’s “Profiles in Courage” to see how descriptions of the figures it profiled are similar or different, then a researcher might split a single work out by chapter. Those are simplistic examples, but they highlight the kinds of splitting and combining that may happen. 
 
 ## Tokenization
-![Tokenization](../sections/images/token.png)
+![Tokenization](../images/token.png)
 * An additional step in preparation is called tokenization. Tokenization is simply the process of breaking text into pieces called tokens. Often certain characters, such as punctuation marks, are discarded in the process. 
 Here’s a tokenized version of the beginning of The Gettysburg Address on the image above. The original text, which is in a human-readable form, has been translated into tokens. 
 While the tokens can still be parsed by a human, it isn’t in a form we regularly read. It can now, however, be read and processed by a computer. 
