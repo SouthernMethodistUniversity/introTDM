@@ -20,8 +20,6 @@
 * The researcher, of course, still brings her own analysis to bear on the results.
 
 
-
-
 ## API (application programming interface)
 
 An application programming interface (API) is a way for two or more computer programs or components to communicate with each other.
@@ -54,84 +52,24 @@ Features include part-of-speech tagged term token counts, header/footer identifi
 
 
 #### Worksets
-[Ready-Made Featured Worksets](https://htrc.github.io/torchlite-handbook/worksets.html)
+- [Ready-Made Featured Worksets](https://htrc.github.io/torchlite-handbook/worksets.html)
 
 # TORCHLITE 
 
-[TORCHLITE Hackathon Handbook](https://htrc.github.io/torchlite-handbook/)
-[Torchlite API Documentation](https://torchlite-dev-api.htrc.illinois.edu/docs#/)
+- [TORCHLITE Hackathon Handbook](https://htrc.github.io/torchlite-handbook/)
+- [Torchlite API Documentation](https://torchlite-dev-api.htrc.illinois.edu/docs#/)
 
 
 
-
-
-# Login to HTDL & HTRC 
-## First, go to the HathiTrust Digital Library (HTDL) interface. 
-* [Go to HTDL site](https://www.hathitrust.org/)
-* Click on the “LOG IN” button on the right to sign in.
-* If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in.
-* Once you are logged in, click on the “FULL-TEXT” tab to search in full text. Now you can start thinking about a search query to find volumes for your collection. Try building your own collection.
-* View search results. You can facet in the sidebar, then select volumes.
-* When you’re satisfied with your selection, click on the “Select Collection” bar and choose “[CREATE NEW COLLECTION]” from the drop-down menu. Then hit the “Add Selected” button on the right. 
-* A pop-up window will appear that prompts you to add some metadata to your collection before the system creates it for you. 
-    * Fill in the name and description of your new collection. 
-    * You can choose to make the collection public or private, and we recommend writing a short description whenever you make collections public. 
-    * When done, click on “Save Changes” to create your collection.
-* After the collection is successfully created, you should see a a confirmation message above the search results. 
-    * To view your collection, click on “My Collections” near the top right of the page. 
-* This will bring you to all your collections. 
-    *You can manage your collections here by viewing collections, changing the public or private status of a collection, and deleting collections you don’t need. 
-    * Click on the title of the collection you just created to view it. 
-    * While viewing a collection, you will see *Collection Tools*
-        * There will be an option for a sharable link to this collection (only sharable and usable in HTRC if you choose to make your collections public)
-* You will be able to see the title and description of your collection, as well as all the items in it. 
-    *   In order to import your newly created collection into HTRC Analytics for analysis, we need to download the metadata of the collection first. 
-        * Click on the “Download Metadata” button on the left sidebar and select the “Download Item Metadata: Tab-Delimited Text (TSV)” option. 
-            * You will not be able to upload the JSON metadata of your collection to HTRC Analytics, so make sure to select the TSV option.
-
-
-## Second, go to the HathiTrust Research Center (HTRC) Analytics interface. 
-* Go to [HTRC Analytics](https://analytics.hathitrust.org/)
-* Look for the sign in/ sign up section on the top right part of the page.
-    * If you are affiliated to an HT partner institution (such as SMU), select your partner institution from the list and click on continue, then follow the directions for institutional log in. [FAQ page for sign in](https://wiki.htrc.illinois.edu/display/COM/Troubleshooting+and+FAQs#TroubleshootingandFAQs-UserAccountsandSign-in)
-* **Workset**: Now, we are ready to import our HT Collection into HTRC Analytics as a workset. 
-    * Click on the [“Worksets” option on the header menu.](https://analytics.hathitrust.org/worksets) 
-        * Click on *Create A Workset.* 
-* Import from file:
-    * To create a workset from a file of HathiTrust volume IDs ( in the TSV file you created in step 1) click on *upload file.*
-* Name your workset and write a description if you like. 
-    * When naming, please note that only characters A-Z, 0-9, (), -, or _  are allowed, so do not use spaces or other special characters. 
-    * Click on “Choose file” to upload the TSV file we just downloaded. 
-    * Check the “Make private workset” box if you want to create a private workset. 
-    * Finally, hit the “Create Workset” button. 
-* If successful, you should be brought back to your worksets page, and the new workset that you just created should be listed. 
-    * Click on the name of the workset to view it. 
-* Import from Hathitrust:
- * Create a workset from an existing, public HathiTrust collection
- * You will need the URL for a public HathiTrust collection. Private collections cannot be imported by URL.
-    * After entering the URL, click on Fetch collection. after the collections is successfully fetched, you will see the text *Data retrieved from source*  
-    * Enter Name and Description, then click on Create Workset. 
-* **Algorithms**: Now, we are ready to apply HTRC Algorithms to our worksets.  
-    * Click on the [“Algorithm” option on the header menu.](https://analytics.hathitrust.org/algorithms) 
-        * Choose one of the Algorithms to Execute. 
-            * If you have questions about what preset choices the Algorithm is making, read the documentation.
-        * Once you choose an Algorithm, click on execute. 
-            * It will take you to page with a description and you will have to choose a Job Name, a workset for analysis, and any additional choices relevant to the algorithm you are choosing. 
-    * Once you make your choices, you will go to a page listing [current and past Jobs.](https://analytics.hathitrust.org/listjobs)
-        * Click on the Job name to see the output.         
-
-
-* Workset review!
-    * How did it go?
-    * What kind of search criteria did you use?
-    * Did you find any challenges?
-    * Remember you can always click on Read Documentation or Learn More to find additional contextual information. 
+- [Possible Projects](https://htrc.github.io/torchlite-hackathon/projects)
+- [Sample Creations](https://htrc.github.io/torchlite-hackathon/creations)
 
 ## All HTRC Tutorials
 *  [A comprehensive list of all HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
 
-# Lessons
-[Library Carpentry lesson on fetching data from APIs.](https://joshuadull.github.io/APIs-for-Libraries/)
+# Further Learning 
+- APIs
+* [Library Carpentry lesson on fetching data from APIs.](https://joshuadull.github.io/APIs-for-Libraries/)
 
 Some content in this session based on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
 
