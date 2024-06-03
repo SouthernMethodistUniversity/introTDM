@@ -6,12 +6,7 @@
     * Log in with your partner institution (SMU) account to access the largest number of volumes and features.
     * [Click here for a list of HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
 
-
-# Worksets
-* [Recommended Worksets](https://analytics.hathitrust.org/staticrecommendedworksets) are curated worksets created by real researchers of projects that utilize resources from the HathiTrust Digital Library and can be analyzed with tools built by the HTRC.
-* [Creating datasets/worksets](https://analytics.hathitrust.org/staticworksets#top)
-
-##  Algorithms
+##  HTRC for Text Analysis
 * [HTRC Algorithms](https://analytics.hathitrust.org/statisticalalgorithms) are web-based, click-and-run tools to perform computational text analysis on volumes in the HathiTrust Digital Library. 
 
 ![HTRC for text analysis](../images/htrcta.png)
@@ -25,15 +20,50 @@
 * The researcher, of course, still brings her own analysis to bear on the results.
 
 
-### HTRC tools
-* Use the HTRC algorithms as an example of how to use a pre-built tool for text analysis. The HTRC provides some algorithms through HTRC Analytics, and they can be used to analyze HTRC worksets.
-* An algorithm is just a way of saying a computer function - text goes in, process happens, and results come out. 
-* HTRC algorithms can extract, refine, analyze, and visualize worksets. They can basically perform “plug-and-play” text analysis. 
-* Because they are built into HTRC Analytics, they are mostly limited in how much they can be tweaked or customized. The algorithms are primarily for users who don’t know how or don’t want to work with custom code. It can be a good tool for learning and just trying things out. 
-* How do you choose which HTRC algorithm to use? Naturally, it depends on what you want to do. 
-* Some of the algorithms are task oriented. For example, there are ones for running spellcheck reports, for creating word counts, for visualizing more frequently used words, and for generating a list of named entities. 
-* Others algorithms are more analytic, like one that generates topic models, and another that compares salient words in two worksets.
-* Try to gain some basic understanding of your tool. **Reading some relevant documentation is especially important when the tool is within a “black box”.** Speaking of understanding your tools, it’s important to note that the HTRC algorithm only has two parameters you can set right now, so it’s not suitable for really robust topic modeling. But for teaching and exploration of HT text specifically, the HTRC topic modeling algorithm can be a good place to start.
+
+
+## API (application programming interface)
+
+An application programming interface (API) is a way for two or more computer programs or components to communicate with each other.
+
+
+Additional Explanation form technology companies: 
+- Postman: [video explanation of API](https://youtu.be/-0MmWEYR2a8?si=ilGP5D2w71AEdZHh), [Text explanation of API](https://www.postman.com/what-is-an-api/)
+- IBM: [text explanation of API](https://www.ibm.com/topics/api)
+
+
+Example APIs: loc.gov
+- For example, look at these pages from the Library of Congress
+- The [main page](https://www.loc.gov/) is meant for people to interact with. 
+- The [APIs for LoC.gov](https://www.loc.gov/apis/) "makes information available via a series of application programming interfaces (APIs)" it is meant to retrieve information from Loc.gov in a way that is formatted for a machine and for a programming interface.  
+- [Library of Congress Data Exploration](https://github.com/LibraryOfCongress/data-exploration?tab=readme-ov-file#library-of-congress-data-exploration)
+
+
+
+
+### HTRC Extracted Features (EF) API
+
+The HTRC Extracted Features Dataset v.2.0 is composed of page-level features for 17.1 million volumes in the HathiTrust Digital Library. This version contains non-consumptive features for both public-domain and in-copyright books.
+Features include part-of-speech tagged term token counts, header/footer identification, marginal character counts, and much more.
+
+
+* [HTRC Extracted Features (EF) Dataset](https://analytics.hathitrust.org/deriveddatasets#ef)
+* A full explanation of the dataset's features, motivation, and creation is available at the EF Dataset documentation page: [HTRC Extracted Features (EF) Documentation](https://htrc.atlassian.net/wiki/spaces/COM/pages/43295914/Extracted+Features+v.2.0/)
+* [EF API](https://htrc.stoplight.io/docs/ef-api/8xpvh96ani2e0-ef-api) 
+
+
+
+#### Worksets
+[Ready-Made Featured Worksets](https://htrc.github.io/torchlite-handbook/worksets.html)
+
+# TORCHLITE 
+
+[TORCHLITE Hackathon Handbook](https://htrc.github.io/torchlite-handbook/)
+[Torchlite API Documentation](https://torchlite-dev-api.htrc.illinois.edu/docs#/)
+
+
+
+
 
 # Login to HTDL & HTRC 
 ## First, go to the HathiTrust Digital Library (HTDL) interface. 
@@ -100,7 +130,8 @@
 ## All HTRC Tutorials
 *  [A comprehensive list of all HTRC tutorials to walk you through the steps for using HTRC tools and data.](https://wiki.htrc.illinois.edu/display/COM/All+HTRC+Tutorials)
 
-
+# Lessons
+[Library Carpentry lesson on fetching data from APIs.](https://joshuadull.github.io/APIs-for-Libraries/)
 
 Some content in this session based on [HTRC Digging Deeper, Reaching Further](https://teach.htrc.illinois.edu/teaching-materials/) used under a [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by-nc/4.0/)
 
