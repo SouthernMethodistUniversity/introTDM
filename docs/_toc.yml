@@ -8,6 +8,7 @@ chapters:
   - file: tools
   - file: voyant
   - file: htrc
+  - file: htrcapi
   - file: constellate
   - file: python
   - file: terms
