@@ -1,4 +1,4 @@
-# HathiTrust Research Center
+# HTRC API
 
 * [HathiTrust Digital Library](https://www.hathitrust.org/digital_library)
 * [HathiTrust Research Center](https://analytics.hathitrust.org/)
