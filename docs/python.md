@@ -1,22 +1,13 @@
 # Python for Text Mining
-# NOTE: this section is currently being updated. 
 
-Click on the link to see each lesson or click on [![Binder](../sections/images/binder.png)] to launch the [Jupyter Notebook](https://southernmethodistuniversity.github.io/dhri/sections/whycoding.html#jupyter-notebooks) in an interactive environment. 
+- [JSTOR Constellate](https://guides.smu.edu/c.php?g=1397994) is a platform for learning and performing text analysis. To access Tutorials, log in to Constellate and navigate to the Tutorials section on your dashboard. From there, you can explore their growing library of interactive tutorials covering a wide range of text analysis topics.
 
-## Getting started with [Python](https://southernmethodistuniversity.github.io/dhri/sections/whycoding.html#programming-languages)
-* [Introduction to Python Programming](https://github.com/SouthernMethodistUniversity/pythonintro/blob/main/intro_to_python.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SouthernMethodistUniversity/pythonintro/main?labpath=intro_to_python.ipynb)
-
-## Getting started with Text Mining with Python
-* [Introduction to Working with Text in Python](https://github.com/SouthernMethodistUniversity/pythonintro/blob/main/intro_to_working_with_text.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SouthernMethodistUniversity/pythonintro/main?labpath=intro_to_working_with_text.ipynb)
-
-* [Intermediate TextMining with Python](https://github.com/SouthernMethodistUniversity/pythonintro/blob/main/intermediate_textmining.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SouthernMethodistUniversity/pythonintro/main?labpath=intermediate_textmining.ipynb)
-
-* [TextMining with Python](https://github.com/SouthernMethodistUniversity/pythonintro/blob/main/textmining_python.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SouthernMethodistUniversity/pythonintro/main?labpath=textmining_python.ipynb)
-
+- Once you log on to Constellate, log on to [tutorials](https://constellate.org/dashboard/tutorials)
+- You will have access to code-based Jupyter notebooks.
+- Beginner: Getting started with Jupyter notebooks and Python basics (6 notebooks)
+Get started with Jupyter notebooks with an introduction to the Python Programming language for absolute beginners.
+- Python intermediate (5 notebooks): Expand your Python skills learning to work with files, comprehensions, and object-oriented programming. Five notebooks that introduce intermediate-level coding with Python.
+-[Getting started with Constellate](https://constellate.org/docs/topic/explanation)
 
 
 Additional lessons:
@@ -28,7 +19,6 @@ Additional lessons:
 
 -----
 #### Attribution 
-Session Leader: [Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People)
-* Written by Eric Godat & Robert Kalescky
+* Written by Rafia Mirza
 
-* [Text Mining With Python repository](https://github.com/SouthernMethodistUniversity/pythonintro)
+
