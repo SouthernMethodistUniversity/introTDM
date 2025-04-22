@@ -1,8 +1,8 @@
 # Text data mining (TDM)
-    * What is Data?
-    * What is Text data mining (TDM)?
-    * What is Text as Data?
-    * What are Types of Text Mining?
+- What is Data?
+- What is Text data mining (TDM)?
+- What is Text as Data?
+- What are Types of Text Mining?
 
 # What is Data ?
 * We begin without data. Then it is *observed*, or *made*, or *imagined*, or *generated.* After that, it goes through further transformations.
@@ -162,10 +162,11 @@ Try searching:
 * [Library of Congress Labs](https://labs.loc.gov/)
 * [Digital Public Library](https://dp.la/)
 * [Project Gutenberg](https://www.gutenberg.org/)
+* [.txtlab datasets](https://txtlab.org/data-sets/)
 * You can also look at the archive for [*Data Is Plural* a weekly newsletter of datasets](https://www.data-is-plural.com/)
 
 Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.
-* Data collected by the [U.S. government may be publicly available.](https://usafacts.org/data/)
+* Data collected by the U.S. government may be publicly available.
 * Your discipline may have a OA repository, such as [arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.](https://arxiv.org/)
 
 
@@ -176,10 +177,15 @@ Depending on the the type of data, the collecting agency or you field their migh
 * If they created it, did they make it accessible in a repository on a website, or a Github repository?
 
 * Read some data journalism articles on [The Pudding](https://pudding.cool/), [ProPublica](https://www.propublica.org/datastore) or this [roundup of data journalism projects from 2021](https://datajournalism.com/read/blog/best-data-journalism-projects-2021)
+* [Journal of Cultural Analytics](https://culturalanalytics.org/)
+* [Journal of Open Humanities Data (JOHD)](https://openhumanitiesdata.metajnl.com/) 
 
 
 # Preparing Data (Cleaning and Transforming)
 * After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed to as pre-processing the data). Preparing data can take a lot of time and effort.
+
+**Preprocessing specifically for text will include**
+
 * *Cleaning text data can involve…*
 - Removing Duplicates
 - Correcting Errors
@@ -212,7 +218,7 @@ A small detour to discuss data formats. For accessibility, future-proofing, and 
 
 How do you decide the formats to store your data when you transition from 'raw' to 'processed/transformed' data? What are some of your considerations?
 
-## Tidy data
+## Tidy data (structured data)
 There are guidelines to the processing of data, sometimes referred to as **Tidy Data**.<sup>1</sup> One manifestation of these rules:
 1. Each variable is in a column.
 2. Each observation is a row.
@@ -335,7 +341,13 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 
 * We can recognize that these words tend to cluster together within newspaper sections such as "Sports", "Finance", and "Politics". If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using [Machine Learning](https://constellate.org/docs/key-terms/#machine-learning) to discover the topics in a given document automatically.
 
-![Topic modeling](../images/topicmodel.png)
+* [Core Concepts of Topic Modeling](https://www.datacamp.com/tutorial/what-is-topic-modeling)
+* [Text Mining with R:Topic modeling](https://www.tidytextmining.com/topicmodeling)
+* [Programming Historian: What is Topic Modeling And For Whom is this Useful?](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#what-is-topic-modeling-and-for-whom-is-this-useful)
+* [Walkthrough: Topic Modeling Using Latent Dirichlet Allocation (LDA)](https://www.geeksforgeeks.org/topic-modeling-using-latent-dirichlet-allocation-lda/)
+* [Walkthrough: Python: Topic Modeling (LDA)](https://elibooklover.github.io/Tutorials/Python/nltk/) or [IBM Developer](https://developer.ibm.com/tutorials/awb-lda-topic-modeling-text-analysis-python/#step-1-set-up-your-environment3)
+
+![Topic modeling:](../images/topicmodel.png)
 
 ## Bag of words
 * The computer treats the textual documents as **bags of words**, and guesses which words make up a “topic” based on their proximity to one another in the documents, with the idea the words that frequently co-occur are likely about the same thing. So the different colored groupings are the groups of words that the computer has statistically analyzed and determined are likely related to each other about a “topic”.
@@ -466,6 +478,8 @@ ___
 ___
 
 ## Read more 
+* [The M.E. Test](https://walshbr.com/blog/the-me-test/) "... workshop for the US Latino Digital Humanities Center (USLDH) at the University of Houston on introductory text analysis concepts and Voyant. [recording of talk](https://youtu.be/-Ct_UbE2UrY) & [slides](https://myuva-my.sharepoint.com/:p:/g/personal/bmw9t_virginia_edu/EQukJ2jpIndIsqE3ipFqA7kBFYufLska-Hs4tZrrypM0zw?rtime=cZN3r-KB3Ug)
+
 * [Data in digital humanities](https://southernmethodistuniversity.github.io/dhri/data1.htmles) 
 * [Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1](https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/)
 * [DH@ Berkley:Data Prep and Cleaning](https://live-digital-humanities-berkeley.pantheon.berkeley.edu/data-prep-and-cleaning)
