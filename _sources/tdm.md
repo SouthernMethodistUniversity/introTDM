@@ -29,6 +29,8 @@ There are many ways to represent data, just as there are many sources of data. F
 
 ## Processed/transformed
 * Processing data puts it into a state more readily available for analysis, and makes the data legible. For instance it could be rendered as **structured data**. This can also take many forms, e.g., a table. We will discuss what this means for text data (OCR, Tokenizing, etc.). 
+* [The preprocessing process includes (1) unitization and tokenization, (2) standardization and cleansing or text data cleansing, (3) stop word removal, and (4) lemmatization or stemming.](http://users.cis.fiu.edu/~giri/teach/5768/F18/lecs/Anandarajan-Ch4Ch5Ch6Ch8.pdf)
+* [Preprocessing Text Data for Machine Learning](https://datastud.dev/posts/nlp-preprocess)
 
 # Data mining      
  * Data mining is looking for patterns using computational methods, often across large data sets. 
@@ -341,11 +343,15 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 
 * We can recognize that these words tend to cluster together within newspaper sections such as "Sports", "Finance", and "Politics". If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using [Machine Learning](https://constellate.org/docs/key-terms/#machine-learning) to discover the topics in a given document automatically.
 
+* [JoDH:Topic Modeling: A Basic Introduction](https://journalofdigitalhumanities.org/2-1/topic-modeling-a-basic-introduction-by-megan-r-brett/)
+* [What is Topic Modeling?](https://python-textbook.pythonhumanities.com/04_topic_modeling/04_01_02_topic_modeling_concepts.html#what-is-topic-modeling)
 * [Core Concepts of Topic Modeling](https://www.datacamp.com/tutorial/what-is-topic-modeling)
+* [Topic Modeling Best Practices](https://msaxton.github.io/topic-model-best-practices/)
 * [Text Mining with R:Topic modeling](https://www.tidytextmining.com/topicmodeling)
 * [Programming Historian: What is Topic Modeling And For Whom is this Useful?](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#what-is-topic-modeling-and-for-whom-is-this-useful)
 * [Walkthrough: Topic Modeling Using Latent Dirichlet Allocation (LDA)](https://www.geeksforgeeks.org/topic-modeling-using-latent-dirichlet-allocation-lda/)
 * [Walkthrough: Python: Topic Modeling (LDA)](https://elibooklover.github.io/Tutorials/Python/nltk/) or [IBM Developer](https://developer.ibm.com/tutorials/awb-lda-topic-modeling-text-analysis-python/#step-1-set-up-your-environment3)
+* [Topic Modeling the DHQ Article Corpus](https://cssh.northeastern.edu/nulab/grey-modeling-dhq-corpus/)
 
 ![Topic modeling:](../images/topicmodel.png)
 
