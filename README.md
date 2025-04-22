@@ -7,7 +7,7 @@
 
 
 -----
-Session Leaders: [Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/), & [Eric Godat](https://www.smu.edu/Provost/Data-Science-Institute/People) 
+Session Leaders: [Rafia Mirza](https://guides.smu.edu/prf.php?id=5b2674a1-7cdb-11ed-9922-0ad758b798c3), & [Eric Godat](https://www.smu.edu/oit/research/staff) 
 
 
 [![Creative Commons License](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
