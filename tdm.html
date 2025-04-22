@@ -418,7 +418,7 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-data-cleaning-and-transforming">Preparing Data (Cleaning and Transforming)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-importance-of-using-open-data-formats">The importance of using open data formats</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidy-data">Tidy data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidy-data-structured-data">Tidy data (structured data)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chunking-text">Chunking text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-text">Grouping text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">Tokenization</a></li>
@@ -478,12 +478,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="text-data-mining-tdm">
 <h1>Text data mining (TDM)<a class="headerlink" href="#text-data-mining-tdm" title="Permalink to this heading">#</a></h1>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* What is Data?
-* What is Text data mining (TDM)?
-* What is Text as Data?
-* What are Types of Text Mining?
-</pre></div>
-</div>
+<ul class="simple">
+<li><p>What is Data?</p></li>
+<li><p>What is Text data mining (TDM)?</p></li>
+<li><p>What is Text as Data?</p></li>
+<li><p>What are Types of Text Mining?</p></li>
+</ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="what-is-data">
 <h1>What is Data ?<a class="headerlink" href="#what-is-data" title="Permalink to this heading">#</a></h1>
@@ -719,11 +719,12 @@ Try searching:</p>
 <li><p><a class="reference external" href="https://labs.loc.gov/">Library of Congress Labs</a></p></li>
 <li><p><a class="reference external" href="https://dp.la/">Digital Public Library</a></p></li>
 <li><p><a class="reference external" href="https://www.gutenberg.org/">Project Gutenberg</a></p></li>
+<li><p><a class="reference external" href="https://txtlab.org/data-sets/">.txtlab datasets</a></p></li>
 <li><p>You can also look at the archive for <a class="reference external" href="https://www.data-is-plural.com/"><em>Data Is Plural</em> a weekly newsletter of datasets</a></p></li>
 </ul>
 <p>Depending on the the type of data, the collecting agency or you field their might be open access repositories with that data available.</p>
 <ul class="simple">
-<li><p>Data collected by the <a class="reference external" href="https://usafacts.org/data/">U.S. government may be publicly available.</a></p></li>
+<li><p>Data collected by the U.S. government may be publicly available.</p></li>
 <li><p>Your discipline may have a OA repository, such as <a class="reference external" href="https://arxiv.org/">arXiv, which has articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.</a></p></li>
 </ul>
 <section id="highly-recommended-practice">
@@ -734,6 +735,8 @@ Try searching:</p>
 <li><p>Where did these researchers find their data set they are using?</p></li>
 <li><p>If they created it, did they make it accessible in a repository on a website, or a Github repository?</p></li>
 <li><p>Read some data journalism articles on <a class="reference external" href="https://pudding.cool/">The Pudding</a>, <a class="reference external" href="https://www.propublica.org/datastore">ProPublica</a> or this <a class="reference external" href="https://datajournalism.com/read/blog/best-data-journalism-projects-2021">roundup of data journalism projects from 2021</a></p></li>
+<li><p><a class="reference external" href="https://culturalanalytics.org/">Journal of Cultural Analytics</a></p></li>
+<li><p><a class="reference external" href="https://openhumanitiesdata.metajnl.com/">Journal of Open Humanities Data (JOHD)</a></p></li>
 </ul>
 </section>
 </section>
@@ -741,6 +744,9 @@ Try searching:</p>
 <h1>Preparing Data (Cleaning and Transforming)<a class="headerlink" href="#preparing-data-cleaning-and-transforming" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>After gathering the data needed for research and before conducting the actual analysis, data often requires preparation (also sometimes refereed to as pre-processing the data). Preparing data can take a lot of time and effort.</p></li>
+</ul>
+<p><strong>Preprocessing specifically for text will include</strong></p>
+<ul class="simple">
 <li><p><em>Cleaning text data can involve…</em></p></li>
 </ul>
 <ul class="simple">
@@ -777,8 +783,8 @@ Try searching:</p>
 </ul>
 <p>How do you decide the formats to store your data when you transition from ‘raw’ to ‘processed/transformed’ data? What are some of your considerations?</p>
 </section>
-<section id="tidy-data">
-<h2>Tidy data<a class="headerlink" href="#tidy-data" title="Permalink to this heading">#</a></h2>
+<section id="tidy-data-structured-data">
+<h2>Tidy data (structured data)<a class="headerlink" href="#tidy-data-structured-data" title="Permalink to this heading">#</a></h2>
 <p>There are guidelines to the processing of data, sometimes referred to as <strong>Tidy Data</strong>.<sup>1</sup> One manifestation of these rules:</p>
 <ol class="arabic simple">
 <li><p>Each variable is in a column.</p></li>
@@ -932,8 +938,13 @@ Discovering the topics within a group of texts. Example: “What are the most fr
 <li><p>Topic 2: market, dow, bull, trade, run, fund, stock</p></li>
 <li><p>Topic 3: campaign, democratic, polls, red, vote, defeat, state</p></li>
 <li><p>We can recognize that these words tend to cluster together within newspaper sections such as “Sports”, “Finance”, and “Politics”. If we have never read a set of documents, we might use a topic analysis to get a sense of what topics are in a given corpus. Given that Topic Analysis is an exploratory technique, it may require some expertise to fine-tune and get good results for a given corpus. However, if the topics can be discovered then they could potentially be used to train a model using <a class="reference external" href="https://constellate.org/docs/key-terms/#machine-learning">Machine Learning</a> to discover the topics in a given document automatically.</p></li>
+<li><p><a class="reference external" href="https://www.datacamp.com/tutorial/what-is-topic-modeling">Core Concepts of Topic Modeling</a></p></li>
+<li><p><a class="reference external" href="https://www.tidytextmining.com/topicmodeling">Text Mining with R:Topic modeling</a></p></li>
+<li><p><a class="reference external" href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#what-is-topic-modeling-and-for-whom-is-this-useful">Programming Historian: What is Topic Modeling And For Whom is this Useful?</a></p></li>
+<li><p><a class="reference external" href="https://www.geeksforgeeks.org/topic-modeling-using-latent-dirichlet-allocation-lda/">Walkthrough: Topic Modeling Using Latent Dirichlet Allocation (LDA)</a></p></li>
+<li><p><a class="reference external" href="https://elibooklover.github.io/Tutorials/Python/nltk/">Walkthrough: Python: Topic Modeling (LDA)</a> or <a class="reference external" href="https://developer.ibm.com/tutorials/awb-lda-topic-modeling-text-analysis-python/#step-1-set-up-your-environment3">IBM Developer</a></p></li>
 </ul>
-<p><img alt="Topic modeling" src="_images/topicmodel.png" /></p>
+<p><img alt="Topic modeling:" src="_images/topicmodel.png" /></p>
 </section>
 <section id="bag-of-words">
 <h2>Bag of words<a class="headerlink" href="#bag-of-words" title="Permalink to this heading">#</a></h2>
@@ -1118,6 +1129,7 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 <section id="read-more">
 <h2>Read more<a class="headerlink" href="#read-more" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
+<li><p><a class="reference external" href="https://walshbr.com/blog/the-me-test/">The M.E. Test</a> “… workshop for the US Latino Digital Humanities Center (USLDH) at the University of Houston on introductory text analysis concepts and Voyant. <a class="reference external" href="https://youtu.be/-Ct_UbE2UrY">recording of talk</a> &amp; <a class="reference external" href="https://myuva-my.sharepoint.com/:p:/g/personal/bmw9t_virginia_edu/EQukJ2jpIndIsqE3ipFqA7kBFYufLska-Hs4tZrrypM0zw?rtime=cZN3r-KB3Ug">slides</a></p></li>
 <li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/dhri/data1.htmles">Data in digital humanities</a></p></li>
 <li><p><a class="reference external" href="https://blogs.loc.gov/thesignal/2022/02/datasets-as-primary-sources-an-archaeological-dig-into-our-collective-brains-part-1/">Datasets as Primary Sources: An Archaeological Dig into Our Collective Brains, Part 1</a></p></li>
 <li><p><a class="reference external" href="https://live-digital-humanities-berkeley.pantheon.berkeley.edu/data-prep-and-cleaning">DH&#64; Berkley:Data Prep and Cleaning</a></p></li>
@@ -1245,7 +1257,7 @@ Sentiment analysis can help determine the emotions expressed in a given text. Th
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-data-cleaning-and-transforming">Preparing Data (Cleaning and Transforming)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-importance-of-using-open-data-formats">The importance of using open data formats</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidy-data">Tidy data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidy-data-structured-data">Tidy data (structured data)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chunking-text">Chunking text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-text">Grouping text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">Tokenization</a></li>
